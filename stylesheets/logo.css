@@ -1,0 +1,129 @@
+.logo {
+  margin: auto;
+  width: 50%;
+}
+p {
+  font-size: 40px;
+  position: relative;
+  top: -38px;
+  color: #45597e;
+}
+.ellipse {
+  border: #45597e 2px solid;
+  height: 50px;
+  width: 150px;
+  border-radius: 50%;
+  z-index: 1000;
+}
+.ellipse1 {
+  border: #45597e 2px solid;
+  height: 50px;
+  width: 150px;
+  border-radius: 50%;
+  transform: rotate(60deg);
+  position: relative;
+  top: -48px;
+}
+.ellipse2 {
+  border: #45597e 2px solid;
+  height: 50px;
+  width: 150px;
+  border-radius: 50%;
+  transform: rotate(-60deg);
+  position: relative;
+  top: -100px;
+}
+.ellipse2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: #45597e;
+  animation: rotate1 1.5s infinite linear;
+}
+.ellipse2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 20px;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: #45597e;
+  animation: rotate2 1.5s infinite linear;
+}
+
+@keyframes rotate2 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  10% {
+    transform: translate(20px, -4px);
+  }
+  20% {
+    transform: translate(40px, -5px);
+  }
+  30% {
+    transform: translate(60px, -5px);
+  }
+  40% {
+    transform: translate(80px, -4px);
+  }
+  50% {
+    transform: translate(100px, -1px);
+  }
+  60% {
+    transform: translate(110px, 3px);
+  }
+  70% {
+    transform: translate(120px, 8px);
+  }
+  80% {
+    transform: translate(128px, 20px);
+  }
+  90% {
+    transform: translate(120px, 30px);
+  }
+  100% {
+    transform: translate(100px, 40px);
+  }
+}
+
+@keyframes rotate1 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  10% {
+    transform: translate(-20px, 4px);
+  }
+  20% {
+    transform: translate(-40px, 5px);
+  }
+  30% {
+    transform: translate(-60px, 5px);
+  }
+  40% {
+    transform: translate(-80px, 4px);
+  }
+  50% {
+    transform: translate(-100px, 1px);
+  }
+  60% {
+    transform: translate(-110px, -3px);
+  }
+  70% {
+    transform: translate(-120px, -8px);
+  }
+  80% {
+    transform: translate(-128px, -20px);
+  }
+  90% {
+    transform: translate(-120px, -30px);
+  }
+  100% {
+    transform: translate(-100px, -40px);
+  }
+}
