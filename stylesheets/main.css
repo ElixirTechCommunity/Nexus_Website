@@ -1,3 +1,5 @@
-@import "./styles.css";
-@import "./animation.css";
 @import "./logo.css";
+@import "./loader.css";
+@import "./styles.css";
+@import "header.css";
+@import "./animation.css";

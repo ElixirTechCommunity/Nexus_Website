@@ -11,18 +11,18 @@
 }
 .fadeOut {
   animation-name: fadeOut;
-  animation-duration: 0.5s;
+  animation-duration: 1s;
   animation-delay: 0.7s;
   animation-iteration-count: 1;
 }
 @keyframes slideIn {
   0% {
     opacity: 0;
-    transform: translateX(30px);
+    transform: translateX(80vh);
   }
   100% {
     opacity: 1;
-    transform: translateX(0px);
+    transform: translateX(0);
   }
 }
 @keyframes fadeOut {
@@ -45,5 +45,30 @@
   100% {
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+/* page sliding animation */
+.slide-left {
+  animation: slideLeft 1s linear 1;
+}
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-90vw);
+  }
+}
+
+.slide-right {
+  animation: slideRight 1s linear 1;
+}
+@keyframes slideRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(90vw);
   }
 }

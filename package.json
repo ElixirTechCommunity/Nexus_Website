@@ -2,19 +2,17 @@
   "name": "nexus-website",
   "version": "1.0.0",
   "description": "nexus website",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm run build-css && npm run build-js",
     "build-css": "esbuild ./stylesheets/main.css  --bundle --outfile=build/styles.css",
-    "build-js": "esbuild ./index.js  --bundle --outfile=build/script.js --bundle=false",
+    "build-js": "esbuild ./scripts/index.js  --bundle --outfile=build/script.js --bundle=false",
     "prepare": "husky install"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "esbuild": "^0.14.53",
-    "path": "^0.12.7"
+    "esbuild": "^0.14.53"
   },
   "devDependencies": {
     "husky": "^8.0.0",

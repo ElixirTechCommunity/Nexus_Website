@@ -1,4 +1,12 @@
 const pages = ["landing", "about", "sponsors"];
+
+// load Content js start here
+
+/**
+ * load page content
+ * @param {Number} page
+ * @param {Boolean} isReload
+ */
 const load = async (page, isReload = false, direction = "left") => {
   document
     .querySelectorAll(".toggle-btn")
@@ -6,8 +14,10 @@ const load = async (page, isReload = false, direction = "left") => {
   var mid_data = "";
   var left_data = "";
   var right_data = "";
+
   const previous_slide = page ? page - 1 : pages.length - 1;
   const next_slide = (page + 1) % pages.length;
+
   fetch("./content/" + pages[page] + ".html")
     .then((response) => response.text())
     .then((data) => {
@@ -26,9 +36,11 @@ const load = async (page, isReload = false, direction = "left") => {
         document.querySelector(".loader").classList.add("fadeOut");
         setTimeout(() => {
           document.querySelector(".loader").classList.add("no-display");
-        }, 1e3);
+        }, 1000);
       }
     });
+
+  //
   if (direction === "left") {
     document.getElementById("main-content").classList.add("slide-left");
     document.querySelector(".right-slide").classList.add("slide-left");
@@ -37,7 +49,7 @@ const load = async (page, isReload = false, direction = "left") => {
       document.getElementById("main-content").classList.remove("slide-left");
       document.querySelector(".right-slide").classList.remove("slide-left");
       document.querySelector(".left-slide").classList.remove("slide-left");
-    }, 1e3);
+    }, 1000);
   } else {
     document.getElementById("main-content").classList.add("slide-right");
     document.querySelector(".right-slide").classList.add("slide-right");
@@ -46,7 +58,7 @@ const load = async (page, isReload = false, direction = "left") => {
       document.getElementById("main-content").classList.remove("slide-right");
       document.querySelector(".right-slide").classList.remove("slide-right");
       document.querySelector(".left-slide").classList.remove("slide-right");
-    }, 1e3);
+    }, 1000);
   }
   setTimeout(() => {
     document.getElementById("main-content").innerHTML = mid_data;
@@ -55,13 +67,22 @@ const load = async (page, isReload = false, direction = "left") => {
     document
       .querySelectorAll(".toggle-btn")
       .forEach((btn) => (btn.disabled = false));
-  }, 1e3);
+  }, 1000);
 };
+
+/**
+ *
+ * @param {Object} event
+ */
 const next = (event) => {
   page_serve = (page_serve + 1) % pages.length;
   console.log(page_serve);
   load(page_serve);
 };
+/**
+ *
+ * @param {Object} event
+ */
 const previous = (event) => {
   if (!page_serve) page_serve = pages.length - 1;
   else page_serve -= 1;
@@ -69,8 +90,16 @@ const previous = (event) => {
   console.log(page_serve);
   load(page_serve, false, "right");
 };
+
+// load content js ends here
+
+// initial load page content
 var page_serve = window.location.search.split("=");
 page_serve = page_serve.length > 1 ? page_serve[page_serve.length - 1] : 0;
 load(page_serve, true);
+
+// page toggle
 document.getElementById("next").addEventListener("click", next);
 document.getElementById("previous").addEventListener("click", previous);
+
+// page animation
