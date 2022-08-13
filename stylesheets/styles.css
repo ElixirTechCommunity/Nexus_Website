@@ -2,11 +2,15 @@
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
-  background-color: rgba(234, 234, 234, 0.636);
-  height: 100vh;
+  background-color: #0e0e0e;
+  /* height: 100vh; */
   width: 100vw;
   overflow: hidden;
+  color: white;
 }
 .no-display {
   display: none !important;
@@ -16,32 +20,48 @@ body {
   justify-content: center;
   align-items: center;
 }
+.web-top-container {
+  width: 100%;
+  height: 100vh;
+}
+.web-top-container .fa-angle-down {
+  font-size: 30px;
+  position: absolute;
+  bottom: 40px;
+  right: 47%;
+  cursor: pointer;
+}
+.web-bottom-container {
+  position: relative;
+}
 .container {
   position: relative;
   width: 100vw;
   height: calc(100vh - 3.5rem);
 }
 main {
-  position: fixed;
-  background-color: white;
+  position: absolute;
   width: 87vw;
   height: 90vh;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .left-slide {
   left: -83vw;
-  opacity: 0.8;
-  /* height: 85vh; */
 }
 .right-slide {
   right: -83vw;
-  /* height: 85vh; */
-  opacity: 0.8;
 }
 .toggle-btn {
+  color: white;
   cursor: pointer;
   background: none;
   border: none;
-  position: fixed;
+  position: absolute;
   top: 50%;
   z-index: 50;
   font-size: 40px;
@@ -49,11 +69,17 @@ main {
 }
 .toggle-btn:hover {
   transform: scale(1.2);
-  color: rgba(0, 0, 0, 0.617);
+  color: rgba(191, 191, 191, 0.617);
 }
 .toggle-btn-left {
   left: 20px;
 }
 .toggle-btn-right {
   right: 20px;
+}
+.particles-js-canvas-el {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
 }
