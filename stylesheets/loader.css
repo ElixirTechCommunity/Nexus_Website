@@ -7,3 +7,8 @@
   height: 100vh;
   background-color: white;
 }
+.loader .logo{
+position: fixed;
+top: 40%;
+left: 45%
+}

@@ -1,11 +1,14 @@
 .logo {
   margin: auto;
   width: 50%;
+  height: 0;
+  position: relative;
+  top: 30px;
 }
 p {
   font-size: 40px;
   position: relative;
-  top: -30px;
+  bottom: -14px;
   color: #45597e;
   font-family: sans-serif;
   transform: rotate(90deg);
