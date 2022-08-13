@@ -101,8 +101,3 @@ load(page_serve, true);
 // page toggle
 document.getElementById("next").addEventListener("click", next);
 document.getElementById("previous").addEventListener("click", previous);
-
-// page animation
-document.querySelector(".fa-angle-down").addEventListener("click", () => {
-  window.scrollBy(0, 1000);
-});
