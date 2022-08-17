@@ -1,45 +1,54 @@
 /* stylesheets/logo.css */
 .logo {
+  margin: auto;
+  width: 50%;
+  height: 0;
   position: relative;
-  top: 50px;
-  margin: 0px 10px;
+  top: 30px;
 }
 p {
-  font-size: 30px;
+  font-size: 40px;
   position: relative;
-  top: 10px;
+  bottom: -14px;
   color: #45597e;
+  font-family: sans-serif;
+  transform: rotate(90deg);
 }
 .ellipse {
   border: #45597e 2px solid;
-  height: 50px;
-  width: 150px;
+  height: 70px;
+  width: 170px;
   border-radius: 50%;
   z-index: 1000;
+  transform: rotate(90deg);
+  position: relative;
+  left: -8px;
 }
 .ellipse1 {
   border: #45597e 2px solid;
-  height: 50px;
-  width: 150px;
+  height: 70px;
+  width: 170px;
   border-radius: 50%;
-  transform: rotate(60deg);
+  transform: rotate(40deg);
   position: relative;
-  top: -48px;
+  top: -75px;
+  left: -10px;
 }
 .ellipse2 {
   border: #45597e 2px solid;
-  height: 50px;
-  width: 150px;
+  height: 70px;
+  width: 170px;
   border-radius: 50%;
-  transform: rotate(-60deg);
+  transform: rotate(-40deg);
   position: relative;
-  top: -100px;
+  top: -145px;
+  left: -10px;
 }
 .ellipse2::after {
   content: "";
   position: absolute;
   bottom: 0;
-  right: 20px;
+  right: 30px;
   border-radius: 50%;
   width: 10px;
   height: 10px;
@@ -50,7 +59,7 @@ p {
   content: "";
   position: absolute;
   top: 0;
-  left: 20px;
+  left: 30px;
   border-radius: 50%;
   width: 10px;
   height: 10px;
@@ -83,13 +92,13 @@ p {
     transform: translate(120px, 8px);
   }
   80% {
-    transform: translate(128px, 20px);
+    transform: translate(138px, 25px);
   }
   90% {
-    transform: translate(120px, 30px);
+    transform: translate(128px, 45px);
   }
   100% {
-    transform: translate(100px, 40px);
+    transform: translate(100px, 58px);
   }
 }
 @keyframes rotate1 {
@@ -118,13 +127,13 @@ p {
     transform: translate(-120px, -8px);
   }
   80% {
-    transform: translate(-128px, -20px);
+    transform: translate(-138px, -25px);
   }
   90% {
-    transform: translate(-120px, -30px);
+    transform: translate(-128px, -45px);
   }
   100% {
-    transform: translate(-100px, -40px);
+    transform: translate(-100px, -58px);
   }
 }
 
@@ -138,17 +147,26 @@ p {
   height: 100vh;
   background-color: white;
 }
+.loader .logo {
+  position: fixed;
+  top: 40%;
+  left: 45%;
+}
 
 /* stylesheets/styles.css */
 * {
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
 body {
-  background-color: rgba(234, 234, 234, 0.636);
-  height: 100vh;
+  background-color: #0e0e0e;
   width: 100vw;
   overflow: hidden;
+  color: white;
 }
 .no-display {
   display: none !important;
@@ -158,30 +176,48 @@ body {
   justify-content: center;
   align-items: center;
 }
+.web-top-container {
+  width: 100%;
+  height: 100vh;
+}
+.web-top-container .fa-angle-down {
+  font-size: 30px;
+  position: absolute;
+  bottom: 40px;
+  right: 47%;
+  cursor: pointer;
+}
+.web-bottom-container {
+  position: relative;
+}
 .container {
   position: relative;
   width: 100vw;
   height: calc(100vh - 3.5rem);
 }
 main {
-  position: fixed;
-  background-color: white;
+  position: absolute;
   width: 87vw;
   height: 90vh;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .left-slide {
   left: -83vw;
-  opacity: 0.8;
 }
 .right-slide {
   right: -83vw;
-  opacity: 0.8;
 }
 .toggle-btn {
+  color: white;
   cursor: pointer;
   background: none;
   border: none;
-  position: fixed;
+  position: absolute;
   top: 50%;
   z-index: 50;
   font-size: 40px;
@@ -189,7 +225,7 @@ main {
 }
 .toggle-btn:hover {
   transform: scale(1.2);
-  color: rgba(0, 0, 0, 0.617);
+  color: rgba(191, 191, 191, 0.617);
 }
 .toggle-btn-left {
   left: 20px;
@@ -197,12 +233,32 @@ main {
 .toggle-btn-right {
   right: 20px;
 }
+.particles-js-canvas-el {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+i {
+  color: white;
+}
 
 /* stylesheets/header.css */
+header {
+  position: sticky;
+  top: 0;
+}
 .navbar {
-  color: white;
-  background-color: rgb(0, 86, 198);
+  overflow: hidden;
+  background: #d9d9d9;
   height: 3.5rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  position: fixed;
+  top: 0;
   width: 100%;
 }
 

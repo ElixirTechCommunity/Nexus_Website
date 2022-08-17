@@ -8,21 +8,28 @@
     ></script>
     <!-- stylesheets -->
     <link rel="stylesheet" href="./stylesheets/styles.css" />
+    <link rel="stylesheet" href="./stylesheets/utils.css">
     <link rel="stylesheet" href="./stylesheets/header.css" />
     <link rel="stylesheet" href="./stylesheets/animation.css" />
     <link rel="stylesheet" href="./stylesheets/logo.css" />
     <link rel="stylesheet" href="./stylesheets/loader.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./stylesheets/landing_page.css" />
+    <link rel="stylesheet" href="./stylesheets/slide_page.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon" />
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nexus: What the Hack</title>
   </head>
-  <body>
+  <body id="particles-js">
     <header>
-      <nav class="navbar">Navbar</nav>
+      <nav class="navbar flex">
+        NE
+        <img src="./assets/favicon.svg"  width="60" alt="X">
+        US
+      </nav>
     </header>
     <div class="loader flex">
       <span class="logo">
@@ -33,20 +40,56 @@
         <div class="ellipse2"></div>
       </span>
     </div>
-
-    <div class="flex container">
-      <main class="left-slide"></main>
-      <main id="main-content" class="mid-slide"></main>
-      <main class="right-slide"></main>
+    <div class="snap-child web-top-container flex">
+      <div class="web-top-left flex flex-column">
+        <h1>NEXUS</h1>
+        <p>What the hack</p>
+      </div>
+      <div class="main-logo-container flex">
+        <object class="main-logo" data="./assets/one.svg" type=""></object>
+        <object
+          class="main-logo stars"
+          data="./assets/two.svg"
+          type=""
+        ></object>
+        <object
+          class="main-logo outer-ring"
+          data="./assets/three.svg"
+          type=""
+        ></object>
+        <object class="main-logo" data="./assets/four.svg" type=""></object>
+        <object class="main-logo" data="./assets/five.svg" type=""></object>
+        <object
+          class="main-logo planet"
+          data="./assets/six.svg"
+          type=""
+        ></object>
+        <object
+          class="main-logo ring-box"
+          data="./assets/seven.svg"
+          type=""
+        ></object>
+      </div>
+      <div>
+        <a href="#hack-info"><i class="fas fa-angle-down"></i></a>
+      </div>
     </div>
-    <footer class="flex">
+    <div class="snap-child web-bottom-container" id="hack-info">
+      <div class="flex container">
+        <main class="left-slide"></main>
+        <main id="main-content" class="mid-slide"></main>
+        <main class="right-slide"></main>
+      </div>
       <button id="previous" class="toggle-btn toggle-btn-left">
         <i class="fa-solid fa-angle-left"></i>
       </button>
       <button id="next" class="toggle-btn toggle-btn-right">
         <i class="fa-solid fa-chevron-right"></i>
       </button>
-    </footer>
+    </div>
+    <!-- <footer class="flex"></footer> -->
     <script src="./scripts/index.js"></script>
+    <script src="./scripts/particles.js"></script>
+    <script src="./scripts/particle-app.js"></script>
   </body>
 </html>

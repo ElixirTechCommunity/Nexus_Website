@@ -1,4 +1,4 @@
-const pages = ["landing", "about", "sponsors"];
+const pages = [ "about", "sponsors"];
 
 // load Content js start here
 
@@ -101,5 +101,3 @@ load(page_serve, true);
 // page toggle
 document.getElementById("next").addEventListener("click", next);
 document.getElementById("previous").addEventListener("click", previous);
-
-// page animation
