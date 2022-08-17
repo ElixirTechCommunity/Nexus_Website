@@ -8,11 +8,13 @@
     ></script>
     <!-- stylesheets -->
     <link rel="stylesheet" href="./stylesheets/styles.css" />
+    <link rel="stylesheet" href="./stylesheets/utils.css">
     <link rel="stylesheet" href="./stylesheets/header.css" />
     <link rel="stylesheet" href="./stylesheets/animation.css" />
     <link rel="stylesheet" href="./stylesheets/logo.css" />
     <link rel="stylesheet" href="./stylesheets/loader.css" />
-    <link rel="stylesheet" href="./stylesheets/main-logo.css" />
+    <link rel="stylesheet" href="./stylesheets/landing_page.css" />
+    <link rel="stylesheet" href="./stylesheets/slide_page.css">
     <!-- favicon -->
     <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon" />
 
@@ -23,8 +25,10 @@
   </head>
   <body id="particles-js">
     <header>
-      <nav class="navbar">
-        <a href="#">Scroll Top</a>
+      <nav class="navbar flex">
+        NE
+        <img src="./assets/favicon.svg"  width="60" alt="X">
+        US
       </nav>
     </header>
     <div class="loader flex">
@@ -36,7 +40,7 @@
         <div class="ellipse2"></div>
       </span>
     </div>
-    <div class="web-top-container flex">
+    <div class="snap-child web-top-container flex">
       <div class="web-top-left flex flex-column">
         <h1>NEXUS</h1>
         <p>What the hack</p>
@@ -70,7 +74,7 @@
         <a href="#hack-info"><i class="fas fa-angle-down"></i></a>
       </div>
     </div>
-    <div class="web-bottom-container" id="hack-info">
+    <div class="snap-child web-bottom-container" id="hack-info">
       <div class="flex container">
         <main class="left-slide"></main>
         <main id="main-content" class="mid-slide"></main>

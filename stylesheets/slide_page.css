@@ -1,0 +1,47 @@
+.web-bottom-container {
+    position: relative;
+  }
+
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: calc(100vh - 3.5rem);
+  }main {
+    position: absolute;
+    width: 87vw;
+    height: 85vh;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .left-slide {
+    left: -83vw;
+  }
+  .right-slide {
+    right: -83vw;
+  }
+  .toggle-btn {
+    color: white;
+    cursor: pointer;
+    background: none;
+    border: none;
+    position: absolute;
+    top: 50%;
+    z-index: 50;
+    font-size: 40px;
+    transition: 0.2s;
+  }
+  .toggle-btn:hover {
+    transform: scale(1.2);
+    color: rgba(191, 191, 191, 0.617);
+  }
+  .toggle-btn-left {
+    left: 20px;
+  }
+  .toggle-btn-right {
+    right: 20px;
+  }

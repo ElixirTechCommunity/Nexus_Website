@@ -1,0 +1,66 @@
+.web-top-container .fa-angle-down {
+  font-size: 30px;
+  position: absolute;
+  bottom: 40px;
+  right: 47%;
+  cursor: pointer;
+}
+
+.web-top-container {
+  width: 100%;
+  height: 100vh;
+}
+
+.web-top-left {
+  position: relative;
+  left: 10rem;
+  width: 30vw;
+  height: 70vh;
+}
+.web-top-left h1 {
+  color: var(--font-color);
+  font-family: var(--secondary-font);
+  font-size: 7rem;
+  letter-spacing: 8px;
+}
+.web-top-left p {
+  color: var(--ternary-color);
+  margin-top: 20px;
+  font-size: 25px;
+  letter-spacing: 5px;
+}
+.particles-js-canvas-el {
+  opacity: 0.5;
+}
+
+/* logo */
+
+.main-logo-container {
+    position: relative;
+    width: 70vw;
+    height: 80vh;
+    overflow: hidden;
+  }
+  .main-logo {
+    position: absolute;
+    right: 0;
+    width: 90%;
+  }
+  .planet {
+    height: 80%;
+    z-index: 7;
+  }
+  
+  .outer-ring {
+    height: 80%;
+  }
+  .ring-box {
+    height: 80%;
+    z-index: 5;
+  }
+  
+  .stars {
+    width: 100%;
+  }
+  
+  

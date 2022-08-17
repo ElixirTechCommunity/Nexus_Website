@@ -9,12 +9,12 @@
   font-size: 40px;
   position: relative;
   bottom: -14px;
-  color: #45597e;
+  color: var(--ternary-color);
   font-family: sans-serif;
   transform: rotate(90deg);
 }
 .ellipse {
-  border: #45597e 2px solid;
+  border: var(--ternary-color) 3px solid;
   height: 70px;
   width: 170px;
   border-radius: 50%;
@@ -24,7 +24,7 @@
   left: -8px;
 }
 .ellipse1 {
-  border: #45597e 2px solid;
+  border: var(--ternary-color) 3px solid;
   height: 70px;
   width: 170px;
   border-radius: 50%;
@@ -34,7 +34,7 @@
   left: -10px;
 }
 .ellipse2 {
-  border: #45597e 2px solid;
+  border: var(--ternary-color) 3px solid;
   height: 70px;
   width: 170px;
   border-radius: 50%;
@@ -51,7 +51,7 @@
   border-radius: 50%;
   width: 10px;
   height: 10px;
-  background-color: #45597e;
+  background-color: var(--ternary-color);
   animation: rotate1 1.5s infinite linear;
 }
 .ellipse2::before {
@@ -62,7 +62,7 @@
   border-radius: 50%;
   width: 10px;
   height: 10px;
-  background-color: #45597e;
+  background-color: var(--ternary-color);
   animation: rotate2 1.5s infinite linear;
 }
 

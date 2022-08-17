@@ -1,4 +1,4 @@
-const pages = ["landing", "about", "sponsors"];
+const pages = [ "about", "sponsors"];
 
 // load Content js start here
 
