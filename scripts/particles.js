@@ -57,7 +57,7 @@ var pJS = function (tag_id, params) {
           },
         },
         line_linked: {
-          enable: true,
+          enable: false,
           distance: 100,
           color: "#fff",
           opacity: 1,
