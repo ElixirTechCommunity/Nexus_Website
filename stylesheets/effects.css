@@ -1,0 +1,71 @@
+.btnHoverEffect:hover {
+    background-color: #b0d8fa;
+    color: black;
+}
+
+.web-top-container {
+    width: 90% !important;
+    margin: auto;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.box-content-p {
+    width: 90%;
+    margin: auto;
+    text-align: justify;
+    line-height: 30px;
+}
+
+.pageBoxes {
+    padding: 10px;
+}
+
+@media screen and (max-width:768px) {
+    .web-top-container {
+        flex-direction: column-reverse !important;
+    }
+
+    .web-top-container>div {
+        width: 100% !important;
+    }
+}
+
+
+
+@keyframes rotateLogo {
+    from {
+        rotate: 3deg;
+    }
+
+    to {
+        rotate: 360deg;
+    }
+}
+
+.main-logo-container-outer {
+    transform: rotate(360deg);
+    transition: 15s;
+
+}
+
+
+.linkIcon:hover {
+    opacity: 80% !important;
+}
+
+
+.aboutIconContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.aboutIcon{
+    width: 17%;
+    /* background-color: red; */
+}

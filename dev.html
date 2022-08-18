@@ -1,106 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- font aws -->
-    <script
-      src="https://kit.fontawesome.com/acbd692ad8.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- stylesheets -->
-    <link rel="stylesheet" href="./stylesheets/styles.css" />
-    <link rel="stylesheet" href="./stylesheets/utils.css" />
-    <link rel="stylesheet" href="./stylesheets/header.css" />
-    <link rel="stylesheet" href="./stylesheets/animation.css" />
-    <link rel="stylesheet" href="./stylesheets/logo.css" />
-    <link rel="stylesheet" href="./stylesheets/loader.css" />
-    <link rel="stylesheet" href="./stylesheets/landing_page.css" />
-    <link rel="stylesheet" href="./stylesheets/slide_page.css" />
-    <!-- favicon -->
-    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon" />
 
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nexus: What the Hack</title>
-  </head>
-  <body id="particles-js">
-    <header class="flex">
-      <nav class="navbar flex">
-        <div class="flex">
-          NE
-          <img src="./assets/favicon.svg" width="60" alt="X" />
-          US
-        </div>
-        <div class="flex">
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-brands fa-instagram"></i
-          ><i class="fa-brands fa-linkedin-in"></i>
-          <i class="fa-brands fa-discord"></i>
-        </div>
-      </nav>
-    </header>
-    <div class="loader flex">
-      <span class="logo">
-        <div class="ellipse">
-          <p class="flex logo-x">X</p>
-        </div>
-        <div class="ellipse1"></div>
-        <div class="ellipse2"></div>
-      </span>
+<head>
+  <!-- font aws -->
+  <script src="https://kit.fontawesome.com/acbd692ad8.js" crossorigin="anonymous"></script>
+  <!-- stylesheets -->
+  <link rel="stylesheet" href="./stylesheets/styles.css" />
+  <link rel="stylesheet" href="./stylesheets/utils.css" />
+  <link rel="stylesheet" href="./stylesheets/header.css" />
+  <link rel="stylesheet" href="./stylesheets/animation.css" />
+  <link rel="stylesheet" href="./stylesheets/logo.css" />
+  <link rel="stylesheet" href="./stylesheets/loader.css" />
+  <link rel="stylesheet" href="./stylesheets/landing_page.css" />
+  <link rel="stylesheet" href="./stylesheets/slide_page.css" />
+  <link rel="stylesheet" href="./stylesheets/effects.css" />
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon" />
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexus: What the Hack</title>
+</head>
+
+<body id="particles-js">
+
+  <!-- Header of Website Starts -->
+  <header class="flex">
+    <nav class="navbar flex">
+      <a class="flex" href="#home">
+        NE
+        <img src="./assets/favicon.svg" width="60" alt="X" />
+        US
+      </a>
+      <div class="flex">
+        <a class="headLinks" href="https://twitter.com/nexus_hackathon"><i
+            class=" linkIcon fa-brands fa-twitter"></i></a>
+        <a class="headLinks" href="https://www.instagram.com/nexus_whatthehack/"><i
+            class=" linkIcon fa-brands fa-instagram"></i></a>
+        <a class="headLinks" href="https://www.linkedin.com/company/nexus-what-the-hack/"><i
+            class=" linkIcon fa-brands fa-linkedin-in"></i></a>
+        <a class="headLinks" href=""><i class=" linkIcon fa-brands fa-discord"></i></a>
+        <a class="headLinks" href="mailto:whatthehacknexus@gmail.com"><i class=" linkIcon fa-brands fa-google"></i></a>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- Header Ends -->
+
+  <!-- Loader Starts -->
+  <div class="loader flex">
+    <span class="logo">
+      <div class="ellipse">
+        <p class="flex logo-x">X</p>
+      </div>
+      <div class="ellipse1"></div>
+      <div class="ellipse2"></div>
+    </span>
+  </div>
+
+  <!-- Loader Ends  -->
+
+  <!-- Home Screen Content Starts  -->
+  <div class="snap-child web-top-container flex" id="home">
+    <div class="web-top-left flex flex-column " style="width:100% ">
+      <h1>NEXUS</h1>
+      <p>What the hack</p>
+      <button class="btn btnHoverEffect">Coming Soon</button>
     </div>
-    <div class="snap-child web-top-container flex">
-      <div class="web-top-left flex flex-column">
-        <h1>NEXUS</h1>
-        <p>What the hack</p>
-        <button class="btn">Coming Soon</button>
-      </div>
-      <div class="main-logo-container-outer flex">
-        <div class="main-logo-container flex">
-          <object class="main-logo" data="./assets/one.svg" type=""></object>
-          <object
-            class="main-logo stars"
-            data="./assets/two.svg"
-            type=""
-          ></object>
-          <object
-            class="main-logo outer-ring"
-            data="./assets/three.svg"
-            type=""
-          ></object>
-          <object class="main-logo" data="./assets/four.svg" type=""></object>
-          <object class="main-logo" data="./assets/five.svg" type=""></object>
-          <object
-            class="main-logo planet"
-            data="./assets/six.svg"
-            type=""
-          ></object>
-          <object
-            class="main-logo ring-box"
-            data="./assets/seven.svg"
-            type=""
-          ></object>
-        </div>
-      </div>
-      <div>
-        <a href="#hack-info"><i class="fas fa-angle-down"></i></a>
-      </div>
+    <div class="flex">
+      <!-- <object class="main-logo" data="./assets/one.svg" type=""></object> 
+        <object class="main-logo stars" data="./assets/two.svg" type=""></object> 
+        <object class="main-logo outer-ring" id="homeCircle" data="./assets/three.svg" type=""></object>
+        <object class="main-logo" data="./assets/four.svg" type=""></object>
+        <object class="main-logo" data="./assets/five.svg" type=""></object> 
+        <object class="main-logo planet" data="./assets/six.svg" type=""></object>
+        <object class="main-logo ring-box" data="./assets/seven.svg" type=""></object> -->
+      <img src="./assets/homeLogo.png" width="100%" alt="">
     </div>
-    <div class="snap-child web-bottom-container" id="hack-info">
-      <div class="flex container">
-        <main class="left-slide"></main>
-        <main id="main-content" class="mid-slide"></main>
-        <main class="right-slide"></main>
-      </div>
-      <button id="previous" class="toggle-btn toggle-btn-left">
-        <i class="fa-solid fa-angle-left"></i>
-      </button>
-      <button id="next" class="toggle-btn toggle-btn-right">
-        <i class="fa-solid fa-chevron-right"></i>
-      </button>
+    <div>
+      <a href="#hack-info"><i class="fas fa-angle-down"></i></a>
     </div>
-    <!-- <footer class="flex"></footer> -->
-    <script src="./scripts/index.js"></script>
-    <script src="./scripts/particles.js"></script>
-    <script src="./scripts/particle-app.js"></script>
-  </body>
+  </div>
+
+  <!-- Home Screen Content Ends  -->
+
+
+  <div class="snap-child web-bottom-container" id="hack-info">
+    <div class="flex container">
+      <main class="left-slide"></main>
+      <main id="main-content" class="mid-slide"></main>
+      <main class="right-slide"></main>
+    </div>
+    <button id="previous" class="toggle-btn toggle-btn-left">
+      <i class="fa-solid fa-angle-left"></i>
+    </button>
+    <button id="next" class="toggle-btn toggle-btn-right">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+  </div>
+
+
+
+  <!-- <footer class="flex"></footer> -->
+  <script src="./scripts/index.js"></script>
+  <script src="./scripts/particles.js"></script>
+  <script src="./scripts/particle-app.js"></script>
+</body>
+
 </html>

@@ -1,99 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- font aws -->
-    <script
-      src="https://kit.fontawesome.com/acbd692ad8.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- stylesheet -->
-    <link rel="stylesheet" href="./build/styles.css" />
-    <!-- favicon -->
-    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon" />
 
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nexus: What the Hack</title>
-  </head>
-  <body id="particles-js">
-    <header class="flex">
-      <nav class="navbar flex">
-        <div class="flex">
-          NE
-          <img src="./assets/favicon.svg" width="60" alt="X" />
-          US
-        </div>
-        <div class="flex">
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-brands fa-instagram"></i
-          ><i class="fa-brands fa-linkedin-in"></i>
-          <i class="fa-brands fa-discord"></i>
-        </div>
-      </nav>
-    </header>
-    <div class="loader flex">
-      <span class="logo">
-        <div class="ellipse">
-          <p class="flex logo-x">X</p>
-        </div>
-        <div class="ellipse1"></div>
-        <div class="ellipse2"></div>
-      </span>
+<head>
+  <!-- font aws -->
+  <script src="https://kit.fontawesome.com/acbd692ad8.js" crossorigin="anonymous"></script>
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="./build/styles.css" />
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon" />
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexus: What the Hack</title>
+</head>
+
+<body id="particles-js">
+  <header class="flex">
+    <nav class="navbar flex">
+      <div class="flex">
+        NE
+        <img src="./assets/favicon.svg" width="60" alt="X" />
+        US
+      </div>
+      <div class="flex">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i><i class="fa-brands fa-linkedin-in"></i>
+        <i class="fa-brands fa-discord"></i>
+      </div>
+    </nav>
+  </header>
+  <div class="loader flex">
+    <span class="logo">
+      <div class="ellipse">
+        <p class="flex logo-x">X</p>
+      </div>
+      <div class="ellipse1"></div>
+      <div class="ellipse2"></div>
+    </span>
+  </div>
+  <div class="snap-child web-top-container flex">
+    <div class="web-top-left flex flex-column">
+      <h1>NEXUS</h1>
+      <p>What the hack</p>
+      <button class="btn" >Coming Soon</button>
     </div>
-    <div class="snap-child web-top-container flex">
-      <div class="web-top-left flex flex-column">
-        <h1>NEXUS</h1>
-        <p>What the hack</p>
-        <button class="btn">Coming Soon</button>
-      </div>
-      <div class="main-logo-container-outer flex">
-        <div class="main-logo-container flex">
-          <object class="main-logo" data="./assets/one.svg" type=""></object>
-          <object
-            class="main-logo stars"
-            data="./assets/two.svg"
-            type=""
-          ></object>
-          <object
-            class="main-logo outer-ring"
-            data="./assets/three.svg"
-            type=""
-          ></object>
-          <object class="main-logo" data="./assets/four.svg" type=""></object>
-          <object class="main-logo" data="./assets/five.svg" type=""></object>
-          <object
-            class="main-logo planet"
-            data="./assets/six.svg"
-            type=""
-          ></object>
-          <object
-            class="main-logo ring-box"
-            data="./assets/seven.svg"
-            type=""
-          ></object>
-        </div>
-      </div>
-      <div>
-        <a href="#hack-info"><i class="fas fa-angle-down"></i></a>
+    <div class="main-logo-container-outer flex">
+      <div class="main-logo-container flex">
+        <object class="main-logo" data="./assets/one.svg" type=""></object>
+        <object class="main-logo stars" data="./assets/two.svg" type=""></object>
+        <object class="main-logo outer-ring" data="./assets/three.svg" type=""></object>
+        <object class="main-logo" data="./assets/four.svg" type=""></object>
+        <object class="main-logo" data="./assets/five.svg" type=""></object>
+        <object class="main-logo planet" data="./assets/six.svg" type=""></object>
+        <object class="main-logo ring-box" data="./assets/seven.svg" type=""></object>
       </div>
     </div>
-    <div class="snap-child web-bottom-container" id="hack-info">
-      <div class="flex container">
-        <main class="left-slide"></main>
-        <main id="main-content" class="mid-slide"></main>
-        <main class="right-slide"></main>
-      </div>
-      <button id="previous" class="toggle-btn toggle-btn-left">
-        <i class="fa-solid fa-angle-left"></i>
-      </button>
-      <button id="next" class="toggle-btn toggle-btn-right">
-        <i class="fa-solid fa-chevron-right"></i>
-      </button>
+    <div>
+      <a href="#hack-info"><i class="fas fa-angle-down"></i></a>
     </div>
-    <script src="./build/script.js"></script>
-  </body>
-  <!-- particle js  -->
-  <script defer src="./scripts/particles.js"></script>
-  <script defer src="./scripts/particle-app.js"></script>
+  </div>
+  <div class="snap-child web-bottom-container" id="hack-info">
+    <div class="flex container">
+      <main class="left-slide"></main>
+      <main id="main-content" class="mid-slide"></main>
+      <main class="right-slide"></main>
+    </div>
+    <button id="previous" class="toggle-btn toggle-btn-left">
+      <i class="fa-solid fa-angle-left"></i>
+    </button>
+    <button id="next" class="toggle-btn toggle-btn-right">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+  </div>
+  <script src="./build/script.js"></script>
+</body>
+<!-- particle js  -->
+<script defer src="./scripts/particles.js"></script>
+<script defer src="./scripts/particle-app.js"></script>
+
 </html>
