@@ -34,6 +34,7 @@ body {
   height: 100vh;
   color: var(--font-color);
   scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
   overflow-y: auto;
   overflow-x: hidden;
 }

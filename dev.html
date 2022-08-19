@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
   <!-- font aws -->
   <script src="https://kit.fontawesome.com/acbd692ad8.js" crossorigin="anonymous"></script>
@@ -43,6 +44,7 @@
         <a  href="https://discord.gg/RHn4CPuW"><i class=" linkIcon fa-brands fa-discord"></i></a>
         <a  href="mailto:whatthehacknexus@gmail.com"><i class=" linkIcon fa fa-envelope"></i></a>
 
+
       </div>
     </nav>
   </header>
@@ -69,6 +71,7 @@
       <p style="margin: 0px">What the hack</p>
       <button class="custom-btn btn-6" onclick="alert('Coming Soon')">Coming Soon</button>
     </div>
+
     <div class="main-logo-container  flex" style="height:60vh">
 
       <img src="./assets/homeLogo.png" id="homeImage" width="100%" alt="">
@@ -81,27 +84,44 @@
   <!-- Home Screen Content Ends  -->
 
 
-  <div class="snap-child web-bottom-container" id="hack-info">
-    <div class="flex container">
-      <main class="left-slide"></main>
-      <main id="main-content" class="mid-slide"></main>
-      <main class="right-slide"></main>
+    <div class="snap-child web-bottom-container" id="hack-info">
+      <div class="flex container">
+        <main
+          class="left-slide"
+          data-tilt
+          data-tilt-max="3"
+          data-tilt-speed="100"
+          data-tilt-glare="true"
+        ></main>
+        <main
+          id="main-content"
+          class="mid-slide"
+          data-tilt
+          data-tilt-max="3"
+          data-tilt-speed="100"
+          data-tilt-glare="true"
+        ></main>
+        <main
+          class="right-slide"
+          data-tilt
+          data-tilt-max="3"
+          data-tilt-speed="100"
+          data-tilt-glare="true"
+        ></main>
+      </div>
+      <button id="previous" class="toggle-btn toggle-btn-left">
+        <i class="fa-solid fa-angle-left"></i>
+      </button>
+      <button id="next" class="toggle-btn toggle-btn-right">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
     </div>
-    <button id="previous" class="toggle-btn toggle-btn-left">
-      <i class="fa-solid fa-angle-left"></i>
-    </button>
-    <button id="next" class="toggle-btn toggle-btn-right">
-      <i class="fa-solid fa-chevron-right"></i>
-    </button>
-  </div>
-
-
-
-  <!-- <footer class="flex"></footer> -->
-  <script src="./scripts/vanilla-tilt.js"></script>
-  <script src="./scripts/index.js"></script>
-  <script src="./scripts/particles.js"></script>
-  <script src="./scripts/particle-app.js"></script>
-</body>
-
+    <!-- <footer class="flex"></footer> -->
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts/particles.js"></script>
+    <script src="./scripts/particle-app.js"></script>
+    <script src="./scripts/vanilla-tilt.js"></script>
+    <!-- <script src="./scripts/glass-animation.js"></script> -->
+  </body>
 </html>
+
