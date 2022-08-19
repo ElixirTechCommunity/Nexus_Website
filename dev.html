@@ -40,8 +40,8 @@
             class=" linkIcon fa-brands fa-instagram"></i></a>
         <a class="headLinks" href="https://www.linkedin.com/company/nexus-what-the-hack/"><i
             class=" linkIcon fa-brands fa-linkedin-in"></i></a>
-        <a class="headLinks" href=""><i class=" linkIcon fa-brands fa-discord"></i></a>
-        <a class="headLinks" href="mailto:whatthehacknexus@gmail.com"><i class=" linkIcon fa-brands fa-google"></i></a>
+        <a class="headLinks" href="https://discord.gg/RHn4CPuW"><i class=" linkIcon fa-brands fa-discord"></i></a>
+        <a class="headLinks" href="mailto:whatthehacknexus@gmail.com"><i class=" linkIcon fa fa-envelope"></i></a>
 
       </div>
     </nav>
@@ -66,18 +66,12 @@
   <div class="snap-child web-top-container flex" id="home">
     <div class="web-top-left flex flex-column " style="width:100% ">
       <h1>NEXUS</h1>
-      <p>What the hack</p>
-      <button class="btn btnHoverEffect">Coming Soon</button>
+      <p style="margin: 0px">What the hack</p>
+      <button class="custom-btn btn-6" onclick="alert('Coming Soon')">Coming Soon</button>
     </div>
-    <div class="flex">
-      <!-- <object class="main-logo" data="./assets/one.svg" type=""></object> 
-        <object class="main-logo stars" data="./assets/two.svg" type=""></object> 
-        <object class="main-logo outer-ring" id="homeCircle" data="./assets/three.svg" type=""></object>
-        <object class="main-logo" data="./assets/four.svg" type=""></object>
-        <object class="main-logo" data="./assets/five.svg" type=""></object> 
-        <object class="main-logo planet" data="./assets/six.svg" type=""></object>
-        <object class="main-logo ring-box" data="./assets/seven.svg" type=""></object> -->
-      <img src="./assets/homeLogo.png" width="100%" alt="">
+    <div class="main-logo-container  flex" style="height:60vh">
+
+      <img src="./assets/homeLogo.png" id="homeImage" width="100%" alt="">
     </div>
     <div>
       <a href="#hack-info"><i class="fas fa-angle-down"></i></a>
@@ -89,9 +83,9 @@
 
   <div class="snap-child web-bottom-container" id="hack-info">
     <div class="flex container">
-      <main class="left-slide"></main>
-      <main id="main-content" class="mid-slide"></main>
-      <main class="right-slide"></main>
+      <div class=" main left-slide"></div>
+      <div id="main-content" class=" main mid-slide"></div>
+      <div class=" main right-slide"></div>
     </div>
     <button id="previous" class="toggle-btn toggle-btn-left">
       <i class="fa-solid fa-angle-left"></i>
@@ -104,6 +98,7 @@
 
 
   <!-- <footer class="flex"></footer> -->
+  <script src="./scripts/vanilla-tilt.js"></script>
   <script src="./scripts/index.js"></script>
   <script src="./scripts/particles.js"></script>
   <script src="./scripts/particle-app.js"></script>

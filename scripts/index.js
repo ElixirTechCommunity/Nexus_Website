@@ -121,3 +121,25 @@ document.querySelector("body").addEventListener("scroll", () => {
     document.querySelector(".main-logo-container").classList.remove("spin");
   }
 });
+
+
+
+//Slide Screen Tilt
+VanillaTilt.init(document.querySelector(".left-slide"), {
+  max: 15,
+  speed: 400,
+  glare: true,
+  "max-glare": 0.2
+});
+VanillaTilt.init(document.querySelector(".right-slide"), {
+  max: 15,
+  speed: 400,
+  glare: true,
+  "max-glare": 0.2
+});
+VanillaTilt.init(document.querySelector(".mid-slide"), {
+  max: 7,
+  speed: 100,
+  glare: true,
+  "max-glare": 0.2
+});
