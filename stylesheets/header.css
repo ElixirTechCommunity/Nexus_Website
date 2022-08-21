@@ -3,6 +3,7 @@ header {
   top: 0;
   margin: auto;
   background: var(--secondary-color);
+  z-index: 100;
 }
 .navbar {
   width: 90%;

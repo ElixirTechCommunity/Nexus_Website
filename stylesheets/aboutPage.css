@@ -1,0 +1,17 @@
+.box-content-p {
+  line-height: 35px;
+  text-align: justify;
+}
+
+#about-content div {
+  width: 90%;
+}
+#about-content {
+  width: 90%;
+  font-family: var(--ternary-font);
+}
+
+.pageHead {
+  color: white !important;
+  font-weight: 800;
+}
