@@ -11,7 +11,9 @@ main {
   position: absolute;
   width: 87vw;
   height: 85vh;
+
   background: rgba(255, 255, 255, 0.01);
+
   border-radius: 5px;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);

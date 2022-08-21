@@ -121,3 +121,6 @@ document.querySelector("body").addEventListener("scroll", () => {
     document.querySelector(".main-logo-container").classList.remove("spin");
   }
 });
+
+
+

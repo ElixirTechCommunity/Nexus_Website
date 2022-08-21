@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="./stylesheets/loader.css" />
     <link rel="stylesheet" href="./stylesheets/landing_page.css" />
     <link rel="stylesheet" href="./stylesheets/slide_page.css" />
+    <link rel="stylesheet" href="./stylesheets/effects.css" />
+
     <!-- favicon -->
     <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon" />
 
@@ -90,11 +92,46 @@
             type=""
           ></object>
         </div>
+
       </div>
-      <div>
-        <a href="#hack-info"><i class="fas fa-angle-down"></i></a>
+    </nav>
+  </header>
+
+  <!-- Header Ends -->
+
+  <!-- Loader Starts -->
+  <div class="loader flex">
+    <span class="logo">
+      <div class="ellipse">
+        <p class="flex logo-x">X</p>
       </div>
+      <div class="ellipse1"></div>
+      <div class="ellipse2"></div>
+    </span>
+  </div>
+
+  <!-- Loader Ends  -->
+
+  <!-- Home Screen Content Starts  -->
+  <div class="snap-child web-top-container flex" id="home">
+    <div class="web-top-left flex flex-column " style="width:100% ">
+      <h1>NEXUS</h1>
+      <p style="margin: 0px">What the hack</p>
+      <button class="custom-btn btn-6" onclick="alert('Coming Soon')">Coming Soon</button>
     </div>
+
+    <div class="main-logo-container  flex" style="height:60vh">
+
+      <img src="./assets/homeLogo.png" id="homeImage" width="100%" alt="">
+    </div>
+    <div>
+      <a href="#hack-info"><i class="fas fa-angle-down"></i></a>
+    </div>
+  </div>
+
+  <!-- Home Screen Content Ends  -->
+
+
     <div class="snap-child web-bottom-container" id="hack-info">
       <div class="flex container">
         <main
@@ -135,3 +172,4 @@
     <!-- <script src="./scripts/glass-animation.js"></script> -->
   </body>
 </html>
+
