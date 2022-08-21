@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+.box-content-p {
+    line-height: 35px;
+    text-align: justify;
+}
+
+#about-content div{
+    width: 90%;
+}
+#about-content {
+    width: 90%;
+    font-family: Poppins
+}
+
+.pageHead {
+    color: white !important;
+    font-weight: 800;
+}
