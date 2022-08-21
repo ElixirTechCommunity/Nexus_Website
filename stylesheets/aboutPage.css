@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 .box-content-p {
     line-height: 35px;
@@ -10,7 +9,7 @@
 }
 #about-content {
     width: 90%;
-    font-family: Poppins
+    font-family: var(--ternary-font)
 }
 
 .pageHead {
