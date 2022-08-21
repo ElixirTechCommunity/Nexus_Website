@@ -1,28 +1,72 @@
-.main-logo-container {
-  background-color: black;
-  position: relative;
-  width: 70vw;
-  height: 80vh;
-  overflow: hidden;
-}
-.main-logo {
+.icon {
   position: absolute;
-  right: 0;
-  width: 94%;
+  top: 24%;
+  left: 62%;
+  /* border: solid 2px yellow; */
+  height: 61%;
+  width: 26%;
 }
-.planet {
-  height: 80%;
-  z-index: 7;
+.outer {
+  position: absolute;
+  height: 100%;
+}
+.line {
+  position: absolute;
+  height: 70%;
+  top: 14%;
+  left: 18%;
+  animation: clock 8s linear infinite;
+}
+.inner {
+  position: absolute;
+  height: 71%;
+  top: 14%;
+  left: 18%;
+  /* position: absolute;
+    height: 70%;
+    top: 14%;
+    left: 17%; */
+  animation: clock 15s linear infinite;
+}
+.pattern {
+  position: absolute;
+  height: 50%;
+  top: 24%;
+  left: 29%;
+}
+.center {
+  position: absolute;
+  height: 15%;
+  top: 42%;
+  left: 48%;
+}
+.ellipse {
+  position: absolute;
+  height: 63%;
+  top: 17%;
+  left: 21%;
+  animation: turn 15s linear infinite;
 }
 
-.outer-ring {
-  height: 80%;
-}
-.ring-box {
-  height: 80%;
-  z-index: 5;
+/* FOR BOTTOM LOGO */
+.lower {
+  position: absolute;
+  bottom: 3%;
+  left: 45%;
+  height: 27%;
+  width: 12%;
 }
 
-.stars {
-  width: 100%;
+@keyframes clock {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+/* @keyframes anticlock{
+    100%{-webkit-transform: rotate(-360deg);}
+} */
+@keyframes turn {
+  50% {
+    -webkit-transform: rotateX(180deg);
+  }
 }
