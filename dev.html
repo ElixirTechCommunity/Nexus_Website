@@ -1,49 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- font aws -->
+    <script
+      src="https://kit.fontawesome.com/acbd692ad8.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="./stylesheets/styles.css" />
+    <link rel="stylesheet" href="./stylesheets/utils.css" />
+    <link rel="stylesheet" href="./stylesheets/header.css" />
+    <link rel="stylesheet" href="./stylesheets/animation.css" />
+    <link rel="stylesheet" href="./stylesheets/logo.css" />
+    <link rel="stylesheet" href="./stylesheets/loader.css" />
+    <link rel="stylesheet" href="./stylesheets/landing_page.css" />
+    <link rel="stylesheet" href="./stylesheets/slide_page.css" />
+    <link rel="stylesheet" href="./stylesheets/effects.css" />
 
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon" />
 
-<head>
-  <!-- font aws -->
-  <script src="https://kit.fontawesome.com/acbd692ad8.js" crossorigin="anonymous"></script>
-  <!-- stylesheets -->
-  <link rel="stylesheet" href="./stylesheets/styles.css" />
-  <link rel="stylesheet" href="./stylesheets/utils.css" />
-  <link rel="stylesheet" href="./stylesheets/header.css" />
-  <link rel="stylesheet" href="./stylesheets/animation.css" />
-  <link rel="stylesheet" href="./stylesheets/logo.css" />
-  <link rel="stylesheet" href="./stylesheets/loader.css" />
-  <link rel="stylesheet" href="./stylesheets/landing_page.css" />
-  <link rel="stylesheet" href="./stylesheets/slide_page.css" />
-  <link rel="stylesheet" href="./stylesheets/effects.css" />
-  <!-- favicon -->
-  <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon" />
-
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nexus: What the Hack</title>
-</head>
-
-<body id="particles-js">
-
-  <!-- Header of Website Starts -->
-  <header class="flex">
-    <nav class="navbar flex">
-      <a class="flex" href="#home">
-        NE
-        <img src="./assets/favicon.svg" width="60" alt="X" />
-        US
-      </a>
-      <div class="flex">
-        <a  href="https://twitter.com/nexus_hackathon"><i
-            class=" linkIcon fa-brands fa-twitter"></i></a>
-        <a  href="https://www.instagram.com/nexus_whatthehack/"><i
-            class=" linkIcon fa-brands fa-instagram"></i></a>
-        <a  href="https://www.linkedin.com/company/nexus-what-the-hack/"><i
-            class=" linkIcon fa-brands fa-linkedin-in"></i></a>
-        <a  href="https://discord.gg/RHn4CPuW"><i class=" linkIcon fa-brands fa-discord"></i></a>
-        <a  href="mailto:whatthehacknexus@gmail.com"><i class=" linkIcon fa fa-envelope"></i></a>
-
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nexus: What the Hack</title>
+  </head>
+  <body id="particles-js">
+    <header class="flex">
+      <nav class="navbar flex">
+        <div class="flex">
+          NE
+          <img src="./assets/favicon.svg" width="60" alt="X" />
+          US
+        </div>
+        <div class="flex">
+          <a href="https://twitter.com/nexus_hackathon" target="_blank"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a href="https://www.instagram.com/nexus_whatthehack/" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/company/nexus-what-the-hack/about/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a href="https://discord.gg/R53QVZJ2fn" target="_blank"
+            ><i class="fa-brands fa-discord"></i
+          ></a>
+        </div>
+      </nav>
+    </header>
+    <div class="loader flex">
+      <span class="logo">
+        <div class="ellipse">
+          <p class="flex logo-x">X</p>
+        </div>
+        <div class="ellipse1"></div>
+        <div class="ellipse2"></div>
+      </span>
+    </div>
+    <div class="snap-child web-top-container flex">
+      <div class="web-top-left flex flex-column">
+        <h1>NEXUS</h1>
+        <p>What the hack</p>
+        <button class="btn">Coming Soon</button>
+      </div>
+      <div class="main-logo-container-outer flex">
+        <div class="main-logo-container flex">
+          <object class="main-logo" data="./assets/one.svg" type=""></object>
+          <object
+            class="main-logo stars"
+            data="./assets/two.svg"
+            type=""
+          ></object>
+          <object
+            class="main-logo outer-ring"
+            data="./assets/three.svg"
+            type=""
+          ></object>
+          <object class="main-logo" data="./assets/four.svg" type=""></object>
+          <object class="main-logo" data="./assets/five.svg" type=""></object>
+          <object
+            class="main-logo planet"
+            data="./assets/six.svg"
+            type=""
+          ></object>
+          <object
+            class="main-logo ring-box"
+            data="./assets/seven.svg"
+            type=""
+          ></object>
+        </div>
 
       </div>
     </nav>
