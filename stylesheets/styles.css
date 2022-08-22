@@ -61,6 +61,7 @@ h1 {
   letter-spacing: 5px;
   font-family: var(--secondary-font);
   color: var(--secondary-color);
+  padding-top:10px;
 }
 .navigation-logo {
   width: 300px !important;
