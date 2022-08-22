@@ -5,6 +5,7 @@
 .container {
   position: relative;
   width: 100vw;
+  top: 50px;
   height: calc(100vh - 3.5rem);
 }
 main {
@@ -29,7 +30,7 @@ main {
   border: none;
   position: absolute;
   /* top: 50%; */
-  bottom: 40px;
+  bottom: 5rem;
   z-index: 50;
   font-size: 40px;
   transition: 0.2s;
@@ -39,8 +40,16 @@ main {
   color: var(--secondary-color);
 }
 .toggle-btn-left {
-  left: 40%;
+  left: 43%;
 }
 .toggle-btn-right {
-  right: 35%;
+  right: 44%;
+}
+
+.navv-logo{
+  width: 5rem;
+  height: 5rem;
+  position: relative;
+  left: 45rem;
+  bottom: 4rem;
 }

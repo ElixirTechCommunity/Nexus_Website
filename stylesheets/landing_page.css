@@ -1,8 +1,8 @@
 .web-top-container .fa-angle-down {
   font-size: 30px;
-  position: absolute;
-  bottom: 40px;
-  right: 47%;
+  position: relative;
+  top: 20rem;
+  right: 40rem;
   cursor: pointer;
 }
 
@@ -19,7 +19,7 @@
 }
 .web-top-left h1 {
   color: var(--font-color);
-  font-family: var(--secondary-font);
+  font-family: var(--quad-font);
   font-size: 7rem;
   letter-spacing: 8px;
 }
@@ -28,6 +28,8 @@
   margin-top: 20px;
   font-size: 25px;
   letter-spacing: 5px;
+  font-family: var(--pent-font);
+
 }
 .particles-js-canvas-el {
   opacity: 0.5;
@@ -39,31 +41,15 @@
   position: relative;
   width: 100%;
   height: 100%;
-  /* overflow: hidden; */
+  overflow: hidden;
   z-index: 10;
 }
 .main-logo {
   position: absolute;
-  right: 15%;
-  height: 50rem;
-  width: 50rem;
+  right: 35%;
+  height: 25rem;
+  width: 25rem;
   z-index: 10;
-}
-.planet {
-  height: 80%;
-  z-index: 7;
-}
-
-.outer-ring {
-  height: 80%;
-}
-.ring-box {
-  height: 80%;
-  z-index: 5;
-}
-
-.stars {
-  width: 100%;
 }
 
 .main-logo-container-outer {
@@ -71,6 +57,6 @@
   left: 15rem;
   width: 50rem;
   height: 50rem;
-  /* overflow: hidden; */
+  overflow: hidden;
   z-index: 10;
 }

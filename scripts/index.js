@@ -104,20 +104,20 @@ document.getElementById("previous").addEventListener("click", previous);
 
 // scrolling navigation
 
-document.querySelector("body").addEventListener("scroll", () => {
-  const dimension = document
-    .querySelector(".web-bottom-container")
-    .getClientRects();
-  if (dimension[0].top < 295) {
-    // console.log('hii')
-    document
-      .querySelector(".main-logo-container")
-      .classList.add("navigation-logo");
-    document.querySelector(".main-logo-container").classList.add("spin");
-  } else {
-    document
-      .querySelector(".main-logo-container")
-      .classList.remove("navigation-logo");
-    document.querySelector(".main-logo-container").classList.remove("spin");
-  }
-});
+// document.querySelector("body").addEventListener("scroll", () => {
+//   const dimension = document
+//     .querySelector(".web-bottom-container")
+//     .getClientRects();
+//   if (dimension[0].top < 295) {
+//     // console.log('hii')
+//     document
+//       .querySelector(".main-logo-container")
+//       .classList.add("navigation-logo");
+//     document.querySelector(".main-logo-container").classList.add("spin");
+//   } else {
+//     document
+//       .querySelector(".main-logo-container")
+//       .classList.remove("navigation-logo");
+//     document.querySelector(".main-logo-container").classList.remove("spin");
+//   }
+// });

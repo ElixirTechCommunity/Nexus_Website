@@ -73,7 +73,7 @@
   }
 }
 .spin {
-  animation: spin 5s linear infinite;
+  animation: spin 10s linear infinite;
 }
 @keyframes spin {
   0% {

@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Montserrat:wght@200&display=swap");
 
+
+@font-face {
+  font-family: nulshock;
+  src: url(../assets/fonts/nulshock\ bd.otf);
+}
+@font-face {
+  font-family: fake;
+  src: url(../assets/fonts/fake\ receipt.ttf);
+}
 /* reset */
 * {
   margin: 0;
@@ -15,6 +24,8 @@
   --font-color: #ffff;
   --primary-font: "Comfortaa", cursive;
   --secondary-font: "Montserrat", sans-serif;
+  --quad-font: "nulshock";
+  --pent-font: "fake"
 }
 ::-webkit-scrollbar {
   display: none;
@@ -61,22 +72,8 @@ h1 {
   font-family: var(--secondary-font);
   color: var(--ternary-color);
 }
-.navigation-logo {
-  width: 300px !important;
-  height: 300px !important;
-  overflow: hidden;
-  position: fixed !important;
-  bottom: -14%;
-  right: 39%;
-  z-index: 10;
-  border-radius: 50%;
-}
 
-.navigation-logo .main-logo {
-  right: -10%;
-  width: 30rem;
-  height: 30rem;
-}
+
 .btn {
   cursor: pointer;
   width: 300px;
