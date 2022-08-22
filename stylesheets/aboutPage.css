@@ -8,10 +8,8 @@
 }
 #about-content {
   width: 90%;
-  font-family: var(--ternary-font);
 }
 
 .pageHead {
-  color: white !important;
   font-weight: 800;
 }

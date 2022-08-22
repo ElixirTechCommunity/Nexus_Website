@@ -56,10 +56,11 @@ i {
   color: var(--secondary-color);
 }
 h1 {
+  text-align: center;
   font-size: 3rem;
   letter-spacing: 5px;
   font-family: var(--secondary-font);
-  color: var(--ternary-color);
+  color: var(--secondary-color);
 }
 .navigation-logo {
   width: 300px !important;
