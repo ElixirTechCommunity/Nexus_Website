@@ -67,12 +67,10 @@ i {
   color: var(--secondary-color);
 }
 h1 {
-  text-align: center;
   font-size: 3rem;
   letter-spacing: 5px;
   font-family: var(--secondary-font);
-  color: var(--secondary-color);
-  padding-top:10px;
+  color: var(--ternary-color);
 }
 
 
