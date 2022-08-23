@@ -6,6 +6,11 @@
 #about-content div {
   width: 90%;
 }
+#about-content img {
+  width: 20vw;
+  margin: auto;
+}
+
 #about-content {
   width: 90%;
 }
