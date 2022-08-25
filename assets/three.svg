@@ -1,13 +1,1 @@
-<svg id="Design" xmlns="http://www.w3.org/2000/svg" width="3556" height="2000" viewBox="0 0 3556 2000">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: none;
-        stroke: #b0d8fa;
-        stroke-width: 4.708px;
-        fill-rule: evenodd;
-      }
-    </style>
-  </defs>
-  <path id="Shape" class="cls-1" d="M2294.5,220c437.13,0,791.5,354.315,791.5,791.38s-354.37,791.39-791.5,791.39S1503,1448.45,1503,1011.38,1857.37,220,2294.5,220Z"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" id="Design" width="3556" height="2000" viewBox="0 0 3556 2000"><defs><style>.cls-1{fill:none;stroke:#b0d8fa;stroke-width:4.708px;fill-rule:evenodd}</style></defs><path id="Shape" d="M2294.5,220c437.13,0,791.5,354.315,791.5,791.38s-354.37,791.39-791.5,791.39S1503,1448.45,1503,1011.38,1857.37,220,2294.5,220Z" class="cls-1"/></svg>
