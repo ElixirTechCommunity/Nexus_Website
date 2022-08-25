@@ -50,7 +50,7 @@
 
 /* page sliding animation */
 .slide-left {
-  animation: slideLeft 1s linear 1;
+  animation: slideLeft 0.5s linear 1;
 }
 @keyframes slideLeft {
   0% {
@@ -62,7 +62,7 @@
 }
 
 .slide-right {
-  animation: slideRight 1s linear 1;
+  animation: slideRight 0.5s linear 1;
 }
 @keyframes slideRight {
   0% {

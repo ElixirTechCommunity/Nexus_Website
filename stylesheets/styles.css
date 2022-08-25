@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Montserrat:wght@200&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
 @font-face {
   font-family: nulshock;
@@ -21,7 +20,6 @@
   --primary-color: #131313;
   --secondary-color: #d9d9d9;
   --ternary-color: #b0d8fa;
-  --ternary-font: "Poppins", sans-serif;
   --font-color: #ffff;
   --primary-font: "Comfortaa", cursive;
   --secondary-font: "Montserrat", sans-serif;
@@ -51,53 +49,162 @@ body {
   overflow-y: auto;
   overflow-x: hidden;
 }
-/* scroll-snap child */
-.snap-child {
-  scroll-snap-align: start;
-}
 
+/* Particle Js Custom CSS */
 .particles-js-canvas-el {
   position: fixed;
   top: 0;
   left: 0;
   z-index: -1;
 }
+/* Particle Js Custom CSS */
 
-/* icon-element */
-i {
-  color: var(--secondary-color);
-}
 h1 {
-  text-align: center;
-  font-size: 3rem;
-  letter-spacing: 5px;
-  font-family: var(--secondary-font);
-  color: var(--secondary-color);
-  padding-top: 10px;
+  font-family: var(--quad-font);
+  font-size: 6rem;
 }
-
-.btn {
-  cursor: pointer;
-  width: 300px;
-  /* height: 30px; */
-  background: none;
-  color: var(--font-color);
-  border: none;
-  border: 2px solid var(--ternary-color);
-  border-radius: 5px;
-  margin-top: 50px;
-  font-family: var(--secondary-font);
-  padding: 10px 20px;
-}
-.btn:hover {
-  transition: 0.2s;
-  transform: scale(1.04);
-}
-
 .main-section {
-  height: 100vh;
-  /* background-color: ; */
+  margin: 10px;
+  padding: 50px 0px;
+  min-height: 83vh;
 }
-.section-container {
-  padding: 100px 0px;
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Montserrat:wght@200&display=swap");
+
+@font-face {
+  font-family: nulshock;
+  src: url(../assets/fonts/nulshock\ bd.otf);
+}
+@font-face {
+  font-family: fake;
+  src: url(../assets/fonts/fake\ receipt.ttf);
+}
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* root variables */
+:root {
+  --primary-color: #131313;
+  --secondary-color: #d9d9d9;
+  --ternary-color: #b0d8fa;
+  --font-color: #ffff;
+  --primary-font: "Comfortaa", cursive;
+  --secondary-font: "Montserrat", sans-serif;
+  --quad-font: "nulshock";
+  --pent-font: "fake";
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* html element */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  user-select: none;
+}
+
+/* body element */
+body {
+  font-family: var(--primary-font);
+  background-color: var(--primary-color);
+  width: 100vw;
+  height: 100vh;
+  color: var(--font-color);
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Particle Js Custom CSS */
+.particles-js-canvas-el {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+/* Particle Js Custom CSS */
+
+h1 {
+  font-family: var(--quad-font);
+  font-size: 6rem;
+}
+.main-section {
+  margin: 10px;
+  padding: 50px 0px;
+  min-height: 83vh;
+}
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Montserrat:wght@200&display=swap");
+
+@font-face {
+  font-family: nulshock;
+  src: url(../assets/fonts/nulshock\ bd.otf);
+}
+@font-face {
+  font-family: fake;
+  src: url(../assets/fonts/fake\ receipt.ttf);
+}
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* root variables */
+:root {
+  --primary-color: #131313;
+  --secondary-color: #d9d9d9;
+  --ternary-color: #b0d8fa;
+  --font-color: #ffff;
+  --primary-font: "Comfortaa", cursive;
+  --secondary-font: "Montserrat", sans-serif;
+  --quad-font: "nulshock";
+  --pent-font: "fake";
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* html element */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  user-select: none;
+}
+
+/* body element */
+body {
+  font-family: var(--primary-font);
+  background-color: var(--primary-color);
+  width: 100vw;
+  height: 100vh;
+  color: var(--font-color);
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Particle Js Custom CSS */
+.particles-js-canvas-el {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+/* Particle Js Custom CSS */
+
+h1 {
+  font-family: var(--quad-font);
+  font-size: 6rem;
+}
+.main-section {
+  margin: 10px;
+  padding: 50px 0px;
+  min-height: 83vh;
 }

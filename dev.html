@@ -6,6 +6,9 @@
       src="https://kit.fontawesome.com/acbd692ad8.js"
       crossorigin="anonymous"
     ></script>
+
+    <!-- box icons min css -->
+    <!-- need to be replaced -->
     <link
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
       rel="stylesheet"
@@ -19,8 +22,7 @@
     <link rel="stylesheet" href="./stylesheets/logo.css" />
     <link rel="stylesheet" href="./stylesheets/loader.css" />
     <link rel="stylesheet" href="./stylesheets/landing_page.css" />
-    <link rel="stylesheet" href="./stylesheets/slide_page.css" />
-    <link rel="stylesheet" href="./stylesheets/aboutPage.css" />
+    <link rel="stylesheet" href="./stylesheets/slidePage.css" />
     <link rel="stylesheet" href="./stylesheets/responsive.css" />
     <link rel="stylesheet" href="./stylesheets/theme_page.css" />
     <link rel="stylesheet" href="./stylesheets/faq.css" />
@@ -29,14 +31,19 @@
 
     <!-- favicon -->
     <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon" />
+
+    <!-- meta tags -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- title -->
     <title>Nexus: What the Hack</title>
   </head>
 
   <!-- body -->
   <body id="particles-js">
+    <!-- ----------------------------------------------------------------------------------------- -->
     <!-- navBar -->
     <header class="flex">
       <nav class="navbar flex">
@@ -49,17 +56,14 @@
           <a href="https://twitter.com/nexus_hackathon" target="_blank"
             ><i class="fa-brands fa-twitter"></i
           ></a>
-
           <a href="https://www.instagram.com/nexus_whatthehack/" target="_blank"
             ><i class="fa-brands fa-instagram"></i
           ></a>
-
           <a
             href="https://www.linkedin.com/company/nexus-what-the-hack/about/"
             target="_blank"
             ><i class="fa-brands fa-linkedin-in"></i
           ></a>
-
           <a href="https://discord.gg/R53QVZJ2fn" target="_blank"
             ><i class="fa-brands fa-discord"></i
           ></a>
@@ -67,6 +71,8 @@
       </nav>
     </header>
     <!-- navBar -->
+
+    <!-- ----------------------------------------------------------------------------------------- -->
 
     <!-- loader -->
     <div class="loader flex">
@@ -80,30 +86,51 @@
     </div>
     <!-- loader -->
 
-    <!-- hero section -->
-    <div class="snap-child web-top-container flex">
-      <div class="web-top-left flex flex-column">
+    <!-- ----------------------------------------------------------------------------------------- -->
+
+    <!-- Landing Page section -->
+    <div class="web-top-container flex">
+      <div class="flex flex-column landing-page-left">
         <h1>NEXUS</h1>
-        <p>What the hack!</p>
-        <button class="custom-btn btn"><span>Coming Soon</span></button>
-      </div>
-      <div class="main-logo-container-outer flex">
-        <div class="main-logo-container flex">
-          <object
-            class="main-logo spin"
-            data="./assets/mainlogo.svg"
-            type=""
-          ></object>
-        </div>
+        <h2>What the hack</h2>
+        <button class="custom-btn btn">Coming Soon</button>
       </div>
 
+      <!-- landing page main logo -->
+      <div class="main-logo-container flex">
+        <object class="main-logo" data="../../assets/one.svg" type=""></object>
+        <object
+          class="main-logo stars"
+          data="../../assets/two.svg"
+          type=""
+        ></object>
+        <object
+          class="main-logo outer-ring"
+          data="../../assets/three.svg"
+          type=""
+        ></object>
+        <object class="main-logo" data="../../assets/four.svg" type=""></object>
+        <object class="main-logo" data="../../assets/five.svg" type=""></object>
+        <object
+          class="main-logo planet"
+          data="../../assets/six.svg"
+          type=""
+        ></object>
+        <object
+          class="main-logo ring-box"
+          data="../../assets/seven.svg"
+          type=""
+        ></object>
+      </div>
       <div>
         <a href="#hack-info"><i class="fas fa-angle-down"></i></a>
       </div>
     </div>
-    <!-- hero section  -->
+    <!-- Landing section here -->
 
-    <!-- caraousel -->
+    <!-- ----------------------------------------------------------------------------------------- -->
+
+    <!-- Slides -->
     <div class="snap-child web-bottom-container" id="hack-info">
       <div class="flex container">
         <main
@@ -134,31 +161,46 @@
         <i class="fa-solid fa-chevron-left"></i>
       </button>
 
-      <object
-        class="navv-logo spin"
-        data="./assets/mainlogo.svg"
-        type=""
-      ></object>
-
       <button id="next" class="toggle-btn toggle-btn-right">
         <i class="fa-solid fa-chevron-right"></i>
       </button>
     </div>
-    <!-- caraousel -->
+    <!-- Slides -->
 
-    <div id="sponsors" class="snap-child main-section">
+    <!-- ----------------------------------------------------------------------------------------- -->
+
+    <!-- themes -->
+    <div id="themes" class="main-section">
+      <div class="flex section-container">
+        <h1>Theme</h1>
+      </div>
+    </div>
+    <!-- themes -->
+
+    <!-- ----------------------------------------------------------------------------------------- -->
+
+    <!-- sponsors -->
+    <div id="sponsors" class="main-section">
       <div class="flex section-container">
         <h1>sponsors</h1>
       </div>
     </div>
-    <div id="schedule" class="snap-child main-section">
+    <!-- sponsors -->
+
+    <!-- ----------------------------------------------------------------------------------------- -->
+
+    <!-- schedule -->
+    <div id="schedule" class="main-section">
       <div class="flex section-container">
         <h1>schedule</h1>
       </div>
     </div>
+    <!-- schedule -->
+
+    <!-- ----------------------------------------------------------------------------------------- -->
 
     <!-- faq section -->
-    <div id="faq" class="snap-child main-section flex">
+    <div id="faq" class="main-section flex">
       <div class="accordion">
         <div class="image-box">
           <img src="./assets/mainlogo.svg" alt="" class="spin" />
@@ -246,6 +288,5 @@
     <script src="./scripts/particles.js"></script>
     <script src="./scripts/particle-app.js"></script>
     <script src="./scripts/vanilla-tilt.js"></script>
-    <!-- <script src="./scripts/glass-animation.js"></script> -->
   </body>
 </html>

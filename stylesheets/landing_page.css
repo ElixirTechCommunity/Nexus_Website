@@ -1,61 +1,136 @@
-.web-top-container .fa-angle-down {
-  font-size: 30px;
-  position: relative;
-  top: 20rem;
-  right: 40rem;
-  cursor: pointer;
-}
+/*
 
+final css file for landing page
+Do not modify this file
+
+*/
+
+/* landing page top container css starts */
 .web-top-container {
-  width: 100%;
-  height: 100vh;
-}
-
-.web-top-left {
   position: relative;
-  /* left: 10rem; */
-  width: 30vw;
-  height: 70vh;
+  width: 80vw;
+  height: 90vh;
+  margin: auto;
 }
-.web-top-left h1 {
-  color: var(--font-color);
-  font-family: var(--quad-font);
-  font-size: 7rem;
-  letter-spacing: 8px;
+
+.landing-page-left {
+  width: 40%;
+  height: 100%;
 }
-.web-top-left p {
+/* landing page top container css ends */
+.web-top-container h1 {
+  letter-spacing: 1rem !important;
+  line-height: 2;
+}
+.web-top-container h2 {
+  letter-spacing: 6px;
   color: var(--ternary-color);
-  margin-top: 20px;
-  font-size: 25px;
-  letter-spacing: 5px;
-  font-family: var(--pent-font);
-}
-.particles-js-canvas-el {
-  opacity: 0.5;
 }
 
-/* logo */
+/* landing page to about page arrow css */
+.web-top-container .fa-angle-down {
+  position: absolute;
+  bottom: 2rem;
+  right: 48.5%;
+  font-size: 30px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.322);
+  padding: 10px 15px;
+  border-radius: 50%;
+  transition: 0.2s;
+  z-index: 10;
+}
 
+/* down arrow hover effect */
+.web-top-container .fa-angle-down:hover {
+  transform: scale(1.05);
+}
+
+/* landing page logo css starts here */
 .main-logo-container {
   position: relative;
-  width: 100%;
+  width: 60%;
   height: 100%;
   overflow: hidden;
-  z-index: 10;
 }
 .main-logo {
   position: absolute;
-  right: 35%;
-  height: 25rem;
-  width: 25rem;
-  z-index: 10;
+  right: 0;
+  width: 94%;
+}
+.planet {
+  height: 80%;
+  z-index: 7;
 }
 
-.main-logo-container-outer {
-  position: relative;
-  left: 15rem;
-  width: 50rem;
-  height: 50rem;
-  overflow: hidden;
-  z-index: 10;
+.outer-ring {
+  height: 80%;
+}
+.ring-box {
+  height: 80%;
+  z-index: 5;
+}
+
+.stars {
+  width: 100%;
+}
+
+/* landing page logo css ends here */
+
+/* responsive css for landing page */
+@media screen and (max-width: 1250px) {
+  .web-top-container {
+    flex-direction: column;
+  }
+  .landing-page-left {
+    position: relative;
+    top: 5rem;
+    width: 100%;
+    height: 30vh;
+  }
+  .landing-page-left h1 {
+    font-size: 5rem;
+  }
+  .main-logo-container {
+    right: 6.5rem;
+    width: 650px;
+    height: 70vh;
+  }
+  .web-top-container .fa-angle-down {
+    bottom: 2rem;
+    right: 45%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .landing-page-left {
+    width: 100vw;
+  }
+  .landing-page-left h1 {
+    font-size: 4rem;
+  }
+  .landing-page-left h2 {
+    font-size: 25px;
+  }
+  .main-logo-container {
+    width: 500px;
+    height: 70vh;
+    right: 5rem;
+  }
+  .web-top-container .fa-angle-down {
+    bottom: 4rem;
+    right: 43%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .landing-page-left h1 {
+    font-size: 3rem;
+  }
+  .landing-page-left h2 {
+    font-size: 20px;
+  }
+  .main-logo-container {
+    right: 5rem;
+  }
 }

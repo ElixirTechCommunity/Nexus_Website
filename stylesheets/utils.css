@@ -10,6 +10,13 @@
 .flex-column {
   flex-direction: column;
 }
+.flex-start {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
 .flex-space-btw {
   justify-content: space-between;
+}
+.flex-space-eve {
+  justify-content: space-evenly;
 }
