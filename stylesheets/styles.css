@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Montserrat:wght@200&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
 @font-face {
   font-family: nulshock;
@@ -9,6 +9,7 @@
   font-family: fake;
   src: url(../assets/fonts/fake\ receipt.ttf);
 }
+
 /* reset */
 * {
   margin: 0;
@@ -20,12 +21,12 @@
   --primary-color: #131313;
   --secondary-color: #d9d9d9;
   --ternary-color: #b0d8fa;
-  --ternary-font: Poppins;
+  --ternary-font: "Poppins", sans-serif;
   --font-color: #ffff;
   --primary-font: "Comfortaa", cursive;
   --secondary-font: "Montserrat", sans-serif;
   --quad-font: "nulshock";
-  --pent-font: "fake"
+  --pent-font: "fake";
 }
 ::-webkit-scrollbar {
   display: none;
@@ -72,9 +73,8 @@ h1 {
   letter-spacing: 5px;
   font-family: var(--secondary-font);
   color: var(--secondary-color);
-  padding-top:10px;
+  padding-top: 10px;
 }
-
 
 .btn {
   cursor: pointer;
@@ -92,4 +92,12 @@ h1 {
 .btn:hover {
   transition: 0.2s;
   transform: scale(1.04);
+}
+
+.main-section {
+  height: 100vh;
+  /* background-color: ; */
+}
+.section-container {
+  padding: 100px 0px;
 }

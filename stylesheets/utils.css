@@ -1,10 +1,7 @@
 /* display-none */
 .no-display {
-    display: none !important;
-  }
-
-
-
+  display: none !important;
+}
 .flex {
   display: flex;
   justify-content: center;
@@ -12,4 +9,7 @@
 }
 .flex-column {
   flex-direction: column;
+}
+.flex-space-btw {
+  justify-content: space-between;
 }
