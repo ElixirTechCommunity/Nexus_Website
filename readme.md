@@ -24,3 +24,23 @@
 2. run `$ npm run build`
 3. `open index.html in vsCode.`
 4. `start live server.`
+
+\*\* not having vscode?
+
+Follow these steps to setup
+
+1. open terminal and run `git clone https://github.com/ElixirTechCommunity/Nexus_Website.git`
+2. run `cd Nexus_Website`
+3. run `git checkout -b docker`
+4. `git pull origin docker`
+
+### To start add with nodejs
+
+1. run `npm install`
+2. run `npm start`
+3. Open browser and go to `http://localhost:80/dev`
+
+### To start with docker
+
+1. run `docker-compose up`
+2. Open browser and go to `http://localhost:80/dev`

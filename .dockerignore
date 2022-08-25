@@ -1,0 +1,9 @@
+.github
+.gitignore
+.git
+
+*.md
+LICENSE
+Dockerfile
+
+node_modules

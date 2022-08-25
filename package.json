@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "nexus website",
   "scripts": {
+    "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node builder.config.js",
     "prepare": "husky install"
@@ -10,11 +11,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "fs": "0.0.1-security",
-    "path": "^0.12.7"
+    "express": "^4.18.1",
+    "path": "^0.12.7",
+    "fs": "0.0.1-security"
   },
   "devDependencies": {
     "husky": "^8.0.0",
+    "nodemon": "^2.0.19",
     "prettier": "2.7.1",
     "pretty-quick": "^3.1.3"
   }
