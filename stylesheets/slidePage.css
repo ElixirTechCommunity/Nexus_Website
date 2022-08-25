@@ -144,3 +144,25 @@ main {
     width: 80%;
   }
 }
+
+@media screen and (max-width: 375px) {
+  .slide-page-head {
+    font-size: 2rem;
+  }
+  .slide-page-left {
+    width: 95% !important;
+    height: 300px;
+    line-height: 2;
+    font-size: 10px;
+    width: 60%;
+  }
+  .slide-page-right {
+    position: relative;
+    width: 60%;
+    height: 40%;
+  }
+  .toggle-btn {
+    bottom: -2rem;
+    font-size: 40px !important;
+  }
+}
