@@ -1,0 +1,35 @@
+
+.col {
+    float: left;
+    width: 20%;
+    margin:10px;
+    height:100px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    color: black;
+    background-color: rgb(234, 243, 243);
+}
+.row{
+    text-align: center;
+    padding-left:13%;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.sponsor-heading{
+  padding:30px;
+  text-align:center;
+}
+.fa-lock{
+  color: black;
+}
+.sponsor-name{
+    padding-top:30px;
+    text-align:center;
+    font-size: 30px;
+}
