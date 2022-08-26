@@ -19,6 +19,7 @@
   </head>
 
   <body id="particles-js">
+    <!-- ----------------------------------------------------------------------------------------- -->
     <!-- navBar -->
     <header class="flex">
       <nav class="navbar flex">
@@ -31,17 +32,14 @@
           <a href="https://twitter.com/nexus_hackathon" target="_blank"
             ><i class="fa-brands fa-twitter"></i
           ></a>
-
           <a href="https://www.instagram.com/nexus_whatthehack/" target="_blank"
             ><i class="fa-brands fa-instagram"></i
           ></a>
-
           <a
             href="https://www.linkedin.com/company/nexus-what-the-hack/about/"
             target="_blank"
             ><i class="fa-brands fa-linkedin-in"></i
           ></a>
-
           <a href="https://discord.gg/R53QVZJ2fn" target="_blank"
             ><i class="fa-brands fa-discord"></i
           ></a>
@@ -49,6 +47,8 @@
       </nav>
     </header>
     <!-- navBar -->
+
+    <!-- ----------------------------------------------------------------------------------------- -->
 
     <!-- loader -->
     <div class="loader flex">
@@ -62,30 +62,51 @@
     </div>
     <!-- loader -->
 
-    <!-- hero section -->
-    <div class="snap-child web-top-container flex">
-      <div class="web-top-left flex flex-column">
+    <!-- ----------------------------------------------------------------------------------------- -->
+
+    <!-- Landing Page section -->
+    <div class="web-top-container flex">
+      <div class="flex flex-column landing-page-left">
         <h1>NEXUS</h1>
-        <p>What the hack!</p>
-        <button class="custom-btn btn"><span>Coming Soon</span></button>
-      </div>
-      <div class="main-logo-container-outer flex">
-        <div class="main-logo-container flex">
-          <object
-            class="main-logo spin"
-            data="./assets/mainlogo.svg"
-            type=""
-          ></object>
-        </div>
+        <h2>What the hack</h2>
+        <button class="custom-btn btn">Coming Soon</button>
       </div>
 
+      <!-- landing page main logo -->
+      <div class="main-logo-container flex">
+        <object class="main-logo" data="../../assets/one.svg" type=""></object>
+        <object
+          class="main-logo stars"
+          data="../../assets/two.svg"
+          type=""
+        ></object>
+        <object
+          class="main-logo outer-ring"
+          data="../../assets/three.svg"
+          type=""
+        ></object>
+        <object class="main-logo" data="../../assets/four.svg" type=""></object>
+        <object class="main-logo" data="../../assets/five.svg" type=""></object>
+        <object
+          class="main-logo planet"
+          data="../../assets/six.svg"
+          type=""
+        ></object>
+        <object
+          class="main-logo ring-box"
+          data="../../assets/seven.svg"
+          type=""
+        ></object>
+      </div>
       <div>
         <a href="#hack-info"><i class="fas fa-angle-down"></i></a>
       </div>
     </div>
-    <!-- hero section  -->
+    <!-- Landing section here -->
 
-    <!-- caraousel -->
+    <!-- ----------------------------------------------------------------------------------------- -->
+
+    <!-- Slides -->
     <div class="snap-child web-bottom-container" id="hack-info">
       <div class="flex container">
         <main
@@ -116,20 +137,18 @@
         <i class="fa-solid fa-chevron-left"></i>
       </button>
 
-      <object
-        class="navv-logo spin"
-        data="./assets/mainlogo.svg"
-        type=""
-      ></object>
-
       <button id="next" class="toggle-btn toggle-btn-right">
         <i class="fa-solid fa-chevron-right"></i>
       </button>
     </div>
-    <!-- caraousel -->
+    <!-- Slides -->
+
+    <!-- ----------------------------------------------------------------------------------------- -->
+
+    <!-- ----------------------------------------------------------------------------------------- -->
 
     <!-- faq section -->
-    <div id="faq" class="snap-child main-section flex">
+    <div id="faq" class="main-section flex">
       <div class="accordion">
         <div class="image-box">
           <img src="./assets/mainlogo.svg" alt="" class="spin" />

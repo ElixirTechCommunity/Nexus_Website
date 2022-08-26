@@ -1,4 +1,4 @@
-const pages = ["about", "themes"];
+const pages = ["about", "team"];
 
 // load Content js start here
 
@@ -36,7 +36,7 @@ const load = async (page, isReload = false, direction = "left") => {
         document.querySelector(".loader").classList.add("fadeOut");
         setTimeout(() => {
           document.querySelector(".loader").classList.add("no-display");
-        }, 1000);
+        }, 500);
       }
     });
 
@@ -49,7 +49,7 @@ const load = async (page, isReload = false, direction = "left") => {
       document.getElementById("main-content").classList.remove("slide-left");
       document.querySelector(".right-slide").classList.remove("slide-left");
       document.querySelector(".left-slide").classList.remove("slide-left");
-    }, 1000);
+    }, 500);
   } else {
     document.getElementById("main-content").classList.add("slide-right");
     document.querySelector(".right-slide").classList.add("slide-right");
@@ -58,7 +58,7 @@ const load = async (page, isReload = false, direction = "left") => {
       document.getElementById("main-content").classList.remove("slide-right");
       document.querySelector(".right-slide").classList.remove("slide-right");
       document.querySelector(".left-slide").classList.remove("slide-right");
-    }, 1000);
+    }, 500);
   }
   setTimeout(() => {
     document.getElementById("main-content").innerHTML = mid_data;
@@ -67,7 +67,7 @@ const load = async (page, isReload = false, direction = "left") => {
     document
       .querySelectorAll(".toggle-btn")
       .forEach((btn) => (btn.disabled = false));
-  }, 1000);
+  }, 500);
 };
 
 /**

@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Montserrat:wght@200&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
 @font-face {
   font-family: nulshock;
@@ -21,7 +20,6 @@
   --primary-color: #131313;
   --secondary-color: #d9d9d9;
   --ternary-color: #b0d8fa;
-  --ternary-font: "Poppins", sans-serif;
   --font-color: #ffff;
   --primary-font: "Comfortaa", cursive;
   --secondary-font: "Montserrat", sans-serif;
@@ -51,55 +49,164 @@ body {
   overflow-y: auto;
   overflow-x: hidden;
 }
-/* scroll-snap child */
-.snap-child {
-  scroll-snap-align: start;
-}
 
+/* Particle Js Custom CSS */
 .particles-js-canvas-el {
   position: fixed;
   top: 0;
   left: 0;
   z-index: -1;
 }
+/* Particle Js Custom CSS */
 
-/* icon-element */
-i {
-  color: var(--secondary-color);
-}
 h1 {
-  text-align: center;
-  font-size: 3rem;
-  letter-spacing: 5px;
-  font-family: var(--secondary-font);
-  color: var(--secondary-color);
-  padding-top: 10px;
+  font-family: var(--quad-font);
+  font-size: 6rem;
 }
-
-.btn {
-  cursor: pointer;
-  width: 300px;
-  /* height: 30px; */
-  background: none;
-  color: var(--font-color);
-  border: none;
-  border: 2px solid var(--ternary-color);
-  border-radius: 5px;
-  margin-top: 50px;
-  font-family: var(--secondary-font);
-  padding: 10px 20px;
-}
-.btn:hover {
-  transition: 0.2s;
-  transform: scale(1.04);
-}
-
 .main-section {
-  height: 100vh;
-  /* background-color: ; */
+  margin: 10px;
+  padding: 50px 0px;
+  min-height: 83vh;
 }
-.section-container {
-  padding: 100px 0px;
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Montserrat:wght@200&display=swap");
+
+@font-face {
+  font-family: nulshock;
+  src: url(../assets/fonts/nulshock\ bd.otf);
+}
+@font-face {
+  font-family: fake;
+  src: url(../assets/fonts/fake\ receipt.ttf);
+}
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* root variables */
+:root {
+  --primary-color: #131313;
+  --secondary-color: #d9d9d9;
+  --ternary-color: #b0d8fa;
+  --font-color: #ffff;
+  --primary-font: "Comfortaa", cursive;
+  --secondary-font: "Montserrat", sans-serif;
+  --quad-font: "nulshock";
+  --pent-font: "fake";
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* html element */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  user-select: none;
+}
+
+/* body element */
+body {
+  font-family: var(--primary-font);
+  background-color: var(--primary-color);
+  width: 100vw;
+  height: 100vh;
+  color: var(--font-color);
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Particle Js Custom CSS */
+.particles-js-canvas-el {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+/* Particle Js Custom CSS */
+
+h1 {
+  font-family: var(--quad-font);
+  font-size: 6rem;
+}
+.main-section {
+  margin: 10px;
+  padding: 50px 0px;
+  min-height: 83vh;
+}
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Montserrat:wght@200&display=swap");
+
+@font-face {
+  font-family: nulshock;
+  src: url(../assets/fonts/nulshock\ bd.otf);
+}
+@font-face {
+  font-family: fake;
+  src: url(../assets/fonts/fake\ receipt.ttf);
+}
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* root variables */
+:root {
+  --primary-color: #131313;
+  --secondary-color: #d9d9d9;
+  --ternary-color: #b0d8fa;
+  --font-color: #ffff;
+  --primary-font: "Comfortaa", cursive;
+  --secondary-font: "Montserrat", sans-serif;
+  --quad-font: "nulshock";
+  --pent-font: "fake";
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* html element */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  user-select: none;
+}
+
+/* body element */
+body {
+  font-family: var(--primary-font);
+  background-color: var(--primary-color);
+  width: 100vw;
+  height: 100vh;
+  color: var(--font-color);
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Particle Js Custom CSS */
+.particles-js-canvas-el {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+/* Particle Js Custom CSS */
+
+h1 {
+  font-family: var(--quad-font);
+  font-size: 6rem;
+}
+.main-section {
+  margin: 10px;
+  padding: 50px 0px;
+  min-height: 83vh;
 }
 /* display-none */
 .no-display {
@@ -113,8 +220,15 @@ h1 {
 .flex-column {
   flex-direction: column;
 }
+.flex-start {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
 .flex-space-btw {
   justify-content: space-between;
+}
+.flex-space-eve {
+  justify-content: space-evenly;
 }
 .loader {
   position: fixed;
@@ -156,66 +270,141 @@ header i:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
-.web-top-container .fa-angle-down {
-  font-size: 30px;
-  position: relative;
-  top: 20rem;
-  right: 40rem;
-  cursor: pointer;
-}
+/*
 
+final css file for landing page
+Do not modify this file
+
+*/
+
+/* landing page top container css starts */
 .web-top-container {
-  width: 100%;
-  height: 100vh;
-}
-
-.web-top-left {
   position: relative;
-  /* left: 10rem; */
-  width: 30vw;
-  height: 70vh;
+  width: 80vw;
+  height: 90vh;
+  margin: auto;
 }
-.web-top-left h1 {
-  color: var(--font-color);
-  font-family: var(--quad-font);
-  font-size: 7rem;
-  letter-spacing: 8px;
+
+.landing-page-left {
+  width: 40%;
+  height: 100%;
 }
-.web-top-left p {
+/* landing page top container css ends */
+.web-top-container h1 {
+  letter-spacing: 1rem !important;
+  line-height: 2;
+}
+.web-top-container h2 {
+  letter-spacing: 6px;
   color: var(--ternary-color);
-  margin-top: 20px;
-  font-size: 25px;
-  letter-spacing: 5px;
-  font-family: var(--pent-font);
-}
-.particles-js-canvas-el {
-  opacity: 0.5;
 }
 
-/* logo */
+/* landing page to about page arrow css */
+.web-top-container .fa-angle-down {
+  position: absolute;
+  bottom: 2rem;
+  right: 48.5%;
+  font-size: 30px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.322);
+  padding: 10px 15px;
+  border-radius: 50%;
+  transition: 0.2s;
+  z-index: 10;
+}
 
+/* down arrow hover effect */
+.web-top-container .fa-angle-down:hover {
+  transform: scale(1.05);
+}
+
+/* landing page logo css starts here */
 .main-logo-container {
   position: relative;
-  width: 100%;
+  width: 60%;
   height: 100%;
   overflow: hidden;
-  z-index: 10;
 }
 .main-logo {
   position: absolute;
-  right: 35%;
-  height: 25rem;
-  width: 25rem;
-  z-index: 10;
+  right: 0;
+  width: 94%;
+}
+.planet {
+  height: 80%;
+  z-index: 7;
 }
 
-.main-logo-container-outer {
-  position: relative;
-  left: 15rem;
-  width: 50rem;
-  height: 50rem;
-  overflow: hidden;
-  z-index: 10;
+.outer-ring {
+  height: 80%;
+}
+.ring-box {
+  height: 80%;
+  z-index: 5;
+}
+
+.stars {
+  width: 100%;
+}
+
+/* landing page logo css ends here */
+
+/* responsive css for landing page */
+@media screen and (max-width: 1250px) {
+  .web-top-container {
+    flex-direction: column;
+  }
+  .landing-page-left {
+    position: relative;
+    top: 5rem;
+    width: 100%;
+    height: 30vh;
+  }
+  .landing-page-left h1 {
+    font-size: 5rem;
+  }
+  .main-logo-container {
+    right: 6.5rem;
+    width: 650px;
+    height: 70vh;
+  }
+  .web-top-container .fa-angle-down {
+    bottom: 2rem;
+    right: 45%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .landing-page-left {
+    width: 100vw;
+  }
+  .landing-page-left h1 {
+    font-size: 4rem;
+  }
+  .landing-page-left h2 {
+    font-size: 25px;
+  }
+  .main-logo-container {
+    width: 500px;
+    height: 70vh;
+    right: 5rem;
+  }
+  .web-top-container .fa-angle-down {
+    bottom: 4rem;
+    right: 43%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .landing-page-left h1 {
+    font-size: 3rem;
+  }
+  .landing-page-left h2 {
+    font-size: 20px;
+  }
+  .main-logo-container {
+    right: 5rem;
+  }
 }
 .logo {
   margin: auto;
@@ -412,6 +601,16 @@ button {
 .btn:active {
   top: 2px;
 }
+/*
+
+final css file for landing page
+Do not modify this file
+
+*/
+
+/*
+slide page glass design starts here
+*/
 .web-bottom-container {
   position: relative;
 }
@@ -444,7 +643,7 @@ main {
   border: none;
   position: absolute;
   /* top: 50%; */
-  bottom: 5rem;
+  bottom: 0rem;
   z-index: 50;
   font-size: 40px;
   transition: 0.2s;
@@ -467,25 +666,108 @@ main {
   left: 47%;
   bottom: 5rem;
 }
-.box-content-p {
-  line-height: 35px;
-  text-align: justify;
+
+/* slide page glass style ends here */
+
+/* slide page css starts here */
+.slide-page-container {
+  width: 100%;
+  height: 100%;
 }
 
-#about-content div {
-  width: 90%;
-}
-#about-content img {
-  width: 20vw;
-  margin: auto;
-}
-
-#about-content {
+.slide-page-head {
+  margin-bottom: 30px;
   width: 90%;
 }
 
-.pageHead {
-  font-weight: 800;
+.slide-page-left {
+  line-height: 2;
+  font-size: 20px;
+  width: 60%;
+  text-align: left;
+}
+.slide-page-right {
+  position: relative;
+  width: 30%;
+  /* height: 100%; */
+  bottom: 4rem;
+}
+.slide-page-right img {
+  width: 90%;
+}
+/* slide page css ends here */
+
+/* responsive css for slide page-slide*/
+@media screen and (max-width: 1250px) {
+  .slide-page-box {
+    flex-direction: column-reverse;
+  }
+  .slide-page-head {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 0px;
+  }
+  .slide-page-left {
+    width: 90% !important;
+    height: 400px;
+    line-height: 2;
+    font-size: 17px;
+    width: 60%;
+  }
+  .slide-page-right {
+    position: relative;
+    width: 30%;
+    bottom: 0rem;
+  }
+  .toggle-btn {
+    bottom: -4rem;
+    font-size: 40px !important;
+  }
+  .toggle-btn-left {
+    left: 35%;
+  }
+  .toggle-btn-right {
+    right: 35%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .slide-page-head {
+    font-size: 3rem;
+  }
+  .slide-page-left {
+    width: 95% !important;
+    height: 400px;
+    line-height: 2;
+    font-size: 15px;
+    width: 60%;
+  }
+  .slide-page-right {
+    position: relative;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .slide-page-head {
+    font-size: 2rem;
+  }
+  .slide-page-left {
+    width: 95% !important;
+    height: 300px;
+    line-height: 2;
+    font-size: 10px;
+    width: 60%;
+  }
+  .slide-page-right {
+    position: relative;
+    width: 60%;
+    height: 40%;
+  }
+  .toggle-btn {
+    bottom: -2rem;
+    font-size: 40px !important;
+  }
 }
 .themes-grid {
   display: flex;
@@ -908,9 +1190,6 @@ main {
 }
 
 @media (max-width: 994px) {
-  body {
-    padding: 40px 20px;
-  }
   .accordion {
     max-width: 100%;
     padding: 45px 60px 45px 60px;
@@ -1000,7 +1279,7 @@ main {
 
 /* page sliding animation */
 .slide-left {
-  animation: slideLeft 1s linear 1;
+  animation: slideLeft 0.5s linear 1;
 }
 @keyframes slideLeft {
   0% {
@@ -1012,7 +1291,7 @@ main {
 }
 
 .slide-right {
-  animation: slideRight 1s linear 1;
+  animation: slideRight 0.5s linear 1;
 }
 @keyframes slideRight {
   0% {
