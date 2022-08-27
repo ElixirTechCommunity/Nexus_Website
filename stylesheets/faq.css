@@ -96,9 +96,6 @@
 }
 
 @media (max-width: 994px) {
-  body {
-    padding: 40px 20px;
-  }
   .accordion {
     max-width: 100%;
     padding: 45px 60px 45px 60px;
@@ -134,5 +131,198 @@
   }
   .accordion-text li p {
     width: 98%;
+  }
+}
+
+/* Ishaan's changes */
+
+@media screen and (max-width: 1050px) {
+  .accordion .image-box {
+    height: 360px;
+    width: 250px;
+  }
+
+  .accordion {
+    margin: 0px 60px 0px 60px;
+    padding: 45px 60px 45px 60px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .accordion .image-box {
+    display: none;
+  }
+  .accordion .accordion-text .faq-text {
+    height: 280px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .accordion .accordion-text .title {
+    font-size: 32px;
+  }
+  .accordion-text li .question-arrow .question {
+    font-size: 16px;
+  }
+  .accordion {
+    margin: 0px 60px 0px 60px;
+    padding: 30px 60px 30px 60px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .accordion {
+    padding: 15px 45px 30px 45px;
+  }
+  .accordion .image-box {
+    /* height: 170px; */
+    height: 150px;
+    width: 310px;
+    display: initial;
+  }
+  .accordion .image-box {
+    padding: 10px 30px 10px 30px;
+  }
+  .accordion .accordion-text {
+    margin-top: 25px;
+  }
+  .accordion .accordion-text .title {
+    font-size: 30px;
+  }
+  .accordion .accordion-text .faq-text {
+    margin-top: 15px;
+    height: 280px;
+  }
+  .accordion-text li .question-arrow .question {
+    font-size: 15px;
+  }
+  .accordion-text li .line {
+    margin: 9px 0;
+  }
+}
+
+@media screen and (max-width: 538px) {
+  .accordion {
+    /* padding: 10px 45px 10px 45px; */
+    padding: 30px 45px 30px 45px;
+  }
+  .accordion .image-box {
+    height: 200px;
+    width: 300px;
+    display: initial;
+    padding: 10px 30px 10px 30px;
+  }
+  .accordion .accordion-text {
+    width: 100%;
+    margin-top: 18px;
+  }
+  .accordion .accordion-text .title {
+    font-size: 28px;
+  }
+  .accordion .accordion-text .faq-text {
+    height: 255px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 473px) {
+  .accordion-text li .question-arrow .question {
+    font-size: 13px;
+    letter-spacing: 0.4px;
+  }
+  .accordion {
+    /* padding: 10px 45px 10px 45px; */
+    /* padding: 30px 45px 30px 45px; */
+    padding: 25px 45px 20px 45px;
+    /* width: 65vw; */
+  }
+  .accordion .image-box {
+    height: 160px;
+    width: 247px;
+    display: initial;
+    padding: 10px 30px 10px 30px;
+  }
+  .accordion .accordion-text .title {
+    font-size: 25px;
+  }
+  .accordion .accordion-text .faq-text {
+    height: 255px;
+    margin-top: 10px;
+  }
+  .accordion-text li .question-arrow .question {
+    font-size: 13px;
+    letter-spacing: 0.4px;
+  }
+  .accordion-text li.showAnswer p {
+    display: block;
+    font-size: 13px;
+  }
+  .accordion-text li .line {
+    display: block;
+    height: 2px;
+    width: 100%;
+    margin: 8px 0;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .accordion .accordion-text {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .accordion .accordion-text .faq-text {
+    height: 220px;
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .accordion {
+    padding: 20px 35px 30px 35px;
+    margin: 0px 70px 0px 70px;
+  }
+  .accordion .image-box {
+    height: 160px;
+    width: 230px;
+    display: initial;
+    padding: 15px 30px 15px 30px;
+  }
+  .accordion .accordion-text {
+    width: 100%;
+    margin-top: 25px;
+  }
+  .accordion .accordion-text .faq-text {
+    height: 280px;
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .accordion {
+    padding: 20px 35px 30px 35px;
+    margin: 0px 70px 0px 70px;
+  }
+  .accordion .image-box {
+    /* height: 140px; */
+    height: 120px;
+    width: 260px;
+    display: initial;
+    padding: 15px 0px 15px 0px;
+  }
+  .accordion-text li .question-arrow .question {
+    font-size: 11px;
+    letter-spacing: 0.4px;
+  }
+  .accordion .accordion-text .title {
+    font-size: 22px;
+  }
+  .accordion .accordion-text .faq-text {
+    height: 220px;
+    margin-top: 15px;
+  }
+  .accordion-text li .question-arrow .question {
+    font-size: 12px;
+    letter-spacing: 0.4px;
+  }
+  .accordion-text li.showAnswer p {
+    display: block;
+    font-size: 12px;
   }
 }

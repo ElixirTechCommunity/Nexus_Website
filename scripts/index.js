@@ -135,3 +135,10 @@ for (var i = 0; i < li.length; i++) {
     clickedLi.classList.toggle("showAnswer");
   });
 }
+
+(function () {
+  $(".footer").css(
+    "position",
+    $(document).height() > $(window).height() ? "inherit" : "fixed"
+  );
+})();

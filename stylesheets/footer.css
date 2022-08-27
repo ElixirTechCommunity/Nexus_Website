@@ -1,30 +1,322 @@
 footer {
   width: 100%;
-  height: 20vh;
+  /* height: 20vh; */
   background-color: var(--secondary-color);
   color: black;
+  margin-top: auto;
 }
 
 footer img {
   width: 100px;
-  margin: 0px 10px;
+  margin: 0px 5px;
 }
 
 .elixir {
-  width: 250px;
+  width: 100%;
+  height: 10rem;
+
+  margin-right: -45px;
 }
 
 .gfg {
-  width: 200px;
-}
-
-.cc {
-  width: 120px;
+  width: 100%;
+  height: 4rem;
 }
 
 .gdsc {
-  width: 200px;
+  width: 100%;
+  height: 6rem;
 }
+
+.cc {
+  width: 100%;
+  height: 10rem;
+}
+
 .footer-text {
-  width: 20%;
+  margin-right: 50px;
 }
+
+/* Ishaan's changes */
+
+@media screen and (max-width: 1260px) {
+  .gfg {
+    width: 100%;
+    height: 3rem;
+  }
+  .gdsc {
+    width: 100%;
+    height: 5rem;
+  }
+  .cc {
+    width: 100%;
+    height: 9rem;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .cc {
+    width: 100%;
+    height: 8rem;
+  }
+  .gdsc {
+    width: 100%;
+    height: 4rem;
+  }
+  .gfg {
+    width: 100%;
+    height: 2rem;
+  }
+  .elixir {
+    width: 100%;
+    height: 9rem;
+    margin-right: -45px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .elixir {
+    width: 100%;
+    height: 7rem;
+    margin-right: -25px;
+    margin-left: -8px;
+  }
+  .gfg {
+    width: 100%;
+    height: 1.6rem;
+  }
+  .gdsc {
+    width: 100%;
+    height: 3rem;
+  }
+  .cc {
+    width: 100%;
+    height: 5.5rem;
+  }
+  .flex {
+    margin-left: 0px;
+  }
+  .footer-text {
+    margin-right: 28px;
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .elixir {
+    width: 100%;
+    height: 6rem;
+    margin-right: -27px;
+    margin-left: -10px;
+  }
+  .footer-text {
+    margin-right: 20px;
+    font-size: 12px;
+  }
+  .gfg {
+    width: 100%;
+    height: 1.5rem;
+  }
+  .gdsc {
+    width: 100%;
+    height: 2.4rem;
+  }
+  .cc {
+    width: 100%;
+    height: 4.5rem;
+  }
+  footer img {
+    width: 100px;
+    margin: 0px 3px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .elixir {
+    width: 100%;
+    height: 5rem;
+    margin-right: -22px;
+    margin-left: -14px;
+  }
+  .gfg {
+    width: 100%;
+    height: 1.4rem;
+  }
+  .gdsc {
+    width: 100%;
+    height: 2rem;
+  }
+  .cc {
+    width: 100%;
+    height: 4rem;
+  }
+  footer img {
+    width: 100px;
+    margin: 0px 2px;
+  }
+  .footer-text {
+    margin-right: 12px;
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 473px) {
+  .elixir {
+    width: 100%;
+    height: 4.6rem;
+    margin-right: -22px;
+    margin-left: -15px;
+  }
+  .gfg {
+    width: 100%;
+    height: 1.2rem;
+  }
+  .gdsc {
+    width: 100%;
+    height: 1.8rem;
+  }
+  .cc {
+    width: 100%;
+    height: 3.7rem;
+  }
+  .footer-text {
+    margin-right: 8px;
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .elixir {
+    width: 100%;
+    height: 4.2rem;
+    margin-right: -22px;
+    margin-left: -12px;
+  }
+  .gfg {
+    width: 100%;
+    height: 1.2rem;
+  }
+  .gdsc {
+    width: 100%;
+    height: 1.6rem;
+  }
+  .cc {
+    width: 100%;
+    height: 3.3rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .elixir {
+    width: 100%;
+    height: 3.8rem;
+    margin-right: -20px;
+    margin-left: -10px;
+  }
+  .gfg {
+    width: 100%;
+    height: 1rem;
+  }
+  .gdsc {
+    width: 100%;
+    height: 1.5rem;
+  }
+  .cc {
+    width: 100%;
+    height: 3.1rem;
+  }
+  .footer-text {
+    margin-right: 8px;
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .elixir {
+    width: 100%;
+    height: 2.8rem;
+    margin-right: -12px;
+    margin-left: -6px;
+  }
+  .gfg {
+    width: 100%;
+    height: 0.8rem;
+  }
+  .gdsc {
+    width: 100%;
+    height: 1rem;
+  }
+  .cc {
+    width: 100%;
+    height: 2.2rem;
+  }
+  .footer-text {
+    margin-right: 8px;
+    font-size: 6px;
+  }
+}
+
+/* 
+@media screen and (max-width: 1260px) {
+  
+  .elixir {
+    width: 180px;
+    margin: 0px -40px 0px 10px;
+  }
+
+  .gfg {
+    width: 170px;
+  }
+
+  .gdsc {
+    width: 170px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .elixir {
+    width: 165px;
+    margin: 0px -40px 0px -15px;
+  }
+
+  .gfg {
+    width: 150px;
+    margin: 0px 8px 0px 8px;
+  }
+  .gdsc {
+    width: 160px;
+    margin: 0px 8px;
+  }
+  .cc {
+    width: 100px;
+    margin: 0px 8px;
+  }
+
+  .footer-text {
+    width: 23%;
+    font-size: 14px;
+  }
+
+  footer {
+    height: 17vh;
+    width: 100%;
+    margin-top: 23px;
+  }
+
+  .accordion {
+    padding: 45px 90px 45px 90px;
+    max-width: 875px;
+    margin: 0px 70px 0px 70px;
+  }
+}
+
+@media screen and (max-width: 994px) {
+  footer {
+    height: 19vh;
+    width: 100%;
+    margin-top: 0px;
+  }
+
+}
+
+ */

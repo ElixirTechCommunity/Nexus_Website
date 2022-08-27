@@ -18,3 +18,163 @@
 .pageHead {
   font-weight: 800;
 }
+
+/* Ishaan's Changes */
+
+@media screen and (max-width: 1260px) {
+  .pageHead {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .box-content-p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  #about-content div {
+    width: 90%;
+    margin-left: 15px;
+  }
+
+  #about-content img {
+    width: 20vw;
+    margin: auto;
+    margin: auto 30px auto 50px;
+  }
+  .box-content-p {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 875px) {
+  .box-content-p {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 28px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #about-content {
+    width: 90%;
+    flex-direction: column;
+  }
+  #about-content div {
+    margin: auto;
+    /* width: 90%; */
+    /* margin-left: 15px; */
+  }
+  #about-content img {
+    width: 20vw;
+    margin: auto;
+    margin: auto 30px auto 50px;
+    display: none;
+  }
+  .box-content-p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 36px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .pageHead {
+    text-align: left;
+    margin-bottom: 5px;
+  }
+  .box-content-p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 33px;
+  }
+  #about-content {
+    width: 90%;
+    flex-direction: column;
+    height: 35rem;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  #about-content {
+    width: 90%;
+    flex-direction: column;
+    height: 45rem;
+  }
+  .pageHead {
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  .box-content-p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 33px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .box-content-p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 30px;
+  }
+  .pageHead {
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 473px) {
+  .pageHead {
+    text-align: center;
+    margin-bottom: 6px;
+    font-size: 2rem;
+  }
+  .box-content-p {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .pageHead {
+    text-align: center;
+    margin-bottom: 6px;
+    font-size: 1.8rem;
+  }
+  .box-content-p {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 28px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .box-content-p {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 28px;
+  }
+  .pageHead {
+    text-align: center;
+    margin-bottom: 6px;
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .box-content-p {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 25px;
+  }
+  .pageHead {
+    text-align: center;
+    margin-bottom: 4px;
+    font-size: 1.7rem;
+  }
+}
