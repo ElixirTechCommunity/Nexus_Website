@@ -1,0 +1,39 @@
+/* global styles */
+
+.btn {
+  width: fit-content;
+  cursor: pointer;
+  padding: 20px 30px;
+  margin: 10px;
+  font-size: 1rem;
+  /* font-weight: bolder; */
+  letter-spacing: 3px;
+  background: none;
+  background-color: #7858a6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.section-head {
+  letter-spacing: 5px;
+  width: 100%;
+  font-size: 5rem;
+  font-family: var(--heading-font);
+}
+.container {
+  margin: 20px auto;
+  width: 90% !important;
+  border-radius: 10px;
+}
+.container:nth-child(even) {
+  background-color: var(--ternary-color);
+  color: white;
+}
+.social {
+  width: 70%;
+  font-size: 3rem;
+  margin-top: 3rem;
+}
+.social a {
+  margin-right: 3rem;
+}

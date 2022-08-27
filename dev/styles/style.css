@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Bebas+Neue&family=Ubuntu:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --primary-color: #371b58;
+  --secondary-color: #4c3575;
+  --ternary-color: #7858a6;
+  --font-color: #fff;
+  --font-color-dark: #000;
+  --primary-font: "Ubuntu", sans-serif;
+  --secondary-font: "Alumni Sans Pinstripe", sans-serif;
+  --heading-font: "Bebas Neue", cursive;
+}
+html {
+}
+body {
+  font-family: var(--primary-font);
+  width: 100vw;
+}
+a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+p {
+  width: 80%;
+  padding: 10px;
+  font-size: 20px;
+}

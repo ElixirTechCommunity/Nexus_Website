@@ -1,0 +1,56 @@
+/* homepage design */
+.homepage {
+  width: 100%;
+  height: calc(85vh - 50px);
+  background-image: linear-gradient(to right, #6441a5, #2a0845);
+}
+
+.logo-container {
+  width: 40%;
+  padding: 0px 100px;
+  color: var(--font-color);
+}
+.logo-container h1 {
+  font-size: 5rem;
+}
+.logo-container h3 {
+  font-size: 2rem;
+  margin: 30px 0px;
+}
+.logo-container p {
+  font-size: 1rem;
+  line-height: 2;
+  font-family: var(--primary-font);
+}
+.button-box {
+  margin-top: 20px;
+  width: 60%;
+}
+
+.calendar-container {
+  height: 100%;
+  width: 40vw;
+}
+.calendar {
+  position: relative;
+  left: 5%;
+  height: 50%;
+  width: 90%;
+  background-color: #fff;
+  border-radius: 10px;
+
+  overflow: hidden;
+}
+.cal-top {
+  width: 100%;
+  height: 15%;
+  background-color: var(--secondary-color);
+}
+.cal-mid {
+  width: 100%;
+  height: 70%;
+}
+.cal-bottom {
+  height: 15%;
+  width: 100%;
+}

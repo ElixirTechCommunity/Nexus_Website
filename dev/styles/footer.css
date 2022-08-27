@@ -1,0 +1,6 @@
+/* footer style */
+footer {
+  width: 100%;
+  background-color: var(--primary-color);
+  height: 8rem;
+}

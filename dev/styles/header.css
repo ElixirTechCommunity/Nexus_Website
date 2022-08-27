@@ -1,0 +1,26 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  width: calc(100vw - 20px);
+  padding: 10px;
+  height: 50px;
+  background-image: linear-gradient(to right, #6441a5, #2a0845);
+
+  color: white;
+  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.276); */
+  z-index: 10;
+}
+.navbar .list {
+  width: 80%;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.navbar .list .item {
+  margin: 0px 10px;
+}
+.nav-logo {
+  letter-spacing: 5px;
+  font-weight: bolder;
+  font-family: var(--secondary-font);
+  font-size: 2rem;
+}

@@ -1,0 +1,134 @@
+/* Theme page styles */
+.themePage {
+  padding: 2rem 0px;
+  min-height: 100vh;
+}
+.section-data {
+  width: 40%;
+  max-width: 650px;
+  display: flex;
+}
+.cards-wrapper {
+  width: 90vw;
+}
+.section-title {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 130%;
+  margin-bottom: 2rem;
+}
+.section-description {
+  font-size: 1.3rem;
+  width: 80%;
+  line-height: 140%;
+  margin-bottom: 2rem;
+}
+.cards-wrapper .btn {
+  padding: 0.6rem 2rem;
+  font-size: 1.2rem;
+  border: 1px solid orangered;
+  color: orangered;
+  border-radius: 40px;
+}
+.cards-wrapper .btn:hover {
+  background-color: orangered;
+  color: white;
+}
+/* .cards-wrapper {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  
+    row-gap: 2.5rem;
+    border: none;
+  } */
+.card {
+  border: none;
+  width: 360px;
+  height: 220px;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.12);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  margin: 10px 0px;
+}
+.card--data,
+.card-img-wrapper {
+  width: 50%;
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  justify-content: center;
+  z-index: 3;
+}
+.card--data {
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.card--months {
+  font-size: 0.9rem;
+  z-index: 2;
+}
+.card--title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  line-height: 130%;
+  z-index: 2;
+}
+.course-type {
+  color: orangered;
+}
+.card-img-wrapper img {
+  width: 100%;
+  z-index: 2;
+}
+.card-img-deco {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  z-index: 1;
+  right: -50px;
+  background-color: gold;
+  transition: all ease-in-out 0.35s;
+}
+.card:hover .card-img-deco {
+  width: 464px;
+  border-radius: unset;
+  height: 300px;
+}
+.deco-2 {
+  background-color: #227c9d;
+}
+.deco-3 {
+  background-color: #17c3b2;
+}
+.deco-4 {
+  background-color: #ffcb77;
+}
+.deco-5 {
+  background-color: #fe6d73;
+}
+
+.deco-6 {
+  background-color: green;
+}
+@media screen and (max-width: 1200px) {
+  .section-data {
+    margin-bottom: 4rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
