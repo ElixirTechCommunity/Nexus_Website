@@ -35,7 +35,6 @@
     <link rel="stylesheet" href="./styles/sponsor.css" />
     <link rel="stylesheet" href="./styles/contactForm.css" />
 
-
     <!-- meta tags -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -724,18 +723,26 @@
     <!-- ---------------------------------------------------------------------------- -->
 
     <!-- contact form -->
-    <section class="aboutPage container flex f-col f-space-eve">
+    <section class="contactPage container flex f-col f-space-eve f-wrap">
       <div>
         <h1>Contact Form</h1>
-    </div>
-    <div>
-        <form class="flex column" method="post" action="https://nexus-form-api.herokuapp.com/contact">
-            <input type="text" name="Name" placeholder="Name" required="">
-            <input type="text" name="Email" placeholder="Email" required="">
-            <textarea name="Message" id="" cols="30" rows="10" placeholder="Message" required=""></textarea>
-            <button class="btn gradient-text" type="submit">Submit</button>
+      </div>
+
+      <div>
+        <form class="flex f-col">
+          <input type="text" name="Name" placeholder="Name" required="" />
+          <input type="text" name="Email" placeholder="Email" required="" />
+          <textarea
+            name="Message"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Message"
+            required=""
+          ></textarea>
+          <button class="btn gradient-text" type="submit">Submit</button>
         </form>
-    </div>
+      </div>
     </section>
 
     <!-- contact form -->
@@ -758,5 +765,6 @@
     ></script>
     <!-- ---------------------------------------------------------------------------- -->
     <script src="./scripts/faq.js"></script>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
