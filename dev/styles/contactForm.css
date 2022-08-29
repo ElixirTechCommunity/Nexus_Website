@@ -1,0 +1,30 @@
+.contact {
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+.s-eve {
+    justify-content: space-evenly;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    flex-wrap: wrap;
+    overflow-x: hidden;
+}
+
+.contact h1 {
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+}
+
+.column {
+    flex-direction: column !important;
+}

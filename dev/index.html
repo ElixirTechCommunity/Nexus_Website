@@ -33,6 +33,8 @@
     <link rel="stylesheet" href="./styles/footer.css" />
     <link rel="stylesheet" href="./styles/team.css" />
     <link rel="stylesheet" href="./styles/sponsor.css" />
+    <link rel="stylesheet" href="./styles/contactForm.css" />
+
 
     <!-- meta tags -->
     <meta charset="UTF-8" />
@@ -723,13 +725,17 @@
 
     <!-- contact form -->
     <section class="aboutPage container flex f-col f-space-eve">
-      <div class="section-head flex">CONTACT</div>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe eum nisi
-        aperiam et, nostrum debitis quo voluptate, rerum repudiandae omnis harum
-        consequuntur sed aliquam, amet recusandae iusto molestias. Beatae,
-        eaque.
-      </p>
+      <div>
+        <h1>Contact Form</h1>
+    </div>
+    <div>
+        <form class="flex column" method="post" action="https://nexus-form-api.herokuapp.com/contact">
+            <input type="text" name="Name" placeholder="Name" required="">
+            <input type="text" name="Email" placeholder="Email" required="">
+            <textarea name="Message" id="" cols="30" rows="10" placeholder="Message" required=""></textarea>
+            <button class="btn gradient-text" type="submit">Submit</button>
+        </form>
+    </div>
     </section>
 
     <!-- contact form -->
