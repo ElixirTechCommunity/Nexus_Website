@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="./styles/footer.css" />
     <link rel="stylesheet" href="./styles/team.css" />
     <link rel="stylesheet" href="./styles/sponsor.css" />
+    <link rel="stylesheet" href="./styles/avatars.css"/>
     <link rel="stylesheet" href="./styles/contactForm.css" />
     <link rel="stylesheet" href="./styles/animation.css" />
 
@@ -711,12 +712,24 @@
     <!-- speakers -->
     <section class="aboutPage container flex f-col f-space-eve">
       <div class="section-head flex">SPEAKERS</div>
-      <p>
+      <!-- <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe eum nisi
         aperiam et, nostrum debitis quo voluptate, rerum repudiandae omnis harum
         consequuntur sed aliquam, amet recusandae iusto molestias. Beatae,
         eaque.
-      </p>
+      </p> -->
+      <div id="app">
+        <div class="img-wrapper">
+          <img
+            :ref="setImgRef"
+            v-for="(item, key) in imgList"
+            :key="`${key}_${Number(item.isLoaded)}`"
+            :src="item.isLoaded ? item.src : null"
+            :data-index="key"
+            :class="{ lazyload: item.isLoaded }"
+          />
+        </div>
+      </div>
     </section>
 
     <!-- SPEAKERS -->
@@ -724,12 +737,24 @@
     <!-- JUDGES -->
     <section class="aboutPage container flex f-col f-space-eve">
       <div class="section-head flex">JUDGES</div>
-      <p>
+      <!-- <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe eum nisi
         aperiam et, nostrum debitis quo voluptate, rerum repudiandae omnis harum
         consequuntur sed aliquam, amet recusandae iusto molestias. Beatae,
         eaque.
-      </p>
+      </p> -->
+      <div id="app2">
+        <div class="img-wrapper">
+          <img
+            :ref="setImgRef"
+            v-for="(item, key) in imgList"
+            :key="`${key}_${Number(item.isLoaded)}`"
+            :src="item.isLoaded ? item.src : null"
+            :data-index="key"
+            :class="{ lazyload: item.isLoaded }"
+          />
+        </div>
+      </div>
     </section>
 
     <!-- JUDGES -->
@@ -801,6 +826,8 @@
     <!-- ---------------------------------------------------------------------------- -->
     <script src="./scripts/faq.js"></script>
     <script src="./scripts/script.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./scripts/images.js"></script>
     <script defer src="./scripts/particles.js"></script>
     <script defer src="./scripts/particle-app.js"></script>
   </body>
