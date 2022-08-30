@@ -106,8 +106,25 @@
   border-radius: unset;
   height: 300px;
 }
+.card:hover .card--title {
+  color: white;
+}
+
+.deco-1 {
+  background-image: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--secondary-color),
+    var(--ternary-color)
+  );
+}
 .deco-2 {
-  background-color: #227c9d;
+  background-image: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--secondary-color),
+    var(--ternary-color)
+  );
 }
 .deco-3 {
   background-color: #17c3b2;
