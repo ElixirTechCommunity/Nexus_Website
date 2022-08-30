@@ -27,23 +27,73 @@
   position: relative;
   margin: 10px;
 }
-.card0 {
+.card1 {
   background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg")
     center center no-repeat;
   background-size: 300px;
 }
-.card0:hover {
+.card1:hover {
   background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg")
     left center no-repeat;
-  background-size: 600px;
+  background-size: 500px;
 }
-.card0:hover h2 {
+.card2 {
+  background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg")
+    center center no-repeat;
+  background-size: 300px;
+}
+.card2:hover {
+  background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg")
+    left center no-repeat;
+  background-size: 500px;
+}
+.card3 {
+  background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg")
+    center center no-repeat;
+  background-size: 300px;
+}
+.card3:hover {
+  background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg")
+    left center no-repeat;
+  background-size: 500px;
+}
+.card4 {
+  background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg")
+    center center no-repeat;
+  background-size: 300px;
+}
+.card4:hover {
+  background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg")
+    left center no-repeat;
+  background-size: 500px;
+}
+.card5 {
+  background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg")
+    center center no-repeat;
+  background-size: 300px;
+}
+.card5:hover {
+  background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg")
+    left center no-repeat;
+  background-size: 500px;
+}
+.card6 {
+  background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg")
+    center center no-repeat;
+  background-size: 300px;
+}
+.card6:hover {
+  background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg")
+    left center no-repeat;
+  background-size: 500px;
+}
+.cards:hover h2 {
   opacity: 1;
 }
-.card0:hover .fa {
+.cards:hover .fa {
   opacity: 1;
 }
-.card1 {
+/* .card1 {
   background: url("https://i.pinimg.com/originals/28/d2/e6/28d2e684e7859a0dd17fbd0cea00f8a9.jpg")
     center center no-repeat;
   background-size: 300px;
@@ -74,7 +124,7 @@
 }
 .card2:hover .fa {
   opacity: 1;
-}
+} */
 h2 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #fff;

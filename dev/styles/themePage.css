@@ -110,21 +110,8 @@
   color: white;
 }
 
-.deco-1 {
-  background-image: linear-gradient(
-    to right,
-    var(--primary-color),
-    var(--secondary-color),
-    var(--ternary-color)
-  );
-}
 .deco-2 {
-  background-image: linear-gradient(
-    to right,
-    var(--primary-color),
-    var(--secondary-color),
-    var(--ternary-color)
-  );
+  background-color: #227c9d;
 }
 .deco-3 {
   background-color: #17c3b2;
@@ -133,12 +120,22 @@
   background-color: #ffcb77;
 }
 .deco-5 {
-  background-color: #fe6d73;
+  background-image: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--secondary-color),
+    var(--ternary-color)
+  );
 }
 
 .deco-6 {
   background-color: green;
 }
+
+.theme {
+  color: var(--ternary-color);
+}
+
 @media screen and (max-width: 1200px) {
   .section-data {
     margin-bottom: 4rem;
