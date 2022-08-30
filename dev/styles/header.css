@@ -12,20 +12,28 @@
     var(--ternary-color)
   );
 }
-
+.offcanvas-body,
+.offcanvas-header {
+  background-color: var(--primary-color);
+}
+.btn-close {
+  background-color: var(--container-color);
+}
 .navbar .list {
+  height: 100%;
   /* width: 20%; */
-  justify-content: flex-end;
-  align-items: flex-end;
+  /* justify-content: flex-end; */
+  /* align-items: flex-end; */
 }
 .navbar .list .item {
   position: relative;
   cursor: pointer;
-  margin: 0px 10px;
-  font-family: var(--secondary-font);
-  font-size: 20px;
+  margin: 14px 10px;
+  font-family: var(--primary-font);
+  font-size: 1.5rem;
   letter-spacing: 2px;
-  font-weight: bolder;
+  color: var(--font-color);
+  /* font-weight: bolder; */
 }
 .navbar .list .item::after {
   content: "";
