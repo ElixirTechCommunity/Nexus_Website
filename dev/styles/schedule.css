@@ -1,5 +1,6 @@
 .schedule-box {
   width: 40%;
+  min-height: 100vh;
 }
 .schedule-box img {
   width: 100%;
@@ -8,8 +9,8 @@
   width: 70%;
 }
 .calendar-container {
-  height: 50rem;
-  width: 40rem;
+  height: 40rem;
+  width: 30rem;
 }
 .calendar {
   height: 50%;
@@ -71,8 +72,8 @@
   background-color: rgba(255, 255, 255, 0.227);
 }
 .dot {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   background-color: var(--primary-color);
   opacity: 0.5;
   position: absolute;
@@ -83,6 +84,7 @@
   margin: 30px auto;
   padding: 10px;
   font-size: 20px;
+  /* height: 0%; */
 }
 @media screen and (max-width: 800px) {
   .schedule-box {
