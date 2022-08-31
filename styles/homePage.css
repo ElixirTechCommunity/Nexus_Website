@@ -1,0 +1,92 @@
+/**
+Do not modify this file
+Home page final css file
+**/
+
+/* homepage design */
+.homepage {
+  position: relative;
+  width: 100%;
+  height: calc(100vh);
+  background-image: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--secondary-color),
+    var(--ternary-color)
+  );
+  overflow: hidden;
+  padding-top: 80px;
+}
+.logo-container {
+  position: relative;
+  top: 10px;
+}
+.home-image-box {
+  position: relative;
+  top: 17px;
+  width: 50%;
+  height: 100%;
+  z-index: 100;
+}
+.home-image {
+  width: 40%;
+  position: relative;
+  bottom: 2rem;
+  z-index: 15;
+}
+.home-image img {
+  width: 100%;
+  object-fit: cover;
+  z-index: 10;
+}
+.home-heading {
+  letter-spacing: 1rem;
+  font-family: var(--heading-font);
+  font-size: 10rem;
+  color: white;
+  font-weight: bolder;
+}
+.homepage h3 {
+  color: rgba(255, 255, 255, 0.483);
+  font-size: 40px;
+  font-family: var(--primary-font);
+}
+.landing-page-bg-logo {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  opacity: 0.05;
+  z-index: 5;
+  filter: blur(5px);
+}
+@media screen and (max-width: 800px) {
+  .logo-container {
+    width: 100%;
+  }
+  .home-image {
+    width: 80%;
+  }
+  .home-image img {
+    width: 60%;
+    /* margin: auto; */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .logo-container {
+    width: 100%;
+  }
+  .home-heading {
+    font-size: 6rem;
+  }
+  .homepage h3 {
+    font-size: 2rem;
+  }
+  .home-image {
+    width: 100%;
+  }
+  .home-image img {
+    width: 100%;
+    /* margin: auto; */
+  }
+}

@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+.faqPage {
+  min-height: 90vh;
+}
+.accordion {
+  display: flex;
+  font-family: Poppins !important;
+  max-width: 1010px;
+  width: 100%;
+  border-radius: 5px;
+  background-image: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--secondary-color),
+    var(--ternary-color)
+  ) !important;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 25px;
+  height: 100%;
+  padding: 25px 90px 25px 60px;
+}
+.accordion .image-box {
+  height: 360px;
+  width: 300px;
+}
+.accordion .image-box img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.accordion .accordion-text {
+  width: 100%;
+}
+.accordion .accordion-text .title {
+  font-size: 35px;
+  font-weight: 600;
+  color: white;
+  font-family: "Fira Sans", sans-serif;
+}
+.accordion .accordion-text .faq-text {
+  margin-top: 25px;
+  height: 353px;
+  overflow-y: auto;
+}
+.faq-text::-webkit-scrollbar {
+  display: none;
+}
+.accordion .accordion-text li {
+  list-style: none;
+  cursor: pointer;
+}
+.accordion-text li .question-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.accordion-text li .question-arrow .question {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+.accordion-text li p {
+  color: rgba(24, 255, 101, 0.874) !important;
+  font-size: 16px;
+  text-align: justify;
+  letter-spacing: 1px;
+}
+
+.accordion-text li .question-arrow .arrow {
+  font-size: 20px;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.accordion-text li.showAnswer .question-arrow .arrow {
+  transform: rotate(-180deg);
+}
+.accordion-text li:hover .question-arrow .question,
+.accordion-text li:hover .question-arrow .arrow {
+  scale: 0.98;
+}
+.accordion-text li .line {
+  display: block;
+  height: 2px;
+  width: 100%;
+  margin: 10px 0;
+  background: rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 820px) {
+  .accordion {
+    flex-direction: column;
+  }
+  .accordion .image-box {
+    height: 360px;
+    width: 300px;
+    width: 100%;
+    border-radius: 25px;
+    padding: 30px;
+  }
+  .accordion .faq-right {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 538px) {
+  .accordion {
+    padding: 25px;
+  }
+  .accordion-text li p {
+    width: 98%;
+  }
+}
+
+::selection {
+  color: #fff;
+}
+
+.faq-right {
+  width: 60%;
+}
+
+.bottom-info {
+  font-size: 13px;
+  margin: auto;
+  color: white;
+  letter-spacing: 1px;
+}

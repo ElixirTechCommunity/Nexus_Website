@@ -4,7 +4,7 @@ particlesJS(
   {
     particles: {
       number: {
-        value: 80,
+        value: 160,
         density: {
           enable: true,
           value_area: 800,
@@ -29,27 +29,27 @@ particlesJS(
         },
       },
       opacity: {
-        value: 0.5,
-        random: false,
+        value: 0.48102361825965684,
+        random: true,
         anim: {
-          enable: false,
+          enable: true,
           speed: 1,
-          opacity_min: 0.1,
+          opacity_min: 0,
           sync: false,
         },
       },
       size: {
-        value: 5,
+        value: 3,
         random: true,
         anim: {
           enable: false,
-          speed: 40,
-          size_min: 0.1,
+          speed: 4,
+          size_min: 0.3,
           sync: false,
         },
       },
       line_linked: {
-        enable: true,
+        enable: false,
         distance: 150,
         color: "#ffffff",
         opacity: 0.4,
@@ -57,15 +57,16 @@ particlesJS(
       },
       move: {
         enable: true,
-        speed: 6,
+        speed: 1,
         direction: "none",
-        random: false,
+        random: true,
         straight: false,
         out_mode: "out",
+        bounce: false,
         attract: {
           enable: false,
           rotateX: 600,
-          rotateY: 1200,
+          rotateY: 600,
         },
       },
     },
@@ -74,11 +75,11 @@ particlesJS(
       events: {
         onhover: {
           enable: true,
-          mode: "repulse",
+          mode: "bubble",
         },
         onclick: {
           enable: true,
-          mode: "push",
+          mode: "repulse",
         },
         resize: true,
       },
@@ -90,14 +91,15 @@ particlesJS(
           },
         },
         bubble: {
-          distance: 400,
-          size: 40,
+          distance: 250,
+          size: 0,
           duration: 2,
-          opacity: 8,
+          opacity: 0,
           speed: 3,
         },
         repulse: {
-          distance: 200,
+          distance: 203.00776301685792,
+          duration: 0.4,
         },
         push: {
           particles_nb: 4,
@@ -108,13 +110,5 @@ particlesJS(
       },
     },
     retina_detect: true,
-    config_demo: {
-      hide_card: false,
-      background_color: "#b61924",
-      background_image: "",
-      background_position: "50% 50%",
-      background_repeat: "no-repeat",
-      background_size: "cover",
-    },
   }
 );

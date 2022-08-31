@@ -1,0 +1,27 @@
+/* utils classes */
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.f-col {
+  flex-direction: column;
+}
+.f-justify-start {
+  align-items: flex-start;
+}
+.f-align-start {
+  align-items: flex-start;
+}
+.f-space-btw {
+  justify-content: space-between;
+}
+.f-space-eve {
+  justify-content: space-evenly;
+}
+.f-wrap {
+  flex-wrap: wrap;
+}
+/* utils classes */

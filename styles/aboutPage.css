@@ -1,0 +1,45 @@
+/* about page */
+.aboutPage {
+  /* background-color: aqua; */
+  min-height: 90vh;
+}
+.about-box {
+  width: 35%;
+  /* background-color: azure; */
+}
+.about-image {
+  width: 100%;
+}
+.about-box-right {
+  position: relative;
+  /* bottom: 5rem; */
+  font-size: 20px;
+  width: 65%;
+  line-height: 1.5;
+  font-family: var(--primary-font);
+  padding: 0px !important;
+  /* background-color: aquamarine; */
+}
+.about-box-right p {
+  width: 90%;
+}
+@media screen and (max-width: 1232px) {
+  .about-box {
+    width: 50%;
+  }
+  .about-box-right {
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 977px) {
+  .about-box {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .about-box {
+    width: 100%;
+  }
+}

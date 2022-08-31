@@ -1,7 +1,7 @@
 var fs = require("fs");
 const path = require("path");
-const dirs = ["/scripts", "/stylesheets"];
-const build_dirs = ["/builds/script.js", "/builds/style.css"];
+const dirs = ["/scripts", "/styles"];
+const build_dirs = ["/build/script.js", "/build/style.css"];
 
 build_dirs.forEach((dir) => {
   fs.writeFileSync(path.join(__dirname, dir), "");

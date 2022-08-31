@@ -1,0 +1,67 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+}
+.nav-bg {
+  background-image: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--secondary-color),
+    var(--ternary-color)
+  );
+}
+.offcanvas-body,
+.offcanvas-header {
+  background-color: var(--primary-color);
+}
+.btn-close {
+  background-color: var(--container-color);
+}
+.navbar .list {
+  height: 100%;
+  /* width: 20%; */
+  /* justify-content: flex-end; */
+  /* align-items: flex-end; */
+}
+.navbar .list .item {
+  position: relative;
+  cursor: pointer;
+  margin: 14px 10px;
+  font-family: var(--primary-font);
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  color: var(--font-color);
+  /* font-weight: bolder; */
+}
+.navbar .list .item::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--secondary-color);
+  transition: 0.2s;
+}
+.navbar .list .item:hover::after {
+  width: 100%;
+}
+.nav-logo {
+  position: relative;
+  left: 20px;
+  height: 100%;
+  letter-spacing: 5px;
+  font-weight: bolder;
+  font-family: var(--secondary-font);
+  font-size: 2rem;
+}
+.nav-logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.navbar .btn {
+  padding: 5px 10px;
+}

@@ -1,0 +1,134 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* global styles */
+
+.custom-btn {
+  min-width: 200px;
+  /* width: 1000px !important; */
+  padding: 10px 20px !important;
+  font-size: 17px !important;
+  color: #fff;
+  border-radius: 5px;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+}
+
+/* 11 */
+.btn-11 {
+  border: 1px solid rgba(255, 255, 255, 0.271);
+
+  background: var(--secondary-color);
+  background: linear-gradient(
+    0deg,
+    var(--secondary-color) 0,
+    var(--ternary-color) 100%
+  );
+  color: #fff;
+  overflow: hidden;
+}
+.btn-11:hover {
+  text-decoration: none;
+  color: #fff;
+}
+.btn-11:before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  top: -180px;
+  left: 0;
+  width: 30px;
+  height: 100%;
+  background-color: #fff;
+  animation: shiny-btn1 3s ease-in-out infinite;
+}
+.btn-11:hover {
+  opacity: 0.7;
+}
+.btn-11:active {
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.3),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+@-webkit-keyframes shiny-btn1 {
+  0% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0;
+  }
+  80% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0.5;
+  }
+  81% {
+    -webkit-transform: scale(4) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(50) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+/*  */
+
+.btn {
+  width: fit-content;
+  cursor: pointer;
+  padding: 20px 30px;
+  margin: 10px;
+  font-size: 1rem;
+  /* font-weight: bolder; */
+  letter-spacing: 3px;
+  background: none;
+  background-color: var(--ternary-color);
+  color: white;
+  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.201);
+  border-radius: 5px;
+}
+.section-head {
+  letter-spacing: 5px;
+  width: 100%;
+  font-size: 6rem;
+  font-family: var(--heading-font);
+}
+.container {
+  margin: 20px auto;
+  width: 95%;
+  border-radius: 10px;
+}
+.container:nth-child(even) {
+  background-image: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--secondary-color),
+    var(--ternary-color)
+  );
+  color: white;
+}
+.social {
+  width: 70%;
+  font-size: 3rem;
+  margin-top: 3rem;
+}
+.social a {
+  margin-right: 3rem;
+}
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    border-radius: 0px;
+  }
+  .section-head {
+    font-size: 5rem;
+  }
+}
