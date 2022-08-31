@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="./styles/footer.css" />
     <link rel="stylesheet" href="./styles/team.css" />
     <link rel="stylesheet" href="./styles/sponsor.css" />
+    <link rel="stylesheet" href="./styles/avatars.css" />
     <link rel="stylesheet" href="./styles/contactForm.css" />
     <link rel="stylesheet" href="./styles/animation.css" />
 
@@ -47,7 +48,7 @@
   <body>
     <!-- ---------------------------------------------------------------------------- -->
     <!-- NAVBAR -->
-    <nav class="navbar flex f-space-btw">
+    <nav class="navbar flex f-space-btw" id="navbar">
       <a href="/">
         <div class="nav-logo flex">
           <!-- <img src="./assets/favicon.svg" alt="" /> -->
@@ -83,7 +84,7 @@
           ></button>
         </div>
         <div class="offcanvas-body">
-          <div class="list flex f-col">
+          <div class="list flex f-col f-justify-start">
             <div class="item">ABOUT</div>
             <div class="item">SCHEDULE</div>
             <div class="item">THEMES</div>
@@ -102,9 +103,15 @@
     <!-- ---------------------------------------------------------------------------- -->
     <!-- LANDING PAGES -->
     <section class="homepage flex f-col" id="particles-js">
+      <img
+        src="./assets/logo.png"
+        class="landing-page-bg-logo spin"
+        alt=""
+        srcset=""
+      />
       <div class="logo-container flex f-col">
         <h1 class="home-heading">NEXUS</h1>
-        <h3>What the hack</h3>
+        <h3>WHAT THE HACK!</h3>
       </div>
       <div class="home-image float flex">
         <img src="./assets/one.png" alt="" />
@@ -606,73 +613,220 @@
     <!-- ---------------------------------------------------------------------------- -->
     <!-- faqs -->
     <section class="faqPage container flex f-col f-space-eve">
-      <div class="section-head flex">FAQS</div>
       <div class="accordion">
         <div class="image-box float">
           <img src="./assets/faq.png" alt="" />
         </div>
-        <div class="accordion-text">
-          <div class="title">FAQ</div>
-          <ul class="faq-text">
-            <li>
-              <div class="question-arrow">
-                <span class="question">What do you mean by HTML & CSS?</span>
-                <i class="bx bxs-chevron-down arrow"></i>
-              </div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Nostrum, doloribus.
-              </p>
-              <span class="line"></span>
-            </li>
-            <li>
-              <div class="question-arrow">
-                <span class="question">What do you mean by JavaScript?</span>
-                <i class="bx bxs-chevron-down arrow"></i>
-              </div>
-              <p>
-                JavaScript is a text-based programming language used both on the
-                client-side and server-side that allows you to make web pages
-                interactive
-              </p>
-              <span class="line"></span>
-            </li>
-            <li>
-              <div class="question-arrow">
-                <span class="question">From where you learned HTML & CSS?</span>
-                <i class="bx bxs-chevron-down arrow"></i>
-              </div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non,
-                necessitatibus.
-              </p>
-              <span class="line"></span>
-            </li>
-            <li>
-              <div class="question-arrow">
-                <span class="question">Which code editor do you use?</span>
-                <i class="bx bxs-chevron-down arrow"></i>
-              </div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum,
-                labore.
-              </p>
-              <span class="line"></span>
-            </li>
-            <li>
-              <div class="question-arrow">
-                <span class="question"
-                  >Software you use for video editing?</span
+        <div class="faq-right text-center">
+          <div class="accordion-text" id="accordion-box">
+            <div class="title">FAQ</div>
+            <ul class="faq-text" id="accordioFlushExample">
+              <li>
+                <div
+                  class="question-arrow"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseOne"
                 >
-                <i class="bx bxs-chevron-down arrow"></i>
-              </div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe,
-                repudiandae!
-              </p>
-              <span class="line"></span>
-            </li>
-          </ul>
+                  <span class="question"
+                    >Who can participate in the Hackathon?</span
+                  >
+                  <i class="bx bxs-chevron-down arrow"></i>
+                </div>
+                <p
+                  id="flush-collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingOne"
+                >
+                  Nexus is open to all undergraduates around the region. There
+                  are no prerequisites for the participants. Anyone with an
+                  inquisitive mind can participate
+                </p>
+                <span class="line"></span>
+              </li>
+              <li>
+                <div
+                  class="question-arrow"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTwo"
+                >
+                  <span class="question"
+                    >What is the registration Procedure?</span
+                  >
+                  <i class="bx bxs-chevron-down arrow"></i>
+                </div>
+                <p
+                  id="flush-collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingTwo"
+                >
+                  Registrations will take place at Devfolio. One has to fill out
+                  a form to register for the event.
+                </p>
+                <span class="line"></span>
+              </li>
+              <li>
+                <div
+                  class="question-arrow"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseThree"
+                >
+                  <span class="question">Is there any Registration fee ?</span>
+                  <i class="bx bxs-chevron-down arrow"></i>
+                </div>
+                <p
+                  id="flush-collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingTh#flush-collapseThree"
+                >
+                  It will cost nothing but your time and efforts.
+                </p>
+                <span class="line"></span>
+              </li>
+              <li>
+                <div
+                  class="question-arrow"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseFour"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseFour"
+                >
+                  <span class="question"
+                    >By whom and when will we be given the problem
+                    statements?</span
+                  >
+                  <i class="bx bxs-chevron-down arrow"></i>
+                </div>
+                <p
+                  id="flush-collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingFour"
+                >
+                  The problem statements will be provided during the Orientation
+                  Session by the speakers of the event.
+                </p>
+                <span class="line"></span>
+              </li>
+              <li>
+                <div
+                  class="question-arrow"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseFive"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseFive"
+                >
+                  <span class="question"
+                    >What is the team size for the hackathon?</span
+                  >
+                  <i class="bx bxs-chevron-down arrow"></i>
+                </div>
+                <p
+                  id="flush-collapseFive"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingFive"
+                >
+                  Teams need to have 3 to 5 members when submitting a project.
+                </p>
+                <span class="line"></span>
+              </li>
+              <li>
+                <div
+                  class="question-arrow"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseSix"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseSix"
+                >
+                  <span class="question"
+                    >Do I will have rights of my own code?</span
+                  >
+                  <i class="bx bxs-chevron-down arrow"></i>
+                </div>
+                <p
+                  id="flush-collapseSix"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingSix"
+                >
+                  Definitely! You do not transfer any of your ownership rights
+                  when you submit the code. It is just used for evaluation and
+                  award purposes.
+                </p>
+                <span class="line"></span>
+              </li>
+              <li>
+                <div
+                  class="question-arrow"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseSeven"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseSeven"
+                >
+                  <span class="question"
+                    >Will there be certificates/goodies provided to the
+                    participants?</span
+                  >
+                  <i class="bx bxs-chevron-down arrow"></i>
+                </div>
+                <p
+                  id="flush-collapseSeven"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingSeven"
+                >
+                  Yes, participation certificates and goodies will be rewarded
+                  to all the participants.
+                </p>
+                <span class="line"></span>
+              </li>
+              <li>
+                <div
+                  class="question-arrow"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseEight"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseEight"
+                >
+                  <span class="question">How can we get updates?</span>
+                  <i class="bx bxs-chevron-down arrow"></i>
+                </div>
+                <p
+                  id="flush-collapseEight"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingEight"
+                >
+                  For updates, you can visit our social media platforms. Links
+                  to them are provided here itself.
+                </p>
+                <span class="line"></span>
+              </li>
+              <li>
+                <div
+                  class="question-arrow"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseNine"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseNine"
+                >
+                  <span class="question">Will there be food arrangements?</span>
+                  <i class="bx bxs-chevron-down arrow"></i>
+                </div>
+                <p
+                  id="flush-collapseNine"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingNine"
+                >
+                  Yes, there will be proper meals provided.
+                </p>
+                <span class="line"></span>
+              </li>
+            </ul>
+          </div>
+
+          <p class="bottom-info">scroll over to view more.</p>
         </div>
       </div>
     </section>
@@ -681,12 +835,24 @@
     <!-- speakers -->
     <section class="aboutPage container flex f-col f-space-eve">
       <div class="section-head flex">SPEAKERS</div>
-      <p>
+      <!-- <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe eum nisi
         aperiam et, nostrum debitis quo voluptate, rerum repudiandae omnis harum
         consequuntur sed aliquam, amet recusandae iusto molestias. Beatae,
         eaque.
-      </p>
+      </p> -->
+      <div id="app">
+        <div class="img-wrapper">
+          <img
+            :ref="setImgRef"
+            v-for="(item, key) in imgList"
+            :key="`${key}_${Number(item.isLoaded)}`"
+            :src="item.isLoaded ? item.src : null"
+            :data-index="key"
+            :class="{ lazyload: item.isLoaded }"
+          />
+        </div>
+      </div>
     </section>
 
     <!-- SPEAKERS -->
@@ -694,12 +860,24 @@
     <!-- JUDGES -->
     <section class="aboutPage container flex f-col f-space-eve">
       <div class="section-head flex">JUDGES</div>
-      <p>
+      <!-- <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe eum nisi
         aperiam et, nostrum debitis quo voluptate, rerum repudiandae omnis harum
         consequuntur sed aliquam, amet recusandae iusto molestias. Beatae,
         eaque.
-      </p>
+      </p> -->
+      <div id="app2">
+        <div class="img-wrapper">
+          <img
+            :ref="setImgRef"
+            v-for="(item, key) in imgList"
+            :key="`${key}_${Number(item.isLoaded)}`"
+            :src="item.isLoaded ? item.src : null"
+            :data-index="key"
+            :class="{ lazyload: item.isLoaded }"
+          />
+        </div>
+      </div>
     </section>
 
     <!-- JUDGES -->
@@ -709,11 +887,13 @@
     <!-- contact form -->
     <section class="contactPage container flex f-col f-space-eve f-wrap">
       <div class="section-head flex">Contact Form</div>
-      <div class="flex f-space-btw f-wrap">
-        <div class="flex">
+      <div class="row flex-wrap" id="contact-box">
+        <div class="flex col-12 mx-auto col-lg-4">
           <img class="contact-image float" src="./assets/contact.png" />
         </div>
-        <div class="contact-form-wrapper flex f-col">
+        <div
+          class="col-8 justify-content-center contact-form-wrapper flex f-col"
+        >
           <form action="#" class="contact-form">
             <div>
               <input
@@ -772,6 +952,9 @@
     <script src="./scripts/themes.js"></script>
     <script src="./scripts/faq.js"></script>
     <script src="./scripts/script.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./scripts/images.js"></script>
+    <script src="./scripts/faq.js"></script>
     <script defer src="./scripts/particles.js"></script>
     <script defer src="./scripts/particle-app.js"></script>
   </body>

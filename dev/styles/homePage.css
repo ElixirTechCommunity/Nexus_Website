@@ -5,8 +5,9 @@ Home page final css file
 
 /* homepage design */
 .homepage {
+  position: relative;
   width: 100%;
-  height: calc(100vh - 50px);
+  height: calc(100vh);
   background-image: linear-gradient(
     to right,
     var(--primary-color),
@@ -14,6 +15,7 @@ Home page final css file
     var(--ternary-color)
   );
   overflow: hidden;
+  padding-top: 80px;
 }
 .logo-container {
   position: relative;
@@ -48,6 +50,14 @@ Home page final css file
   color: rgba(255, 255, 255, 0.483);
   font-size: 40px;
   font-family: var(--primary-font);
+}
+.landing-page-bg-logo {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  opacity: 0.05;
+  z-index: 5;
+  filter: blur(5px);
 }
 @media screen and (max-width: 800px) {
   .logo-container {

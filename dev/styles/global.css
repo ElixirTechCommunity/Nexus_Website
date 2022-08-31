@@ -103,11 +103,16 @@
 }
 .container {
   margin: 20px auto;
-  width: 90%;
+  width: 95%;
   border-radius: 10px;
 }
 .container:nth-child(even) {
-  background-color: var(--container-color);
+  background-image: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--secondary-color),
+    var(--ternary-color)
+  );
   color: white;
 }
 .social {

@@ -1,10 +1,11 @@
 /* about page */
 .aboutPage {
-  width: 100%;
+  /* background-color: aqua; */
   min-height: 90vh;
 }
 .about-box {
   width: 35%;
+  /* background-color: azure; */
 }
 .about-image {
   width: 100%;
@@ -16,9 +17,12 @@
   width: 65%;
   line-height: 1.5;
   font-family: var(--primary-font);
-  padding: 0;
+  padding: 0px !important;
+  /* background-color: aquamarine; */
 }
-
+.about-box-right p {
+  width: 90%;
+}
 @media screen and (max-width: 1232px) {
   .about-box {
     width: 50%;
