@@ -35,7 +35,7 @@ Home page final css file
   z-index: 15;
 }
 .home-image img {
-  width: 100%;
+  width: 80%;
   object-fit: cover;
   z-index: 10;
 }
