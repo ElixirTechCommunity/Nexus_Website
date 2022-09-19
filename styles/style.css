@@ -24,16 +24,20 @@ body {
   font-family: var(--primary-font);
   width: 100vw;
 }
-a {
-  text-decoration: none;
-  color: var(--font-color);
-}
+
 p {
   width: 80%;
   padding: 10px;
   font-size: 20px;
 }
-
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none !important;
+  cursor: pointer !important;
+  color: var(--font-color);
+}
 /*  */
 /* Particle Js Custom CSS */
 .particles-js-canvas-el {

@@ -28,6 +28,8 @@
   <body>
     <!-- ---------------------------------------------------------------------------- -->
     <!-- NAVBAR -->
+    <!-- ---------------------------------------------------------------------------- -->
+    <!-- NAVBAR -->
     <nav class="navbar flex f-space-btw" id="navbar">
       <a href="/">
         <div class="nav-logo flex">
@@ -69,7 +71,7 @@
             <div class="item">SCHEDULE</div>
             <div class="item">THEMES</div>
             <div class="item">SPONSORS</div>
-            <div class="item">TEAM</div>
+            <div class="item"><a href="./team.html">TEAM</a></div>
             <div class="item">PRIZE</div>
             <div class="item">FAQS</div>
             <div class="item">SPEAKERS</div>
@@ -131,7 +133,7 @@
       <div class="calendar-container schedule-box-right flex f-col">
         <div class="section-head flex">SCHEDULE</div>
         <div class="calendar">
-          <div class="cal-top flex">OCTOBER</div>
+          <div class="cal-top flex">NOVEMBER</div>
           <div class="cal-weekday">
             <div class="cla-week-row flex f-space-btw">
               <span class="date flex">SUN</span>
@@ -145,64 +147,55 @@
           </div>
           <div class="cal-mid flex f-col f-space-eve">
             <div class="cla-mid-row flex f-space-btw">
-              <span class="date flex fade">25</span>
-              <span class="date flex fade">26</span>
-              <span class="date flex fade">27</span>
-              <span class="date flex fade">28</span>
-              <span class="date flex fade">29</span>
               <span class="date flex fade">30</span>
+              <span class="date flex fade">31</span>
               <span class="date flex">1</span>
-            </div>
-            <div class="cla-mid-row flex f-space-btw">
               <span class="date flex">2</span>
               <span class="date flex">3</span>
               <span class="date flex">4</span>
               <span class="date flex">5</span>
+            </div>
+            <div class="cla-mid-row flex f-space-btw">
               <span class="date flex">6</span>
               <span class="date flex">7</span>
               <span class="date flex">8</span>
-            </div>
-            <div class="cla-mid-row flex f-space-btw">
               <span class="date flex">9</span>
               <span class="date flex">10</span>
               <span class="date flex">11</span>
               <span class="date flex">12</span>
+            </div>
+            <div class="cla-mid-row flex f-space-btw">
               <span class="date flex">13</span>
+              <span class="date flex">14</span>
+              <span class="date flex">15</span>
+              <span class="date flex">16</span>
+              <span class="date flex">17</span>
               <span class="date flex"
-                >14
+                >18
                 <div class="dot"></div>
               </span>
               <span class="date flex"
-                >15
+                >19
                 <div class="dot"></div>
               </span>
             </div>
             <div class="cla-mid-row flex f-space-btw">
-              <span class="date flex">16</span>
-              <span class="date flex">17</span>
-              <span class="date flex">18</span>
-              <span class="date flex">19</span>
               <span class="date flex">20</span>
               <span class="date flex">21</span>
               <span class="date flex">22</span>
-            </div>
-            <div class="cla-mid-row flex f-space-btw">
               <span class="date flex">23</span>
               <span class="date flex">24</span>
               <span class="date flex">25</span>
               <span class="date flex">26</span>
+            </div>
+            <div class="cla-mid-row flex f-space-btw">
               <span class="date flex">27</span>
               <span class="date flex">28</span>
               <span class="date flex">29</span>
-            </div>
-            <div class="cla-mid-row flex f-space-btw">
               <span class="date flex">30</span>
-              <span class="date flex">31</span>
               <span class="date flex fade">1</span>
               <span class="date flex fade">2</span>
               <span class="date flex fade">3</span>
-              <span class="date flex fade">4</span>
-              <span class="date flex fade">5</span>
             </div>
           </div>
         </div>
@@ -361,6 +354,109 @@
       </div>
     </section>
 
+    <!-- ---------------------------------------------------------------------------- -->
+    <!-- ------------------------------------------------------------------------ -->
+    <!-- PRIZES -->
+    <section class="aboutPage container flex f-col f-space-eve">
+      <div class="section-head flex f-col">
+        PRIZE
+        <h3><i class="fa-solid fa-lock"></i> &nbsp; Revealing Soon</h3>
+      </div>
+    </section>
+    <!-- ---------------------------------------------------------------------------- -->
+    <!-- speakers -->
+    <section class="aboutPage container flex f-col f-space-eve">
+      <div class="section-head flex f-col">
+        SPEAKERS
+        <h3><i class="fa-solid fa-lock"></i> &nbsp; Revealing Soon</h3>
+      </div>
+      <div id="app">
+        <div class="img-wrapper">
+          <img
+            :ref="setImgRef"
+            v-for="(item, key) in imgList"
+            :key="`${key}_${Number(item.isLoaded)}`"
+            :src="item.isLoaded ? item.src : null"
+            :data-index="key"
+            :class="{ lazyload: item.isLoaded }"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- SPEAKERS -->
+    <!-- ---------------------------------------------------------------------------- -->
+    <!-- JUDGES -->
+    <section class="aboutPage container flex f-col f-space-eve">
+      <div class="section-head flex f-col">
+        JUDGES
+        <h3><i class="fa-solid fa-lock"></i> &nbsp; Revealing Soon</h3>
+      </div>
+      <div id="app2">
+        <div class="img-wrapper">
+          <img
+            :ref="setImgRef"
+            v-for="(item, key) in imgList"
+            :key="`${key}_${Number(item.isLoaded)}`"
+            :src="item.isLoaded ? item.src : null"
+            :data-index="key"
+            :class="{ lazyload: item.isLoaded }"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- JUDGES -->
+
+    <!-- ---------------------------------------------------------------------------- -->
+
+    <!-- contact form -->
+    <section class="contactPage container flex f-col f-space-eve f-wrap">
+      <div class="section-head flex">Contact Form</div>
+      <div class="row flex-wrap" id="contact-box">
+        <div class="flex col-12 mx-auto col-lg-4">
+          <img class="contact-image float" src="./assets/contact.png" />
+        </div>
+        <div
+          class="col-8 justify-content-center contact-form-wrapper flex f-col"
+        >
+          <form action="#" class="contact-form">
+            <div>
+              <input
+                type="text"
+                class="form-control rounded border-white mb-3 form-input"
+                id="name"
+                placeholder="Name"
+                required
+              />
+            </div>
+            <div>
+              <input
+                type="email"
+                class="form-control rounded border-white mb-3 form-input"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <div>
+              <textarea
+                id="message"
+                class="form-control rounded border-white mb-3 form-text-area"
+                rows="5"
+                cols="30"
+                placeholder="Message"
+                required
+              ></textarea>
+            </div>
+            <div class="submit-button-wrapper">
+              <input type="submit" value="Send" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact form -->
     <!-- ---------------------------------------------------------------------------- -->
     <!-- faqs -->
     <section class="faqPage container flex f-col f-space-eve">
@@ -551,7 +647,7 @@
                 </p>
                 <span class="line"></span>
               </li>
-              <li class="">
+              <li>
                 <div
                   class="question-arrow w-100 accordion-button collapsed"
                   data-bs-toggle="collapse"
@@ -579,108 +675,6 @@
         </div>
       </div>
     </section>
-
-    <!-- ---------------------------------------------------------------------------- -->
-    <!-- speakers -->
-    <section class="aboutPage container flex f-col f-space-eve">
-      <div class="section-head flex">SPEAKERS</div>
-      <!-- <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe eum nisi
-        aperiam et, nostrum debitis quo voluptate, rerum repudiandae omnis harum
-        consequuntur sed aliquam, amet recusandae iusto molestias. Beatae,
-        eaque.
-      </p> -->
-      <div id="app">
-        <div class="img-wrapper">
-          <img
-            :ref="setImgRef"
-            v-for="(item, key) in imgList"
-            :key="`${key}_${Number(item.isLoaded)}`"
-            :src="item.isLoaded ? item.src : null"
-            :data-index="key"
-            :class="{ lazyload: item.isLoaded }"
-          />
-        </div>
-      </div>
-    </section>
-
-    <!-- SPEAKERS -->
-    <!-- ---------------------------------------------------------------------------- -->
-    <!-- JUDGES -->
-    <section class="aboutPage container flex f-col f-space-eve">
-      <div class="section-head flex">JUDGES</div>
-      <!-- <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe eum nisi
-        aperiam et, nostrum debitis quo voluptate, rerum repudiandae omnis harum
-        consequuntur sed aliquam, amet recusandae iusto molestias. Beatae,
-        eaque.
-      </p> -->
-      <div id="app2">
-        <div class="img-wrapper">
-          <img
-            :ref="setImgRef"
-            v-for="(item, key) in imgList"
-            :key="`${key}_${Number(item.isLoaded)}`"
-            :src="item.isLoaded ? item.src : null"
-            :data-index="key"
-            :class="{ lazyload: item.isLoaded }"
-          />
-        </div>
-      </div>
-    </section>
-
-    <!-- JUDGES -->
-
-    <!-- ---------------------------------------------------------------------------- -->
-
-    <!-- contact form -->
-    <section class="contactPage container flex f-col f-space-eve f-wrap">
-      <div class="section-head flex">Contact Form</div>
-      <div class="row flex-wrap" id="contact-box">
-        <div class="flex col-12 mx-auto col-lg-4">
-          <img class="contact-image float" src="./assets/contact.png" />
-        </div>
-        <div
-          class="col-8 justify-content-center contact-form-wrapper flex f-col"
-        >
-          <form action="#" class="contact-form">
-            <div>
-              <input
-                type="text"
-                class="form-control rounded border-white mb-3 form-input"
-                id="name"
-                placeholder="Name"
-                required
-              />
-            </div>
-            <div>
-              <input
-                type="email"
-                class="form-control rounded border-white mb-3 form-input"
-                placeholder="Email"
-                required
-              />
-            </div>
-            <div>
-              <textarea
-                id="message"
-                class="form-control rounded border-white mb-3 form-text-area"
-                rows="5"
-                cols="30"
-                placeholder="Message"
-                required
-              ></textarea>
-            </div>
-            <div class="submit-button-wrapper">
-              <input type="submit" value="Send" />
-            </div>
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <!-- contact form -->
-    <!-- ---------------------------------------------------------------------------- -->
 
     <div
       id="footerLogos"

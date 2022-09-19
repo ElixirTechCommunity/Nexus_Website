@@ -24,16 +24,20 @@ body {
   font-family: var(--primary-font);
   width: 100vw;
 }
-a {
-  text-decoration: none;
-  color: var(--font-color);
-}
+
 p {
   width: 80%;
   padding: 10px;
   font-size: 20px;
 }
-
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none !important;
+  cursor: pointer !important;
+  color: var(--font-color);
+}
 /*  */
 /* Particle Js Custom CSS */
 .particles-js-canvas-el {
@@ -810,7 +814,8 @@ Home page final css file
   margin: auto;
   color: white;
   letter-spacing: 1px;
-} /* footer style */
+}
+/* footer style */
 footer {
   width: 100%;
   background-color: var(--primary-color);
@@ -862,289 +867,1740 @@ footer .social i {
     height: 100%;
   }
 }
-.team-page-section {
-  position: relative;
-  padding-top: 70px;
+.teamSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3px 100px;
+  height: 550px;
 }
 
-.team-page-section .team-block {
-  margin-bottom: 60px;
-}
-
-.sec-title {
-  position: relative;
-  z-index: 1;
-  margin-bottom: 65px;
-}
-
-.sec-title .title {
-  position: relative;
-  font-size: 18px;
-  color: #bd0000;
-  font-weight: 700;
-  margin-bottom: 12px;
-  text-transform: capitalize;
-}
-
-.sec-title .separator {
-  position: relative;
-  width: 40px;
-  margin-top: 16px !important;
-}
-
-.sec-title .separator:before {
-  position: absolute;
+.teamSection::before {
   content: "";
+  position: absolute;
+  background: url("/assets/team.jpeg") no-repeat center center/cover;
+  height: 555px;
+  top: 0px;
   left: 0px;
-  top: 0px;
-  width: 10px;
-  height: 2px;
-  background-color: #ff9600;
+  width: 100vw;
+  z-index: -1;
+  opacity: 0.89;
 }
 
-.sec-title .separator:after {
-  position: absolute;
-  content: "";
-  right: 0px;
-  top: 0px;
-  width: 10px;
-  height: 2px;
-  background-color: #ff9600;
-}
-
-.sec-title .separator span {
-  position: absolute;
-  left: 50%;
-  top: -2px;
-  width: 10px;
-  height: 5px;
-  margin-left: -5px;
-  display: inline-block;
-  background-color: #bd0000;
-}
-
-.sec-title h2 {
-  position: relative;
-  color: #222222;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2em;
-  margin-top: 35px;
-}
-
-.sec-title .text {
-  position: relative;
-  font-size: 14px;
-  line-height: 1.9em;
-  color: #555555;
-  margin-top: 10px;
-}
-
-.sec-title.centered .separator {
-  margin: 0 auto !important;
-  float: none !important;
-}
-
-.sec-title.centered {
-  text-align: center !important;
-}
-
-.sec-title.light .title {
-  color: #ffffff;
-}
-
-.sec-title.light h2 {
-  color: #ffffff;
-}
-
-.sec-title.light .separator span {
-  background-color: #ff9600;
-}
-
-.sec-title.light .separator:before,
-.sec-title.light .separator:after {
-  background-color: #ffffff;
-}
-
-.team-section {
-  position: relative;
-  padding: 80px 0px 60px;
-}
-
-.team-section.style-two .pattern-layer {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-.team-section .title-box {
-  position: relative;
+.teamSection h1 {
+  color: white;
   text-align: center;
-}
-
-.team-section .title-box h2 {
-  position: relative;
-  color: #222222;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.3em;
-  margin-bottom: 50px;
-}
-
-.team-section .title-box h2 span {
-  color: #ff9600;
-}
-
-.team-block {
-  position: relative;
-}
-
-.team-block .inner-box {
-  position: relative;
-  padding: 40px 70px 28px 0px;
-}
-
-.team-block .inner-box:before {
-  position: absolute;
-  content: "";
-  right: 0px;
-  top: 0px;
-  left: 70px;
-  bottom: 0px;
-  border-radius: 10px;
-  background-color: #f5f5f5;
-  -webkit-transition: all 600ms ease;
-  -moz-transition: all 600ms ease;
-  -ms-transition: all 600ms ease;
-  -o-transition: all 600ms ease;
-  transition: all 600ms ease;
-}
-
-.team-block .inner-box::after {
-  position: absolute;
-  content: "";
-  top: 0px;
-  left: 70px;
-  bottom: 0px;
-  width: 0%;
-  border-radius: 10px;
-  -webkit-transition: all 600ms ease;
-  -moz-transition: all 600ms ease;
-  -ms-transition: all 600ms ease;
-  -o-transition: all 600ms ease;
-  transition: all 600ms ease;
-  background-image: -ms-linear-gradient(top, #ffca08 0%, #f70067 100%);
-  background-image: -moz-linear-gradient(top, #ffca08 0%, #f70067 100%);
-  background-image: -o-linear-gradient(top, #ffca08 0%, #f70067 100%);
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    color-stop(0, #ffca08),
-    color-stop(100, #f70067)
-  );
-  background-image: -webkit-linear-gradient(top, #ffca08 0%, #f70067 100%);
-  background-image: linear-gradient(to bottom, #ffca08 0%, #f70067 100%);
-}
-
-.team-block .inner-box:hover::after {
-  width: 81%;
-}
-
-.team-block .inner-box .social-icons {
-  position: absolute;
-  right: 25px;
-  top: 100px;
-  z-index: 1;
-}
-
-.team-block .inner-box .social-icons li {
-  position: relative;
-  margin-bottom: 20px;
-}
-
-.team-block .inner-box .social-icons li a {
-  position: relative;
-  color: #e40000;
-  font-size: 18px;
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  transition: all 0.4s;
-}
-
-.team-block .inner-box:hover .lower-content h3 a,
-.team-block .inner-box:hover .social-icons li a,
-.team-block .inner-box:hover .lower-content .designation {
-  color: #ffffff;
-}
-
-.team-block .inner-box .image {
-  position: relative;
-  z-index: 1;
-  border-radius: 10px;
-  background-color: #ffffff;
-  box-shadow: inset 0px 0px 35px rgba(0, 0, 0, 0.2);
-}
-
-.team-block .inner-box .image img {
-  position: relative;
+  letter-spacing: 5px;
   width: 100%;
-  display: block;
+  font-size: 6rem;
+  font-family: var(--heading-font);
 }
 
-.team-block .inner-box .lower-content {
+.teamPage {
+  min-height: 100vh;
+}
+.teamPage .container {
+  width: 100%;
+  padding: 20px 0;
+}
+.teamPage .border {
+  height: 445px;
+  width: 366px;
+  background: transparent;
+  border-radius: 10px;
+  transition: border 1s;
   position: relative;
-  text-align: left;
-  z-index: 1;
-  padding: 30px 15px 0px 110px;
 }
-
-.team-block .inner-box .lower-content h3 {
+.teamPage .border:hover {
+  border: 1px solid #fff;
+}
+.teamPage .cards {
+  height: 379px;
+  width: 300px;
+  background: #808080;
+  border-radius: 10px;
+  transition: background 0.8s;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 70px 63px -60px #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  color: #bd0000;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1.3em;
+  margin: 10px;
 }
 
-.team-block .inner-box .lower-content h3 a {
-  position: relative;
-  color: #bd0000;
-  -webkit-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  transition: all 0.4s;
+/* Lead Organizers Cards */
+
+.teamPage .cards-lo {
+  width: 376px;
+  margin: 10px 5px;
+  height: 455px;
 }
 
-.team-block .inner-box .lower-content .designation {
-  position: relative;
-  margin-top: 5px;
-  color: #777777;
-  font-size: 14px;
+.teamPage .card1 {
+  background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg")
+    center center no-repeat;
+  background-size: 376px;
+}
+.teamPage .card1:hover {
+  background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg")
+    left center no-repeat;
+  background-size: 576px;
+}
+.teamPage .card2 {
+  background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg")
+    center center no-repeat;
+  background-size: 376px;
+}
+.teamPage .card2:hover {
+  background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg")
+    left center no-repeat;
+  background-size: 576px;
+}
+.teamPage .card3 {
+  background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg")
+    center center no-repeat;
+  background-size: 376px;
+}
+.teamPage .card3:hover {
+  background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg")
+    left center no-repeat;
+  background-size: 576px;
+}
+.teamPage .card4 {
+  background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg")
+    center center no-repeat;
+  background-size: 376px;
+}
+.teamPage .card4:hover {
+  background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg")
+    left center no-repeat;
+  background-size: 576px;
+}
+.teamPage .card5 {
+  background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg")
+    center center no-repeat;
+  background-size: 376px;
+}
+.teamPage .card5:hover {
+  background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg")
+    left center no-repeat;
+  background-size: 576px;
+}
+.teamPage .card6 {
+  background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg")
+    center center no-repeat;
+  background-size: 376px;
+}
+.teamPage .card6:hover {
+  background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg")
+    left center no-repeat;
+  background-size: 576px;
+}
+.teamPage .card7 {
+  background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg")
+    center center no-repeat;
+  background-size: 376px;
+}
+.teamPage .card7:hover {
+  background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg")
+    left center no-repeat;
+  background-size: 576px;
+}
+.teamPage .card8 {
+  background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg")
+    center center no-repeat;
+  background-size: 376px;
+}
+.teamPage .card8:hover {
+  background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg")
+    left center no-repeat;
+  background-size: 576px;
+}
+.teamPage .card9 {
+  background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg")
+    center center no-repeat;
+  background-size: 376px;
+}
+.teamPage .card9:hover {
+  background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg")
+    left center no-repeat;
+  background-size: 576px;
+}
+.teamPage .cards:hover h2 {
+  opacity: 1;
+}
+.teamPage .cards:hover .fa {
+  opacity: 1;
 }
 
-.team-block.style-two .inner-box .lower-content h3 a,
-.team-block.style-two .inner-box .social-icons li a {
-  color: #ff9600;
+/* Team Lead Cards */
+
+.teamPage .cards-team {
+  width: 281px;
+  margin: 10px 4px;
+  height: 360px;
 }
 
-.team-block.style-two .inner-box:hover .lower-content h3 a,
-.team-block.style-two .inner-box:hover .social-icons li a {
-  color: #ffffff;
+.teamPage .cards-team .border {
+  width: 271px;
+  height: 350px;
 }
 
-.team-block.style-two .inner-box::after {
-  background-image: -ms-linear-gradient(top, #ffeb3c 0%, #ff9600 100%);
-  background-image: -moz-linear-gradient(top, #ffeb3c 0%, #ff9600 100%);
-  background-image: -o-linear-gradient(top, #ffeb3c 0%, #ff9600 100%);
-  /* background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFEB3C), color-stop(100, #ff9600)); */
-  background-image: -webkit-linear-gradient(top, #ffeb3c 0%, #ff9600 100%);
-  background-image: linear-gradient(to bottom, #ffeb3c 0%, #ff9600 100%);
+.teamPage .card1-tl {
+  background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg")
+    center center no-repeat;
+  background-size: 281px;
+}
+.teamPage .card1-tl:hover {
+  background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg")
+    left center no-repeat;
+  background-size: 500px;
+}
+.teamPage .card2-tl {
+  background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg")
+    center center no-repeat;
+  background-size: 281px;
+}
+.teamPage .card2-tl:hover {
+  background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg")
+    left center no-repeat;
+  background-size: 500px;
+}
+.teamPage .card3-tl {
+  background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg")
+    center center no-repeat;
+  background-size: 281px;
+}
+.teamPage .card3-tl:hover {
+  background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg")
+    left center no-repeat;
+  background-size: 500px;
+}
+.teamPage .card4-tl {
+  background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg")
+    center center no-repeat;
+  background-size: 281px;
+}
+.teamPage .card4-tl:hover {
+  background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg")
+    left center no-repeat;
+  background-size: 500px;
+}
+.teamPage .card5-tl {
+  background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg")
+    center center no-repeat;
+  background-size: 281px;
+}
+.teamPage .card5-tl:hover {
+  background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg")
+    left center no-repeat;
+  background-size: 500px;
+}
+.teamPage .card6-tl {
+  background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg")
+    center center no-repeat;
+  background-size: 281px;
+}
+.teamPage .card6-tl:hover {
+  background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg")
+    left center no-repeat;
+  background-size: 500px;
+}
+.teamPage .card7-tl {
+  background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg")
+    center center no-repeat;
+  background-size: 281px;
+}
+.teamPage .card7-tl:hover {
+  background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg")
+    left center no-repeat;
+  background-size: 500px;
+}
+.teamPage .card8-tl {
+  background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg")
+    center center no-repeat;
+  background-size: 281px;
+}
+.teamPage .card8-tl:hover {
+  background: url("https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg")
+    left center no-repeat;
+  background-size: 500px;
+}
+
+.teamPage .container:nth-child(even) {
+  background-image: none;
+  color: white;
+}
+
+.teamPage h2 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
+  margin: 20px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+.teamPage .fa {
+  opacity: 0;
+  transition: opacity 1s;
+}
+.teamPage .icons {
+  position: absolute;
+  fill: #fff;
+  color: #fff;
+  height: 130px;
+  top: 19rem;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.teamPage .cards-team .icons {
+  position: absolute;
+  fill: #fff;
+  color: #fff;
+  height: 130px;
+  top: 13.5rem;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Responsiveness */
+
+@media screen and (max-width: 1400px) {
+  .teamPage .cards-lo {
+    width: 340px;
+    margin: 10px 5px;
+    height: 419px;
+  }
+  .teamPage .border {
+    height: 409px;
+    width: 330px;
+  }
+  .teamPage .card1 {
+    background-size: 340px;
+  }
+  .teamPage .card1:hover {
+    background-size: 540px;
+  }
+  .teamPage .card2 {
+    background-size: 340px;
+  }
+  .teamPage .card2:hover {
+    background-size: 540px;
+  }
+  .teamPage .card3 {
+    background-size: 340px;
+  }
+  .teamPage .card3:hover {
+    background-size: 540px;
+  }
+  .teamPage .card4 {
+    background-size: 340px;
+  }
+  .teamPage .card4:hover {
+    background-size: 540px;
+  }
+  .teamPage .card5 {
+    background-size: 340px;
+  }
+  .teamPage .card5:hover {
+    background-size: 540px;
+  }
+  .teamPage .card6 {
+    background-size: 340px;
+  }
+  .teamPage .card6:hover {
+    background-size: 540px;
+  }
+  .teamPage .card7 {
+    background-size: 340px;
+  }
+  .teamPage .card7:hover {
+    background-size: 540px;
+  }
+  .teamPage .card8 {
+    background-size: 340px;
+  }
+  .teamPage .card8:hover {
+    background-size: 540px;
+  }
+  .teamPage .card9 {
+    background-size: 340px;
+  }
+  .teamPage .card9:hover {
+    background-size: 540px;
+  }
+  .teamPage .cards:hover h2 {
+    opacity: 1;
+  }
+  .teamPage .cards:hover .fa {
+    opacity: 1;
+  }
+
+  .teamPage .cards-team {
+    width: 250px;
+    margin: 10px 6px;
+    height: 329px;
+  }
+
+  .teamPage .cards-team .border {
+    width: 240px;
+    height: 319px;
+  }
+
+  .teamPage .card1-tl {
+    background-size: 250px;
+  }
+  .teamPage .card1-tl:hover {
+    background-size: 450px;
+  }
+  .teamPage .card2-tl {
+    background-size: 250px;
+  }
+  .teamPage .card2-tl:hover {
+    background-size: 450px;
+  }
+  .teamPage .card3-tl {
+    background-size: 250px;
+  }
+  .teamPage .card3-tl:hover {
+    background-size: 450px;
+  }
+  .teamPage .card4-tl {
+    background-size: 250px;
+  }
+  .teamPage .card4-tl:hover {
+    background-size: 450px;
+  }
+  .teamPage .card5-tl {
+    background-size: 250px;
+  }
+  .teamPage .card5-tl:hover {
+    background-size: 450px;
+  }
+  .teamPage .card6-tl {
+    background-size: 250px;
+  }
+  .teamPage .card6-tl:hover {
+    background-size: 450px;
+  }
+  .teamPage .card7-tl {
+    background-size: 250px;
+  }
+  .teamPage .card7-tl:hover {
+    background-size: 450px;
+  }
+  .teamPage .card8-tl {
+    background-size: 250px;
+  }
+  .teamPage .card8-tl:hover {
+    background-size: 450px;
+  }
+  .teamPage .icons {
+    top: 17rem;
+  }
+  .teamPage .cards-team .icons {
+    top: 11.5rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .teamPage .cards-lo {
+    width: 280px;
+    margin: 10px 5px;
+    height: 359px;
+  }
+  .teamPage .border {
+    width: 270px;
+    height: 349px;
+  }
+  .teamPage .card1 {
+    background-size: 280px;
+  }
+  .teamPage .card1:hover {
+    background-size: 380px;
+  }
+  .teamPage .card2 {
+    background-size: 280px;
+  }
+  .teamPage .card2:hover {
+    background-size: 380px;
+  }
+  .teamPage .card3 {
+    background-size: 280px;
+  }
+  .teamPage .card3:hover {
+    background-size: 380px;
+  }
+  .teamPage .card4 {
+    background-size: 280px;
+  }
+  .teamPage .card4:hover {
+    background-size: 380px;
+  }
+  .teamPage .card5 {
+    background-size: 280px;
+  }
+  .teamPage .card5:hover {
+    background-size: 380px;
+  }
+  .teamPage .card6 {
+    background-size: 280px;
+  }
+  .teamPage .card6:hover {
+    background-size: 380px;
+  }
+  .teamPage .card7 {
+    background-size: 280px;
+  }
+  .teamPage .card7:hover {
+    background-size: 380px;
+  }
+  .teamPage .card8 {
+    background-size: 280px;
+  }
+  .teamPage .card8:hover {
+    background-size: 380px;
+  }
+  .teamPage .card9 {
+    background-size: 280px;
+  }
+  .teamPage .card9:hover {
+    background-size: 380px;
+  }
+  .teamPage .cards:hover h2 {
+    opacity: 1;
+  }
+  .teamPage .cards:hover .fa {
+    opacity: 1;
+  }
+
+  .teamPage .cards-team {
+    width: 206px;
+    margin: 10px 6px;
+    height: 269px;
+  }
+
+  .teamPage .cards-team .border {
+    width: 196px;
+    height: 259px;
+  }
+
+  .teamPage .card1-tl {
+    background-size: 206px;
+  }
+  .teamPage .card1-tl:hover {
+    background-size: 306px;
+  }
+  .teamPage .card2-tl {
+    background-size: 206px;
+  }
+  .teamPage .card2-tl:hover {
+    background-size: 306px;
+  }
+  .teamPage .card3-tl {
+    background-size: 206px;
+  }
+  .teamPage .card3-tl:hover {
+    background-size: 306px;
+  }
+  .teamPage .card4-tl {
+    background-size: 206px;
+  }
+  .teamPage .card4-tl:hover {
+    background-size: 306px;
+  }
+  .teamPage .card5-tl {
+    background-size: 206px;
+  }
+  .teamPage .card5-tl:hover {
+    background-size: 306px;
+  }
+  .teamPage .card6-tl {
+    background-size: 206px;
+  }
+  .teamPage .card6-tl:hover {
+    background-size: 306px;
+  }
+  .teamPage .card7-tl {
+    background-size: 206px;
+  }
+  .teamPage .card7-tl:hover {
+    background-size: 306px;
+  }
+  .teamPage .card8-tl {
+    background-size: 206px;
+  }
+  .teamPage .card8-tl:hover {
+    background-size: 306px;
+  }
+  .teamPage .icons {
+    top: 14rem;
+    height: 7rem;
+  }
+  .teamPage .cards-team .icons {
+    top: 10rem;
+    height: 6rem;
+    width: 40px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .teamPage .cards-lo {
+    width: 280px;
+    margin: 10px 5px;
+    height: 359px;
+  }
+  .teamPage .border {
+    width: 270px;
+    height: 349px;
+  }
+  .teamPage .card1 {
+    background-size: 280px;
+  }
+  .teamPage .card1:hover {
+    background-size: 380px;
+  }
+  .teamPage .card2 {
+    background-size: 280px;
+  }
+  .teamPage .card2:hover {
+    background-size: 380px;
+  }
+  .teamPage .card3 {
+    background-size: 280px;
+  }
+  .teamPage .card3:hover {
+    background-size: 380px;
+  }
+  .teamPage .card4 {
+    background-size: 280px;
+  }
+  .teamPage .card4:hover {
+    background-size: 380px;
+  }
+  .teamPage .card5 {
+    background-size: 280px;
+  }
+  .teamPage .card5:hover {
+    background-size: 380px;
+  }
+  .teamPage .card6 {
+    background-size: 280px;
+  }
+  .teamPage .card6:hover {
+    background-size: 380px;
+  }
+  .teamPage .card7 {
+    background-size: 280px;
+  }
+  .teamPage .card7:hover {
+    background-size: 380px;
+  }
+  .teamPage .card8 {
+    background-size: 280px;
+  }
+  .teamPage .card8:hover {
+    background-size: 380px;
+  }
+  .teamPage .card9 {
+    background-size: 280px;
+    /* width: 469px; */
+    margin-right: 13rem;
+    margin-left: auto;
+  }
+  .teamPage .card9:hover {
+    background-size: 380px;
+  }
+
+  .teamPage .cards:hover h2 {
+    opacity: 1;
+  }
+  .teamPage .cards:hover .fa {
+    opacity: 1;
+  }
+
+  .teamPage .cards-team {
+    width: 250px;
+    margin: 12px 19px;
+    height: 324px;
+  }
+
+  .teamPage .cards-team .border {
+    width: 240px;
+    height: 314px;
+  }
+
+  .teamPage .card1-tl {
+    background-size: 250px;
+  }
+  .teamPage .card1-tl:hover {
+    background-size: 350px;
+  }
+  .teamPage .card2-tl {
+    background-size: 250px;
+  }
+  .teamPage .card2-tl:hover {
+    background-size: 350px;
+  }
+  .teamPage .card3-tl {
+    background-size: 250px;
+  }
+  .teamPage .card3-tl:hover {
+    background-size: 350px;
+  }
+  .teamPage .card4-tl {
+    background-size: 250px;
+  }
+  .teamPage .card4-tl:hover {
+    background-size: 350px;
+  }
+  .teamPage .card5-tl {
+    background-size: 250px;
+  }
+  .teamPage .card5-tl:hover {
+    background-size: 350px;
+  }
+  .teamPage .card6-tl {
+    background-size: 250px;
+  }
+  .teamPage .card6-tl:hover {
+    background-size: 350px;
+  }
+  .teamPage .card7-tl {
+    background-size: 250px;
+  }
+  .teamPage .card7-tl:hover {
+    background-size: 350px;
+  }
+  .teamPage .card8-tl {
+    background-size: 250px;
+  }
+  .teamPage .card8-tl:hover {
+    background-size: 350px;
+  }
+  .teamPage .cards-team .icons {
+    top: 13rem;
+    height: 6rem;
+    width: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .teamSection h1 {
+    font-size: 4.8rem;
+  }
+
+  .teamPage .cards-lo {
+    width: 240px;
+    margin: 8px 8px;
+    height: 314px;
+  }
+  .teamPage .border {
+    width: 230px;
+    height: 304px;
+  }
+  .teamPage .card1 {
+    background-size: 240px;
+  }
+  .teamPage .card1:hover {
+    background-size: 340px;
+  }
+  .teamPage .card2 {
+    background-size: 240px;
+  }
+  .teamPage .card2:hover {
+    background-size: 340px;
+  }
+  .teamPage .card3 {
+    background-size: 240px;
+  }
+  .teamPage .card3:hover {
+    background-size: 340px;
+  }
+  .teamPage .card4 {
+    background-size: 240px;
+  }
+  .teamPage .card4:hover {
+    background-size: 340px;
+  }
+  .teamPage .card5 {
+    background-size: 240px;
+  }
+  .teamPage .card5:hover {
+    background-size: 340px;
+  }
+  .teamPage .card6 {
+    background-size: 240px;
+  }
+  .teamPage .card6:hover {
+    background-size: 340px;
+  }
+  .teamPage .card7 {
+    background-size: 240px;
+  }
+  .teamPage .card7:hover {
+    background-size: 340px;
+  }
+  .teamPage .card8 {
+    background-size: 240px;
+  }
+  .teamPage .card8:hover {
+    background-size: 340px;
+  }
+  .teamPage .card9 {
+    background-size: 240px;
+  }
+  .teamPage .card9:hover {
+    background-size: 340px;
+  }
+
+  .teamPage .cards:hover h2 {
+    opacity: 1;
+  }
+  .teamPage .cards:hover .fa {
+    opacity: 1;
+  }
+
+  .teamPage .cards-team {
+    width: 225px;
+    margin: 12px 16px;
+    height: 304px;
+  }
+
+  .teamPage .cards-team .border {
+    width: 215px;
+    height: 294px;
+  }
+
+  .teamPage .card1-tl {
+    background-size: 233px;
+  }
+  .teamPage .card1-tl:hover {
+    background-size: 333px;
+  }
+  .teamPage .card2-tl {
+    background-size: 233px;
+  }
+  .teamPage .card2-tl:hover {
+    background-size: 333px;
+  }
+  .teamPage .card3-tl {
+    background-size: 233px;
+  }
+  .teamPage .card3-tl:hover {
+    background-size: 333px;
+  }
+  .teamPage .card4-tl {
+    background-size: 233px;
+  }
+  .teamPage .card4-tl:hover {
+    background-size: 333px;
+  }
+  .teamPage .card5-tl {
+    background-size: 233px;
+  }
+  .teamPage .card5-tl:hover {
+    background-size: 333px;
+  }
+  .teamPage .card6-tl {
+    background-size: 233px;
+  }
+  .teamPage .card6-tl:hover {
+    background-size: 333px;
+  }
+  .teamPage .card7-tl {
+    background-size: 233px;
+  }
+  .teamPage .card7-tl:hover {
+    background-size: 333px;
+  }
+  .teamPage .card8-tl {
+    background-size: 233px;
+  }
+  .teamPage .card8-tl:hover {
+    background-size: 333px;
+  }
+  .teamPage .icons {
+    top: 11.5rem;
+    width: 45px;
+  }
+  .teamPage .cards-team .icons {
+    top: 12rem;
+  }
+}
+
+@media screen and (max-width: 677px) {
+  .teamSection h1 {
+    font-size: 3.8rem;
+  }
+  .teamPage .cards-lo {
+    width: 215px;
+    margin: 10px 8px;
+    height: 294px;
+  }
+  .teamPage .border {
+    width: 205px;
+    height: 284px;
+  }
+  .teamPage .card1 {
+    background-size: 225px;
+  }
+  .teamPage .card1:hover {
+    background-size: 325px;
+  }
+  .teamPage .card2 {
+    background-size: 225px;
+  }
+  .teamPage .card2:hover {
+    background-size: 325px;
+  }
+  .teamPage .card3 {
+    background-size: 225px;
+  }
+  .teamPage .card3:hover {
+    background-size: 325px;
+  }
+  .teamPage .card4 {
+    background-size: 225px;
+  }
+  .teamPage .card4:hover {
+    background-size: 325px;
+  }
+  .teamPage .card5 {
+    background-size: 225px;
+  }
+  .teamPage .card5:hover {
+    background-size: 325px;
+  }
+  .teamPage .card6 {
+    background-size: 225px;
+  }
+  .teamPage .card6:hover {
+    background-size: 325px;
+  }
+  .teamPage .card7 {
+    background-size: 225px;
+  }
+  .teamPage .card7:hover {
+    background-size: 325px;
+  }
+  .teamPage .card8 {
+    background-size: 225px;
+  }
+  .teamPage .card8:hover {
+    background-size: 325px;
+  }
+  .teamPage .card9 {
+    background-size: 225px;
+  }
+  .teamPage .card9:hover {
+    background-size: 325px;
+  }
+
+  .teamPage .cards:hover h2 {
+    opacity: 1;
+  }
+  .teamPage .cards:hover .fa {
+    opacity: 1;
+  }
+
+  .teamPage .cards-team {
+    width: 195px;
+    margin: 12px 19px;
+    height: 274px;
+  }
+
+  .teamPage .cards-team .border {
+    width: 184px;
+    height: 264px;
+  }
+
+  .teamPage .card1-tl {
+    background-size: 210px;
+  }
+  .teamPage .card1-tl:hover {
+    background-size: 310px;
+  }
+  .teamPage .card2-tl {
+    background-size: 210px;
+  }
+  .teamPage .card2-tl:hover {
+    background-size: 310px;
+  }
+  .teamPage .card3-tl {
+    background-size: 210px;
+  }
+  .teamPage .card3-tl:hover {
+    background-size: 310px;
+  }
+  .teamPage .card4-tl {
+    background-size: 210px;
+  }
+  .teamPage .card4-tl:hover {
+    background-size: 310px;
+  }
+  .teamPage .card5-tl {
+    background-size: 210px;
+  }
+  .teamPage .card5-tl:hover {
+    background-size: 310px;
+  }
+  .teamPage .card6-tl {
+    background-size: 210px;
+  }
+  .teamPage .card6-tl:hover {
+    background-size: 310px;
+  }
+  .teamPage .card7-tl {
+    background-size: 210px;
+  }
+  .teamPage .card7-tl:hover {
+    background-size: 310px;
+  }
+  .teamPage .card8-tl {
+    background-size: 210px;
+  }
+  .teamPage .card8-tl:hover {
+    background-size: 310px;
+  }
+  .teamPage .icons {
+    top: 10.5rem;
+    width: 40px;
+  }
+  .teamPage .cards-team .icons {
+    top: 10rem;
+  }
+}
+
+@media screen and (max-width: 489px) {
+  .teamSection h1 {
+    font-size: 3.2rem;
+  }
+
+  .teamPage .cards-lo {
+    width: 200px;
+    margin: 10px 5px;
+    height: 279px;
+  }
+  .teamPage .border {
+    width: 190px;
+    height: 269px;
+  }
+  .teamPage .card1 {
+    background-size: 215px;
+  }
+  .teamPage .card1:hover {
+    background-size: 315px;
+  }
+  .teamPage .card2 {
+    background-size: 215px;
+  }
+  .teamPage .card2:hover {
+    background-size: 315px;
+  }
+  .teamPage .card3 {
+    background-size: 215px;
+  }
+  .teamPage .card3:hover {
+    background-size: 315px;
+  }
+  .teamPage .card4 {
+    background-size: 215px;
+  }
+  .teamPage .card4:hover {
+    background-size: 315px;
+  }
+  .teamPage .card5 {
+    background-size: 215px;
+  }
+  .teamPage .card5:hover {
+    background-size: 315px;
+  }
+  .teamPage .card6 {
+    background-size: 215px;
+  }
+  .teamPage .card6:hover {
+    background-size: 315px;
+  }
+  .teamPage .card7 {
+    background-size: 215px;
+  }
+  .teamPage .card7:hover {
+    background-size: 315px;
+  }
+  .teamPage .card8 {
+    background-size: 215px;
+  }
+  .teamPage .card8:hover {
+    background-size: 315px;
+  }
+  .teamPage .card9 {
+    background-size: 215px;
+  }
+  .teamPage .card9:hover {
+    background-size: 315px;
+  }
+
+  .teamPage .cards:hover h2 {
+    opacity: 1;
+  }
+  .teamPage .cards:hover .fa {
+    opacity: 1;
+  }
+
+  .teamPage .cards-team {
+    width: 180px;
+    margin: 12px 15px;
+    height: 254px;
+  }
+
+  .teamPage .cards-team .border {
+    width: 170px;
+    height: 244px;
+  }
+
+  .teamPage .card1-tl {
+    background-size: 195px;
+  }
+  .teamPage .card1-tl:hover {
+    background-size: 295px;
+  }
+  .teamPage .card2-tl {
+    background-size: 195px;
+  }
+  .teamPage .card2-tl:hover {
+    background-size: 295px;
+  }
+  .teamPage .card3-tl {
+    background-size: 195px;
+  }
+  .teamPage .card3-tl:hover {
+    background-size: 295px;
+  }
+  .teamPage .card4-tl {
+    background-size: 195px;
+  }
+  .teamPage .card4-tl:hover {
+    background-size: 295px;
+  }
+  .teamPage .card5-tl {
+    background-size: 195px;
+  }
+  .teamPage .card5-tl:hover {
+    background-size: 295px;
+  }
+  .teamPage .card6-tl {
+    background-size: 195px;
+  }
+  .teamPage .card6-tl:hover {
+    background-size: 295px;
+  }
+  .teamPage .card7-tl {
+    background-size: 195px;
+  }
+  .teamPage .card7-tl:hover {
+    background-size: 295px;
+  }
+  .teamPage .card8-tl {
+    background-size: 195px;
+  }
+  .teamPage .card8-tl:hover {
+    background-size: 295px;
+  }
+  .teamPage .icons {
+    top: 9.5rem;
+  }
+  .teamPage .cards-team .icons {
+    top: 8.8rem;
+  }
+}
+
+@media screen and (max-width: 444px) {
+  .teamSection h1 {
+    font-size: 2.6rem;
+  }
+  .teamPage .cards-lo {
+    width: 175px;
+    margin: 10px 5px;
+    height: 254px;
+  }
+  .teamPage .border {
+    width: 165px;
+    height: 244px;
+  }
+  .teamPage .card1 {
+    background-size: 195px;
+  }
+  .teamPage .card1:hover {
+    background-size: 295px;
+  }
+  .teamPage .card2 {
+    background-size: 195px;
+  }
+  .teamPage .card2:hover {
+    background-size: 295px;
+  }
+  .teamPage .card3 {
+    background-size: 195px;
+  }
+  .teamPage .card3:hover {
+    background-size: 295px;
+  }
+  .teamPage .card4 {
+    background-size: 195px;
+  }
+  .teamPage .card4:hover {
+    background-size: 295px;
+  }
+  .teamPage .card5 {
+    background-size: 195px;
+  }
+  .teamPage .card5:hover {
+    background-size: 295px;
+  }
+  .teamPage .card6 {
+    background-size: 195px;
+  }
+  .teamPage .card6:hover {
+    background-size: 295px;
+  }
+  .teamPage .card7 {
+    background-size: 195px;
+  }
+  .teamPage .card7:hover {
+    background-size: 295px;
+  }
+  .teamPage .card8 {
+    background-size: 195px;
+  }
+  .teamPage .card8:hover {
+    background-size: 295px;
+  }
+  .teamPage .card9 {
+    background-size: 195px;
+    /* margin-left: -13px; */
+  }
+  .teamPage .card9:hover {
+    background-size: 295px;
+  }
+
+  .teamPage .cards:hover h2 {
+    opacity: 1;
+  }
+  .teamPage .cards:hover .fa {
+    opacity: 1;
+  }
+
+  .teamPage .cards-team {
+    width: 175px;
+    margin: 12px 5px;
+    height: 234px;
+  }
+
+  .teamPage .cards-team .border {
+    width: 165px;
+    height: 224px;
+  }
+
+  .teamPage .card1-tl {
+    background-size: 180px;
+  }
+  .teamPage .card1-tl:hover {
+    background-size: 280px;
+  }
+  .teamPage .card2-tl {
+    background-size: 180px;
+  }
+  .teamPage .card2-tl:hover {
+    background-size: 280px;
+  }
+  .teamPage .card3-tl {
+    background-size: 180px;
+  }
+  .teamPage .card3-tl:hover {
+    background-size: 280px;
+  }
+  .teamPage .card4-tl {
+    background-size: 180px;
+  }
+  .teamPage .card4-tl:hover {
+    background-size: 280px;
+  }
+  .teamPage .card5-tl {
+    background-size: 180px;
+  }
+  .teamPage .card5-tl:hover {
+    background-size: 280px;
+  }
+  .teamPage .card6-tl {
+    background-size: 180px;
+  }
+  .teamPage .card6-tl:hover {
+    background-size: 280px;
+  }
+  .teamPage .card7-tl {
+    background-size: 180px;
+  }
+  .teamPage .card7-tl:hover {
+    background-size: 280px;
+  }
+  .teamPage .card8-tl {
+    background-size: 180px;
+  }
+  .teamPage .card8-tl:hover {
+    background-size: 280px;
+  }
+  .teamPage .icons {
+    top: 8rem;
+    font-size: 15px;
+  }
+  .teamPage .cards-team .icons {
+    top: 7.6rem;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .teamSection h1 {
+    font-size: 2.6rem;
+  }
+  .teamPage .cards-lo {
+    width: 155px;
+    margin: 5px 5px;
+    height: 234px;
+  }
+  .teamPage .border {
+    width: 145px;
+    height: 224px;
+  }
+  .teamPage .card1 {
+    background-size: 180px;
+  }
+  .teamPage .card1:hover {
+    background-size: 280px;
+  }
+  .teamPage .card2 {
+    background-size: 180px;
+  }
+  .teamPage .card2:hover {
+    background-size: 280px;
+  }
+  .teamPage .card3 {
+    background-size: 180px;
+  }
+  .teamPage .card3:hover {
+    background-size: 280px;
+  }
+  .teamPage .card4 {
+    background-size: 180px;
+  }
+  .teamPage .card4:hover {
+    background-size: 280px;
+  }
+  .teamPage .card5 {
+    background-size: 180px;
+  }
+  .teamPage .card5:hover {
+    background-size: 280px;
+  }
+  .teamPage .card6 {
+    background-size: 180px;
+  }
+  .teamPage .card6:hover {
+    background-size: 280px;
+  }
+  .teamPage .card7 {
+    background-size: 180px;
+  }
+  .teamPage .card7:hover {
+    background-size: 280px;
+  }
+  .teamPage .card8 {
+    background-size: 180px;
+  }
+  .teamPage .card8:hover {
+    background-size: 280px;
+  }
+  .teamPage .card9 {
+    background-size: 180px;
+  }
+  .teamPage .card9:hover {
+    background-size: 280px;
+  }
+
+  .teamPage .cards:hover h2 {
+    opacity: 1;
+  }
+  .teamPage .cards:hover .fa {
+    opacity: 1;
+  }
+
+  .teamPage .cards-team {
+    width: 155px;
+    margin: 5px 5px;
+    height: 204px;
+  }
+
+  .teamPage .cards-team .border {
+    width: 145px;
+    height: 194px;
+  }
+
+  .teamPage .card1-tl {
+    background-size: 158px;
+  }
+  .teamPage .card1-tl:hover {
+    background-size: 258px;
+  }
+  .teamPage .card2-tl {
+    background-size: 158px;
+  }
+  .teamPage .card2-tl:hover {
+    background-size: 258px;
+  }
+  .teamPage .card3-tl {
+    background-size: 158px;
+  }
+  .teamPage .card3-tl:hover {
+    background-size: 258px;
+  }
+  .teamPage .card4-tl {
+    background-size: 158px;
+  }
+  .teamPage .card4-tl:hover {
+    background-size: 258px;
+  }
+  .teamPage .card5-tl {
+    background-size: 158px;
+  }
+  .teamPage .card5-tl:hover {
+    background-size: 258px;
+  }
+  .teamPage .card6-tl {
+    background-size: 158px;
+  }
+  .teamPage .card6-tl:hover {
+    background-size: 258px;
+  }
+  .teamPage .card7-tl {
+    background-size: 158px;
+  }
+  .teamPage .card7-tl:hover {
+    background-size: 258px;
+  }
+  .teamPage .card8-tl {
+    background-size: 158px;
+  }
+  .teamPage .card8-tl:hover {
+    background-size: 258px;
+  }
+  .teamPage .icons {
+    top: 8.6rem;
+    font-size: 12px;
+    height: 5rem;
+  }
+  .teamPage .cards-team .icons {
+    top: 6.6rem;
+    font-size: 12px;
+    height: 5rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .teamSection {
+    padding: 3px 50px;
+  }
+}
+
+@media screen and (max-width: 354px) {
+  .teamPage .cards-lo {
+    width: 140px;
+    margin: 5px 5px;
+    height: 219px;
+  }
+  .teamPage .border {
+    width: 130px;
+    height: 209px;
+  }
+  .teamPage .card1 {
+    background-size: 170px;
+  }
+  .teamPage .card1:hover {
+    background-size: 270px;
+  }
+  .teamPage .card2 {
+    background-size: 170px;
+  }
+  .teamPage .card2:hover {
+    background-size: 270px;
+  }
+  .teamPage .card3 {
+    background-size: 170px;
+  }
+  .teamPage .card3:hover {
+    background-size: 270px;
+  }
+  .teamPage .card4 {
+    background-size: 170px;
+  }
+  .teamPage .card4:hover {
+    background-size: 270px;
+  }
+  .teamPage .card5 {
+    background-size: 170px;
+  }
+  .teamPage .card5:hover {
+    background-size: 270px;
+  }
+  .teamPage .card6 {
+    background-size: 170px;
+  }
+  .teamPage .card6:hover {
+    background-size: 270px;
+  }
+  .teamPage .card7 {
+    background-size: 170px;
+  }
+  .teamPage .card7:hover {
+    background-size: 270px;
+  }
+  .teamPage .card8 {
+    background-size: 170px;
+  }
+  .teamPage .card8:hover {
+    background-size: 270px;
+  }
+  .teamPage .card9 {
+    background-size: 170px;
+    /* margin-left: -10px; */
+  }
+  .teamPage .card9:hover {
+    background-size: 270px;
+  }
+
+  .teamPage .cards:hover h2 {
+    opacity: 1;
+  }
+  .teamPage .cards:hover .fa {
+    opacity: 1;
+  }
+
+  .teamPage .cards-team {
+    width: 140px;
+    margin: 5px 5px;
+    height: 180px;
+  }
+
+  .teamPage .cards-team .border {
+    width: 130px;
+    height: 170px;
+  }
+
+  .teamPage .card1-tl {
+    background-size: 150px;
+  }
+  .teamPage .card1-tl:hover {
+    background-size: 250px;
+  }
+  .teamPage .card2-tl {
+    background-size: 150px;
+  }
+  .teamPage .card2-tl:hover {
+    background-size: 250px;
+  }
+  .teamPage .card3-tl {
+    background-size: 150px;
+  }
+  .teamPage .card3-tl:hover {
+    background-size: 250px;
+  }
+  .teamPage .card4-tl {
+    background-size: 150px;
+  }
+  .teamPage .card4-tl:hover {
+    background-size: 250px;
+  }
+  .teamPage .card5-tl {
+    background-size: 150px;
+  }
+  .teamPage .card5-tl:hover {
+    background-size: 250px;
+  }
+  .teamPage .card6-tl {
+    background-size: 150px;
+  }
+  .teamPage .card6-tl:hover {
+    background-size: 250px;
+  }
+  .teamPage .card7-tl {
+    background-size: 150px;
+  }
+  .teamPage .card7-tl:hover {
+    background-size: 250px;
+  }
+  .teamPage .card8-tl {
+    background-size: 150px;
+  }
+  .teamPage .card8-tl:hover {
+    background-size: 250px;
+  }
+  .teamPage .icons {
+    top: 8.6rem;
+    font-size: 10px;
+    height: 4rem;
+    width: 30px;
+  }
+  .teamPage .cards-team .icons {
+    top: 6.2rem;
+    font-size: 10px;
+    height: 4rem;
+    width: 30px;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .teamPage .cards-lo {
+    width: 130px;
+    margin: 5px 5px;
+    height: 209px;
+  }
+  .teamPage .border {
+    width: 120px;
+    height: 199px;
+  }
+  .teamPage .card1 {
+    background-size: 160px;
+  }
+  .teamPage .card1:hover {
+    background-size: 260px;
+  }
+  .teamPage .card2 {
+    background-size: 160px;
+  }
+  .teamPage .card2:hover {
+    background-size: 260px;
+  }
+  .teamPage .card3 {
+    background-size: 160px;
+  }
+  .teamPage .card3:hover {
+    background-size: 260px;
+  }
+  .teamPage .card4 {
+    background-size: 160px;
+  }
+  .teamPage .card4:hover {
+    background-size: 260px;
+  }
+  .teamPage .card5 {
+    background-size: 160px;
+  }
+  .teamPage .card5:hover {
+    background-size: 260px;
+  }
+  .teamPage .card6 {
+    background-size: 160px;
+  }
+  .teamPage .card6:hover {
+    background-size: 260px;
+  }
+  .teamPage .card7 {
+    background-size: 160px;
+  }
+  .teamPage .card7:hover {
+    background-size: 260px;
+  }
+  .teamPage .card8 {
+    background-size: 160px;
+  }
+  .teamPage .card8:hover {
+    background-size: 260px;
+  }
+  .teamPage .card9 {
+    background-size: 160px;
+    /* margin-left: -10px; */
+  }
+  .teamPage .card9:hover {
+    background-size: 260px;
+  }
+
+  .teamPage .cards:hover h2 {
+    opacity: 1;
+  }
+  .teamPage .cards:hover .fa {
+    opacity: 1;
+  }
+
+  .teamPage .cards-team {
+    width: 130px;
+    height: 180px;
+  }
+
+  .teamPage .cards-team .border {
+    width: 120px;
+    height: 170px;
+  }
+
+  .teamPage .card1-tl {
+    background-size: 140px;
+  }
+  .teamPage .card1-tl:hover {
+    background-size: 240px;
+  }
+  .teamPage .card2-tl {
+    background-size: 140px;
+  }
+  .teamPage .card2-tl:hover {
+    background-size: 240px;
+  }
+  .teamPage .card3-tl {
+    background-size: 140px;
+  }
+  .teamPage .card3-tl:hover {
+    background-size: 240px;
+  }
+  .teamPage .card4-tl {
+    background-size: 140px;
+  }
+  .teamPage .card4-tl:hover {
+    background-size: 240px;
+  }
+  .teamPage .card5-tl {
+    background-size: 140px;
+  }
+  .teamPage .card5-tl:hover {
+    background-size: 240px;
+  }
+  .teamPage .card6-tl {
+    background-size: 140px;
+  }
+  .teamPage .card6-tl:hover {
+    background-size: 240px;
+  }
+  .teamPage .card7-tl {
+    background-size: 140px;
+  }
+  .teamPage .card7-tl:hover {
+    background-size: 240px;
+  }
+  .teamPage .card8-tl {
+    background-size: 140px;
+  }
+  .teamPage .card8-tl:hover {
+    background-size: 240px;
+  }
+  .teamPage .icons {
+    top: 8.2rem;
+  }
 }
 .sponsorsPage {
   min-height: 100vh;
