@@ -11,36 +11,7 @@
 1. `git clone https://github.com/ElixirTechCommunity/Nexus_Website.git`
 2. `open project in vscode.`
 3. `create your personal branch.`
-4. open terminal and run `npm install` (optional)
-
-### For development
-
-1. `open dev.html.`
-2. `start live server.`
-
-### For Production
-
-1. `open terminal and cd to project dir/`
-2. run `$ npm run build`
-3. `open index.html in vsCode.`
-4. `start live server.`
-
-\*\* not having vscode?
-
-Follow these steps to setup
-
-1. open terminal and run `git clone https://github.com/ElixirTechCommunity/Nexus_Website.git`
-2. run `cd Nexus_Website`
-3. run `git checkout -b docker`
-4. `git pull origin docker`
-
-### To start add with nodejs
-
-1. run `npm install`
-2. run `npm start`
-3. Open browser and go to `http://localhost:80/dev`
-
-### To start with docker
-
-1. run `docker-compose up`
-2. Open browser and go to `http://localhost:80/dev`
+4. open terminal and run `npm install` in root directory.
+5. run `$ npm run build`
+6. `open index.html in vsCode.`
+7. `start live server.`
