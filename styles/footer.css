@@ -39,6 +39,7 @@ footer .social i {
 }
 
 #footerLogos {
+  cursor: pointer;
   height: 220px;
   align-items: center;
   flex-wrap: wrap;
