@@ -12,7 +12,7 @@
   --container-color: rgb(61, 69, 118);
   --font-color: #fff;
   --font-color-dark: #000;
-  --primary-font: "Ubuntu", sans-serif;
+  --primary-font: "poppins";
   --secondary-font: "Alumni Sans Pinstripe", sans-serif;
   --heading-font: "Staatliches", cursive;
 }
@@ -42,11 +42,10 @@ a:active {
 /* Particle Js Custom CSS */
 .particles-js-canvas-el {
   width: 100vw;
-  z-index: 1;
+  z-index: -200;
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 10;
 }
 ::-webkit-scrollbar {
   display: none;
@@ -241,7 +240,7 @@ a:active {
   cursor: pointer;
   margin: 14px 10px;
   font-family: var(--primary-font);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   letter-spacing: 2px;
   color: var(--font-color);
   /* font-weight: bolder; */
@@ -334,7 +333,7 @@ Home page final css file
   position: absolute;
   top: 0;
   opacity: 0.05;
-  z-index: 5;
+  z-index: -1;
   filter: blur(5px);
 }
 @media screen and (max-width: 800px) {
@@ -368,6 +367,30 @@ Home page final css file
     /* margin: auto; */
   }
 }
+
+         
+.homeBtn {
+  background-image: linear-gradient(to right, #00c6ff 0%, #0072ff  51%, #00c6ff  100%);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  /* box-shadow: 0 0 20px #eee; */
+  border-radius: 10px;
+  display: block;
+  /* border: 0.2px solid white; */
+  border: none
+}
+
+.homeBtn:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
 /* about page */
 .aboutPage {
   /* background-color: aqua; */
@@ -426,17 +449,19 @@ Home page final css file
 .calendar-container {
   height: 40rem;
   width: 30rem;
+  
 }
 .calendar {
   height: 50%;
   width: 90%;
   background: rgba(255, 255, 255, 0.224);
-
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0px 0px 4px var(--primary-color);
+  box-shadow: 0 0 20px #000;
+
 }
 .cal-top {
   width: 100%;
@@ -660,7 +685,6 @@ Home page final css file
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
 .faqPage {
-  min-height: 90vh;
   width: 85%;
   padding: 0px;
   color: white;
@@ -685,7 +709,7 @@ Home page final css file
 }
 
 .accordion .image-box {
-  height: 360px;
+  /* height: 360px; */
   width: 300px;
 }
 
@@ -708,8 +732,8 @@ Home page final css file
 
 .accordion .accordion-text .faq-text {
   margin-top: 25px;
-  height: 353px;
-  overflow-y: auto;
+  /* height: 353px; */
+  /* overflow-y: auto; */
 }
 
 .faq-text::-webkit-scrollbar {
@@ -735,7 +759,7 @@ Home page final css file
 }
 
 .accordion-text li .question-arrow .question {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 500;
   color: #fff;
   transition: all 0.3s ease;
@@ -744,7 +768,7 @@ Home page final css file
 
 .accordion-text li p {
   color: rgba(24, 255, 101, 0.874) !important;
-  font-size: 16px;
+  font-size: 13px;
   text-align: justify;
   letter-spacing: 1px;
 }
@@ -815,21 +839,14 @@ Home page final css file
   color: white;
   letter-spacing: 1px;
 }
-/* footer style */
-footer {
-  width: 100%;
-  background-color: var(--primary-color);
-  height: 8rem;
-}
 
-footer .social {
-  margin: 0;
-  padding: 0px !important;
-  height: 100% !important;
+
+.footer{
+  background-color: var(--primary-color);
 }
 
 @media screen and (max-width: 500px) {
-  footer .social {
+  .footer .social {
     width: 100%;
   }
   .social a {
@@ -843,30 +860,96 @@ footer .social {
   }
 }
 
-.footerLogo {
-  width: 100px;
-  border-radius: 200px;
-}
-footer .social i {
-  transition: 0.5s;
-}
-.footerLogo:hover {
-  scale: 1.1;
-  transition: 0.5s;
-}
 
-#footerLogos {
-  height: 220px;
-  align-items: center;
-  flex-wrap: wrap;
-  row-gap: 10px;
-}
 
 @media screen and (max-width: 768px) {
   #footerLogos {
     height: 100%;
   }
 }
+
+
+
+
+
+
+
+.list-none{
+  list-style-type: none;
+}
+
+
+
+
+/* pokemone pictures */
+
+.pokemon {
+  height: 110px;
+  width: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* overlay */
+  /* box-shadow: 0 0 0 100px inset, 0 0 5px grey; */
+  /* hover out transition */
+  transition: box-shadow 0.5s;
+  float: left;
+  margin: 10px;
+  background-size: contain;
+  border-radius: 200px;
+
+}
+
+/* 
+/* pokemone names */
+
+/* .pokemon::after {
+  width: 80%;
+  height: 80%;
+  display: block;
+  white-space: pre;
+  font: 15pt 'sigmar one';
+  color: white;
+  text-align: center;
+   center content using flex box 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   hover out transition 
+  transition: opacity 1s .5s;
+} */ 
+
+
+
+.pokemon:hover {
+  transition: box-shadow 0.7s;
+  transform:rotate('5deg')
+} 
+
+
+#bulbasaur {
+  background-image: url('../assets/gdscLogo.png');
+  color: rgba(71, 121, 94, .9);
+}
+
+
+#charmander {
+  background-image: url('../assets/gfgLogo.png');
+  color: rgba(221, 86, 63, .9);
+}
+
+
+#squirtle {
+  background-image: url('../assets/ccLogo.png');
+  color: rgba(65, 102, 114, .9);
+}
+
+
+#pikachu {
+  background-image: url('../assets/elixirLogo.png');
+  color: rgba(179, 152, 98, .9);
+}
+
 .teamSection {
   display: flex;
   flex-direction: column;

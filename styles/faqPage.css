@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
 .faqPage {
-  min-height: 90vh;
   width: 85%;
   padding: 0px;
   color: white;
@@ -26,7 +25,7 @@
 }
 
 .accordion .image-box {
-  height: 360px;
+  /* height: 360px; */
   width: 300px;
 }
 
@@ -49,8 +48,8 @@
 
 .accordion .accordion-text .faq-text {
   margin-top: 25px;
-  height: 353px;
-  overflow-y: auto;
+  /* height: 353px; */
+  /* overflow-y: auto; */
 }
 
 .faq-text::-webkit-scrollbar {
@@ -76,7 +75,7 @@
 }
 
 .accordion-text li .question-arrow .question {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 500;
   color: #fff;
   transition: all 0.3s ease;
@@ -85,7 +84,7 @@
 
 .accordion-text li p {
   color: rgba(24, 255, 101, 0.874) !important;
-  font-size: 16px;
+  font-size: 13px;
   text-align: justify;
   letter-spacing: 1px;
 }

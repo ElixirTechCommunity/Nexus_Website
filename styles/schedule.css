@@ -11,17 +11,19 @@
 .calendar-container {
   height: 40rem;
   width: 30rem;
+  
 }
 .calendar {
   height: 50%;
   width: 90%;
   background: rgba(255, 255, 255, 0.224);
-
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0px 0px 4px var(--primary-color);
+  box-shadow: 0 0 20px #000;
+
 }
 .cal-top {
   width: 100%;

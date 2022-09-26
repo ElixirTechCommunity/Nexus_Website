@@ -16,6 +16,7 @@ Home page final css file
   );
   overflow: hidden;
   padding-top: 80px;
+  
 }
 .logo-container {
   position: relative;
@@ -56,7 +57,7 @@ Home page final css file
   position: absolute;
   top: 0;
   opacity: 0.05;
-  z-index: 5;
+  z-index: -1;
   filter: blur(5px);
 }
 @media screen and (max-width: 800px) {
@@ -90,3 +91,27 @@ Home page final css file
     /* margin: auto; */
   }
 }
+
+         
+.homeBtn {
+  background-image: linear-gradient(to right, #00c6ff 0%, #0072ff  51%, #00c6ff  100%);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  /* box-shadow: 0 0 20px #eee; */
+  border-radius: 10px;
+  display: block;
+  /* border: 0.2px solid white; */
+  border: none
+}
+
+.homeBtn:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+

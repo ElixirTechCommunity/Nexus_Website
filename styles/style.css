@@ -12,7 +12,7 @@
   --container-color: rgb(61, 69, 118);
   --font-color: #fff;
   --font-color-dark: #000;
-  --primary-font: "Ubuntu", sans-serif;
+  --primary-font: "poppins";
   --secondary-font: "Alumni Sans Pinstripe", sans-serif;
   --heading-font: "Staatliches", cursive;
 }
@@ -42,9 +42,8 @@ a:active {
 /* Particle Js Custom CSS */
 .particles-js-canvas-el {
   width: 100vw;
-  z-index: 1;
+  z-index: -200;
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 10;
 }

@@ -1,18 +1,11 @@
-/* footer style */
-footer {
-  width: 100%;
-  background-color: var(--primary-color);
-  height: 8rem;
-}
 
-footer .social {
-  margin: 0;
-  padding: 0px !important;
-  height: 100% !important;
+
+.footer{
+  background-color: var(--primary-color);
 }
 
 @media screen and (max-width: 500px) {
-  footer .social {
+  .footer .social {
     width: 100%;
   }
   .social a {
@@ -26,28 +19,27 @@ footer .social {
   }
 }
 
-.footerLogo {
-  width: 100px;
-  border-radius: 200px;
-}
-footer .social i {
-  transition: 0.5s;
-}
-.footerLogo:hover {
-  scale: 1.1;
-  transition: 0.5s;
-}
 
-#footerLogos {
-  cursor: pointer;
-  height: 220px;
-  align-items: center;
-  flex-wrap: wrap;
-  row-gap: 10px;
-}
 
 @media screen and (max-width: 768px) {
   #footerLogos {
     height: 100%;
   }
 }
+
+
+
+
+
+
+
+.list-none{
+  list-style-type: none;
+}
+
+.colabImage{
+  width: 100%;
+}
+
+
+
